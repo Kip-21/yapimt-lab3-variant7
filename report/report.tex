@@ -1,0 +1,141 @@
+%!TEX TS-program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setmonofont{Consolas}
+\usepackage[russian]{babel}
+\usepackage[left=25mm,right=15mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{amsmath,array,booktabs,listings,graphicx}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{3em}
+\pagestyle{plain}
+\lstset{basicstyle=\ttfamily\fontsize{9}{11}\selectfont,
+ columns=fullflexible,keepspaces=true,breaklines=true,
+ numbers=none,tabsize=4,showstringspaces=false,
+ frame=single,xleftmargin=0pt,
+ aboveskip=5pt,belowskip=5pt}
+
+\begin{document}
+\section*{1 Цель работы}
+Изучить вызов процедур на языке ассемблера из C++ и передачу данных
+между модулями программы.
+
+\section*{2 Постановка задачи}
+Вариант 7. Написать процедуру на языке ассемблера, которая по исходной
+строке формирует палиндром с использованием цепочечных команд.
+Ввод исходной строки и вывод результата выполнить в C++.
+Данные передавать через аргументы функции по соглашению \texttt{cdecl}.
+
+К исходной строке $S$ дописывается её обратная запись $S^R$.
+Полученная строка $P=S\,S^R$ читается одинаково в обоих направлениях.
+Например, \texttt{abcd} преобразуется в \texttt{abcddcba}.
+
+Программа предназначена для Windows, платформа x86, сборка MSVC и MASM.
+Допускается ввод до 255 байтов в кодировке CP866. Русская буква в этой
+кодировке занимает один байт. Пробелы, регистр и знаки препинания сохраняются.
+Ввод большей длины отклоняется. Для результата выделен буфер из 511 байтов:
+510 символов и завершающий нуль.
+
+\section*{3 Алгоритм}
+\begin{enumerate}
+\item В модуле C++ прочитать строку с помощью \texttt{std::getline}.
+Проверить успешность ввода и длину $n$. Кодировка консоли --- CP866.
+\item Передать ассемблерной процедуре адрес исходной строки, адрес буфера
+результата и $n$. Сохранить используемые регистры \texttt{EBP}, \texttt{ESI}
+и \texttt{EDI}.
+\item Сбросить флаг направления командой \texttt{CLD}. Загрузить адреса
+строк в \texttt{ESI} и \texttt{EDI}, а $n$ в \texttt{ECX}.
+Скопировать исходную строку командой \texttt{REP MOVSB}.
+\item Если $n=0$, пропустить обратное копирование. Иначе установить
+\texttt{ESI} на последний символ исходной строки и выполнить $n$ повторений:
+\texttt{STD; LODSB; CLD; STOSB}. Чтение идёт назад, запись вперёд.
+\item Записать нулевой байт в конец результата, восстановить регистры
+и вернуться в C++ командой \texttt{RET}. Вывести полученную строку.
+\end{enumerate}
+
+\newpage
+\section*{4 Интерфейс модулей и используемые команды}
+В C++ процедура объявляется с \texttt{extern "C"}. Соглашение о вызове
+задаётся словом \texttt{\_\_cdecl}. В MASM используется имя
+\texttt{\_MakePalindrome}, экспортируемое директивой \texttt{PUBLIC}.
+Результат записывается по переданному адресу.
+
+Аргументы помещаются в стек справа налево. После
+\texttt{PUSH EBP; MOV EBP, ESP} по адресу \texttt{[EBP+8]} находится
+адрес исходной строки, по \texttt{[EBP+12]} --- адрес результата,
+по \texttt{[EBP+16]} --- длина строки. Аргументы из стека удаляет
+вызывающий код C++, поэтому используется \texttt{RET} без операнда.
+
+\texttt{REP MOVSB} копирует байты, \texttt{LODSB} читает байт в
+\texttt{AL}, \texttt{STOSB} записывает его в результат.
+\texttt{STD} задаёт движение указателя назад, \texttt{CLD} --- вперёд.
+Перед возвратом флаг направления сброшен. \texttt{EBX} не изменяется,
+\texttt{EBP}, \texttt{ESI} и \texttt{EDI} сохраняются в стеке.
+
+\section*{5 Тестирование}
+Программа собрана в режиме x86 без предупреждений. В таблице приведены
+основные тесты; полученные результаты совпали с ожидаемыми.
+Знак $\sqcup$ обозначает один пробел, степень --- число повторений.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}c p{37mm} p{67mm} c@{}}
+\toprule
+№ & Исходная строка & Результат & Код выхода \\
+\midrule
+1 & Пустая строка & Пустая строка & 0 \\
+2 & \texttt{a} & \texttt{aa} & 0 \\
+3 & \texttt{ab} & \texttt{abba} & 0 \\
+4 & \texttt{abc} & \texttt{abccba} & 0 \\
+5 & \texttt{abcd} & \texttt{abcddcba} & 0 \\
+6 & \texttt{aba} & \texttt{abaaba} & 0 \\
+7 & \texttt{aaaa} & \texttt{aaaaaaaa} & 0 \\
+8 & $\texttt{a}\sqcup\texttt{b}$ & $\texttt{a}\sqcup\texttt{bb}\sqcup\texttt{a}$ & 0 \\
+9 & $\sqcup\texttt{a}\sqcup$ & $\sqcup\texttt{a}\sqcup\sqcup\texttt{a}\sqcup$ & 0 \\
+10 & \texttt{Ab1!} & \texttt{Ab1!!1bA} & 0 \\
+11 & \texttt{тест} & \texttt{тесттсет} & 0 \\
+12 & $\texttt{а}\sqcup\texttt{роза}$ & $\texttt{а}\sqcup\texttt{розаазор}\sqcup\texttt{а}$ & 0 \\
+13 & $(\texttt{abc})^{85}$, 255 символов
+   & $(\texttt{abc})^{85}(\texttt{cba})^{85}$, 510 символов & 0 \\
+14 & $\texttt{a}^{256}$ & Ошибка: превышена длина ввода & 1 \\
+15 & $\texttt{b}^{300}$ & Ошибка: превышена длина ввода & 1 \\
+16 & 1 пробел & 2 пробела & 0 \\
+17 & 3 пробела & 6 пробелов & 0 \\
+18 & Нет строки (EOF) & Ошибка ввода & 1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Дополнительно проверены строки всех длин от 0 до 255 байтов.
+Всего пройдено 274 теста программы. Для каждой допустимой длины отдельно
+проверены сохранение регистров и указателя стека, сброс флага направления,
+нулевой байт в конце и отсутствие записи за границы результата.
+Все 256 проверок процедуры завершились успешно.
+
+\newpage
+\section*{6 Код программы}
+\noindent\textbf{Модуль C++ --- main.cpp}
+\lstinputlisting[language=C++]{../code/main.cpp}
+
+Примеры запуска:
+\begin{lstlisting}
+Enter a string (max 255 characters): abcd
+Palindrome: abcddcba
+
+Enter a string (max 255 characters): Ab1!
+Palindrome: Ab1!!1bA
+\end{lstlisting}
+
+\newpage
+\noindent\textbf{Модуль MASM --- palindrome.asm}
+\lstinputlisting{../code/palindrome.asm}
+
+\section*{7 Вывод}
+Обработка строки вынесена в отдельную процедуру на ассемблере.
+C++ передаёт ей адреса буферов и длину по соглашению \texttt{cdecl},
+затем выводит результат. Палиндром строится командами
+\texttt{REP MOVSB}, \texttt{LODSB} и \texttt{STOSB}.
+Проверены пустая строка, пробелы, русские буквы и границы допустимой длины.
+\end{document}

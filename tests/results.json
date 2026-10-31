@@ -1,0 +1,2191 @@
+[
+  {
+    "name": "empty",
+    "input": "",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "one",
+    "input": "a",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: aa\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "two",
+    "input": "ab",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: abba\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "three",
+    "input": "abc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: abccba\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "four",
+    "input": "abcd",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: abcddcba\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "palindrome",
+    "input": "aba",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: abaaba\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "repeated",
+    "input": "aaaa",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: aaaaaaaa\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "space_inside",
+    "input": "a b",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: a bb a\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "edge_spaces",
+    "input": " a ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  a  a \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "mixed",
+    "input": "Ab1!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Ab1!!1bA\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "russian",
+    "input": "тест",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тесттсет\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "russian_spaces",
+    "input": "а роза",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: а розаазор а\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "maximum",
+    "input": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabccbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacbacba\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "too_long_256",
+    "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "exit_code": 1,
+    "stdout": "Enter a string (max 255 characters): ",
+    "stderr": "Error: string is longer than 255 characters.\r\n",
+    "passed": true
+  },
+  {
+    "name": "too_long_300",
+    "input": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "exit_code": 1,
+    "stdout": "Enter a string (max 255 characters): ",
+    "stderr": "Error: string is longer than 255 characters.\r\n",
+    "passed": true
+  },
+  {
+    "name": "one_space",
+    "input": " ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:   \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "three_spaces",
+    "input": "   ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:       \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "end_of_input",
+    "exit_code": 1,
+    "passed": true
+  },
+  {
+    "name": "length_0",
+    "input": "",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_1",
+    "input": "!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_2",
+    "input": "Y.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Y..Y\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_3",
+    "input": "Аbc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: АbccbА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_4",
+    "input": "еX?с",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еX?сс?Xе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_5",
+    "input": "bт0bc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bт0bccb0тb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_6",
+    "input": ",,c1cе",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,,c1cееc1c,,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_7",
+    "input": ",bсX1АА",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,bсX1АААА1Xсb,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_8",
+    "input": "сbсс.b1b",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: сbсс.b1bb1b.ссbс\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_9",
+    "input": "еY ,YеXс ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еY ,YеXс  сXеY, Yе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_10",
+    "input": "еБZXссА0?X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еБZXссА0?XX?0АссXZБе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_11",
+    "input": "еВcсbт0-Бе,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еВcсbт0-Бе,,еБ-0тbсcВе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_12",
+    "input": "!_с_? 1ZВ1cс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !_с_? 1ZВ1cссc1ВZ1 ?_с_!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_13",
+    "input": " т-!ё_ тcXт,Z",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  т-!ё_ тcXт,ZZ,тXcт _ё!-т \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_14",
+    "input": "!Y-,bБcес!!В?т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !Y-,bБcес!!В?тт?В!!сеcБb,-Y!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_15",
+    "input": "-с_cc9-ВБcbёВ А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -с_cc9-ВБcbёВ АА ВёbcБВ-9cc_с-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_16",
+    "input": "сБ_ В.Б?a_?ZтX-b",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: сБ_ В.Б?a_?ZтX-bb-XтZ?_a?Б.В _Бс\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_17",
+    "input": "0 Yё1..-cZ_.е9Y,е",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0 Yё1..-cZ_.е9Y,ее,Y9е._Zc-..1ёY 0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_18",
+    "input": "9В,?Б.1YcZY1Б1a-сZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9В,?Б.1YcZY1Б1a-сZZс-a1Б1YZcY1.Б?,В9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_19",
+    "input": "9 aY,е?тс!YВттАБёb_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9 aY,е?тс!YВттАБёb__bёБАттВY!ст?е,Ya 9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_20",
+    "input": "Бе....X-А.b0c0_ZX!тb",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Бе....X-А.b0c0_ZX!тbbт!XZ_0c0b.А-X....еБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_21",
+    "input": "XaсYеX?тac0т.YА9?т?-X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XaсYеX?тac0т.YА9?т?-XX-?т?9АY.т0caт?XеYсaX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_22",
+    "input": "X-_-- cYXё!ё9-ВZтa0т?Y",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: X-_-- cYXё!ё9-ВZтa0т?YY?т0aтZВ-9ё!ёXYc --_-X\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_23",
+    "input": "Веaт АcВ9т?Z?1еет!А1т01",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Веaт АcВ9т?Z?1еет!А1т0110т1А!тее1?Z?т9ВcА тaеВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_24",
+    "input": ".ё10т-?ёaa9-90Вт?_ё??c1X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .ё10т-?ёaa9-90Вт?_ё??c1XX1c??ё_?тВ09-9aaё?-т01ё.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_25",
+    "input": "1-0!0-ттa-А?АcБX.В0-Z,А!c",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1-0!0-ттa-А?АcБX.В0-Z,А!cc!А,Z-0В.XБcА?А-aтт-0!0-1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_26",
+    "input": "ё._.ёcёZZYaYс_АYтт-Б?YееYa",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ё._.ёcёZZYaYс_АYтт-Б?YееYaaYееY?Б-ттYА_сYaYZZёcё._.ё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_27",
+    "input": "aёАXтёY,00a90 т1с!9е,Ybё?_Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: aёАXтёY,00a90 т1с!9е,Ybё?_ББ_?ёbY,е9!с1т 09a00,YётXАёa\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_28",
+    "input": "ст,тYеYттa_ZтaYZY-тёXеb!Бтте",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ст,тYеYттa_ZтaYZY-тёXеb!БттееттБ!bеXёт-YZYaтZ_aттYеYт,тс\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_29",
+    "input": "-Xеb109bXт_еac_!тттт0В9_те-т1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -Xеb109bXт_еac_!тттт0В9_те-т11т-ет_9В0тттт!_caе_тXb901bеX-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_30",
+    "input": "Вт9е0_Y,X._!cБ1,c0Б XYВАБ?Y9Y_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Вт9е0_Y,X._!cБ1,c0Б XYВАБ?Y9Y__Y9Y?БАВYX Б0c,1Бc!_.X,Y_0е9тВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_31",
+    "input": "1ёX.-ZБ1ZВ,т.!,0?!cё?a!е__Вa.!т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1ёX.-ZБ1ZВ,т.!,0?!cё?a!е__Вa.!тт!.aВ__е!a?ёc!?0,!.т,ВZ1БZ-.Xё1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_32",
+    "input": "т тcX1Xc99bZ9Y,Б9.Yетс-В!c9bВZ,c",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т тcX1Xc99bZ9Y,Б9.Yетс-В!c9bВZ,cc,ZВb9c!В-стеY.9Б,Y9Zb99cX1Xcт т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_33",
+    "input": "9aАc9cт1c9X_a!е,9тYbтВ1XZ9bZ0 А т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9aАc9cт1c9X_a!е,9тYbтВ1XZ9bZ0 А тт А 0Zb9ZX1ВтbYт9,е!a_X9c1тc9cАa9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_34",
+    "input": "0 _тБZ9?a9baaёте0т-1_XБА,Б-е.т В01",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0 _тБZ9?a9baaёте0т-1_XБА,Б-е.т В0110В т.е-Б,АБX_1-т0етёaab9a?9ZБт_ 0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_35",
+    "input": "!0ВёАY.?bYacАё9,ZbcБ.тБ т1В b_ZZ9_a",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !0ВёАY.?bYacАё9,ZbcБ.тБ т1В b_ZZ9_aa_9ZZ_b В1т Бт.БcbZ,9ёАcaYb?.YАёВ0!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_36",
+    "input": "9?!е!1b 0?Za!.c-9тА01тac9cY.сb.a  А1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9?!е!1b 0?Za!.c-9тА01тac9cY.сb.a  А11А  a.bс.Yc9caт10Ат9-c.!aZ?0 b1!е!?9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_37",
+    "input": "cстYБВт.!ё-Y ётАYbВтА,ёВтYттсaБсВБВА1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cстYБВт.!ё-Y ётАYbВтА,ёВтYттсaБсВБВА11АВБВсБaсттYтВё,АтВbYАтё Y-ё!.тВБYтсc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_38",
+    "input": "cabYА?X._еbАaАеБ1-9a_cётеcБтcёё-9c91ё0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cabYА?X._еbАaАеБ1-9a_cётеcБтcёё-9c91ё00ё19c9-ёёcтБcетёc_a9-1БеАaАbе_.X?АYbac\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_39",
+    "input": "1ёА_-.c-Б bтАА0cтY!9АёВ тсYa-b-9БXВ0Б- ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1ёА_-.c-Б bтАА0cтY!9АёВ тсYa-b-9БXВ0Б-  -Б0ВXБ9-b-aYст ВёА9!Yтc0ААтb Б-c.-_Аё1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_40",
+    "input": "Вт ___Xе0 c-a _cт_9.00cсcYёт9?YтАт9XВ?1-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Вт ___Xе0 c-a _cт_9.00cсcYёт9?YтАт9XВ?1--1?ВX9тАтY?9тёYcсc00.9_тc_ a-c 0еX___ тВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_41",
+    "input": "-.aZa-Б_. ёY,?.!X!a!!.X0Вaё 9?c..сc?,9b9X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -.aZa-Б_. ёY,?.!X!a!!.X0Вaё 9?c..сc?,9b9XX9b9,?cс..c?9 ёaВ0X.!!a!X!.?,Yё ._Б-aZa.-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_42",
+    "input": "bБ АY19,т!0?,aА.ее0ёcbё,_тYА -bеYZ-,!  9ёё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bБ АY19,т!0?,aА.ее0ёcbё,_тYА -bеYZ-,!  9ёёёё9  !,-ZYеb- АYт_,ёbcё0ее.Аa,?0!т,91YА Бb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_43",
+    "input": "А9.А1 -еБ.XZАZc0т-е1_!_,Yе01cZ!еc!1?9с0aё,.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А9.А1 -еБ.XZАZc0т-е1_!_,Yе01cZ!еc!1?9с0aё,..,ёa0с9?1!cе!Zc10еY,_!_1е-т0cZАZX.Бе- 1А.9А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_44",
+    "input": ",ёт0.9!b-9с?YБттА0c91..А_, aYb,В-с-ac.т__1X1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,ёт0.9!b-9с?YБттА0c91..А_, aYb,В-с-ac.т__1X11X1__т.ca-с-В,bYa ,_А..19c0АттБY?с9-b!9.0тё,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_45",
+    "input": "YYтБXёВА_cеbaY1сbАВ YА9тА,ВXXc тс0.91тaaе _9!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YYтБXёВА_cеbaY1сbАВ YА9тА,ВXXc тс0.91тaaе _9!!9_ еaaт19.0ст cXXВ,Ат9АY ВАbс1Yabеc_АВёXБтYY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_46",
+    "input": "А1-т1е1a,ВА ba0-БА,c91Б,?1-bВ!В,?Б.0a ётc0-0 0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А1-т1е1a,ВА ba0-БА,c91Б,?1-bВ!В,?Б.0a ётc0-0 00 0-0cтё a0.Б?,В!Вb-1?,Б19c,АБ-0ab АВ,a1е1т-1А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_47",
+    "input": "1_19 Xт-тZ1-,БbтY.b0aтY,bВbZ._В!ёXcZ!0ZАтё_b Бё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1_19 Xт-тZ1-,БbтY.b0aтY,bВbZ._В!ёXcZ!0ZАтё_b БёёБ b_ётАZ0!ZcXё!В_.ZbВb,Yтa0b.YтbБ,-1Zт-тX 91_1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_48",
+    "input": ".?!_ZXac9c?,Xе0.? ,cbВ-0?е_0!?ё-aА,1А.b.b_cb90ёc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .?!_ZXac9c?,Xе0.? ,cbВ-0?е_0!?ё-aА,1А.b.b_cb90ёccё09bc_b.b.А1,Аa-ё?!0_е?0-Вbc, ?.0еX,?c9caXZ_!?.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_49",
+    "input": "т!?9!тb9ёВВ!9 aётАca1X-В_.9,-Y-Zaё ВYт1!!_?тcт0.Z",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т!?9!тb9ёВВ!9 aётАca1X-В_.9,-Y-Zaё ВYт1!!_?тcт0.ZZ.0тcт?_!!1тYВ ёaZ-Y-,9._В-X1acАтёa 9!ВВё9bт!9?!т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_50",
+    "input": "1,cАb-ее!Z,Xc9тc0X,-В_Z1Y,_тБ1ёеБX  9с9?9ё90_1Z11Y",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1,cАb-ее!Z,Xc9тc0X,-В_Z1Y,_тБ1ёеБX  9с9?9ё90_1Z11YY11Z1_09ё9?9с9  XБеё1Бт_,Y1Z_В-,X0cт9cX,Z!ее-bАc,1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_51",
+    "input": " с0!c.91тт1АXА_bXa-1_?b 1Xb0тс0c?тZ_т9БaXАтВт?0b?!Y",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  с0!c.91тт1АXА_bXa-1_?b 1Xb0тс0c?тZ_т9БaXАтВт?0b?!YY!?b0?тВтАXaБ9т_Zт?c0ст0bX1 b?_1-aXb_АXА1тт19.c!0с \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_52",
+    "input": "b09bтёА0a!,Б?Zт c0b-е-c,X.БеYАеcАZ.В9, Б ,b ёс?,,a?А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: b09bтёА0a!,Б?Zт c0b-е-c,X.БеYАеcАZ.В9, Б ,b ёс?,,a?АА?a,,?сё b, Б ,9В.ZАcеАYеБ.X,c-е-b0c тZ?Б,!a0Аётb90b\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_53",
+    "input": "0.ё.0a,Z,Xc.с?_ZYabеYА.cст?ётZY? ZтZcX.-0 Yb-!bтА.cВт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0.ё.0a,Z,Xc.с?_ZYabеYА.cст?ётZY? ZтZcX.-0 Yb-!bтА.cВттВc.Атb!-bY 0-.XcZтZ ?YZтё?тсc.АYеbaYZ_?с.cX,Z,a0.ё.0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_54",
+    "input": "ВZА1т.т0-Zс0b.тZ.?XY1ё0bеБbБ!X.т_еА А, с1,.Б?_т_Zaaт-_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ВZА1т.т0-Zс0b.тZ.?XY1ё0bеБbБ!X.т_еА А, с1,.Б?_т_Zaaт-__-тaaZ_т_?Б.,1с ,А Ае_т.X!БbБеb0ё1YX?.Zт.b0сZ-0т.т1АZВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_55",
+    "input": "1_т_Z-.XcY?,?c_ттБbbАYcё!ётcbт.АYacтёВX0Y- ZБё1c?т9Z!т9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1_т_Z-.XcY?,?c_ттБbbАYcё!ётcbт.АYacтёВX0Y- ZБё1c?т9Z!т99т!Z9т?c1ёБZ -Y0XВётcaYА.тbcтё!ёcYАbbБтт_c?,?YcX.-Z_т_1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_56",
+    "input": "_Y9т-0с9тт1!?b0Z.ZА9Б!.Z9XтbА?_етсВX9еА.ё?9.?сY?!c_1Zтёb",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _Y9т-0с9тт1!?b0Z.ZА9Б!.Z9XтbА?_етсВX9еА.ё?9.?сY?!c_1ZтёbbётZ1_c!?Yс?.9?ё.Ае9XВсте_?АbтX9Z.!Б9АZ.Z0b?!1тт9с0-т9Y_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_57",
+    "input": " т9 АсБ!ёaёb1Y тА,,т?bY-1тАbabaс? Xт?е1,с сY0?т-ZYa1ВY_Xc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  т9 АсБ!ёaёb1Y тА,,т?bY-1тАbabaс? Xт?е1,с сY0?т-ZYa1ВY_XccX_YВ1aYZ-т?0Yс с,1е?тX ?сababАт1-Yb?т,,Ат Y1bёaё!БсА 9т \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_58",
+    "input": "АYБ9.9abАе?тАс_ттё-1Zabbеa.Z1ZbXaтеБ0Y,0ттАтАА,тZт c Аbё-В",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: АYБ9.9abАе?тАс_ттё-1Zabbеa.Z1ZbXaтеБ0Y,0ттАтАА,тZт c Аbё-ВВ-ёbА c тZт,ААтАтт0,Y0БетaXbZ1Z.aеbbaZ1-ётт_сАт?еАba9.9БYА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_59",
+    "input": "еa.,ё_cёА_Z1X91АbX!ёВ9Вb9АеБ,Бт9 А0cтaZ91ё0Zё!0.!т1.АВБе--т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еa.,ё_cёА_Z1X91АbX!ёВ9Вb9АеБ,Бт9 А0cтaZ91ё0Zё!0.!т1.АВБе--тт--еБВА.1т!.0!ёZ0ё19Zaтc0А 9тБ,БеА9bВ9Вё!XbА19X1Z_Аёc_ё,.aе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_60",
+    "input": "Вaa,ё1с 0.тсcсZYbaXXтZ?YВaabYВААbВcёbcс?0еБcВ.X100XbbАcАА -X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Вaa,ё1с 0.тсcсZYbaXXтZ?YВaabYВААbВcёbcс?0еБcВ.X100XbbАcАА -XX- ААcАbbX001X.ВcБе0?сcbёcВbААВYbaaВY?ZтXXabYZсcст.0 с1ё,aaВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_61",
+    "input": "YXА0 !!,9a?9 bВ?!тт- тёa,a,тX?-Вbес0Вcс Z,aт0 ba?-X-ВZ-с?т9сZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YXА0 !!,9a?9 bВ?!тт- тёa,a,тX?-Вbес0Вcс Z,aт0 ba?-X-ВZ-с?т9сZZс9т?с-ZВ-X-?ab 0тa,Z сcВ0сеbВ-?Xт,a,aёт -тт!?Вb 9?a9,!! 0АXY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_62",
+    "input": " 0В1-ZXАc-ВеXА!?X..ёc,Аa?0 9,етZ.А1_YетВтАb?с!тY_Беё!Z__В9с1Y!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  0В1-ZXАc-ВеXА!?X..ёc,Аa?0 9,етZ.А1_YетВтАb?с!тY_Беё!Z__В9с1Y!!Y1с9В__Z!ёеБ_Yт!с?bАтВтеY_1А.Zте,9 0?aА,cё..X?!АXеВ-cАXZ-1В0 \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_63",
+    "input": "_АВ1т09 ВтYёY1ё!тт?Z1!09ёXZБX0.YY ё ,90XАX90._ba.,В1тА _aY9тё.a",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _АВ1т09 ВтYёY1ё!тт?Z1!09ёXZБX0.YY ё ,90XАX90._ba.,В1тА _aY9тё.aa.ёт9Ya_ Ат1В,.ab_.09XАX09, ё YY.0XБZXё90!1Z?тт!ё1YёYтВ 90т1ВА_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_64",
+    "input": "ё1,ВссёА,1БёААВс1БZАX_,!9АВX,1.ВВАZ9,-_aт,тББZА!a.-Xb9е0ZВ0т?Xс_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ё1,ВссёА,1БёААВс1БZАX_,!9АВX,1.ВВАZ9,-_aт,тББZА!a.-Xb9е0ZВ0т?Xс__сX?т0ВZ0е9bX-.a!АZББт,тa_-,9ZАВВ.1,XВА9!,_XАZБ1сВААёБ1,АёссВ,1ё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_65",
+    "input": "е0В-тaА?т!,ё_0БZ.тXёт?Аb99..bac,,АВБ?с9X1 ё.т1._0ZYcА0-Аеё1Y?БА,_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: е0В-тaА?т!,ё_0БZ.тXёт?Аb99..bac,,АВБ?с9X1 ё.т1._0ZYcА0-Аеё1Y?БА,__,АБ?Y1ёеА-0АcYZ0_.1т.ё 1X9с?БВА,,cab..99bА?тёXт.ZБ0_ё,!т?Аaт-В0е\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_66",
+    "input": " еАY-?19В.Б9,БZ-aё9?1А !--,тАcБ?Y .bcс!Yт?АсaБa0cА 9тXсY1Z_?Y0.еZт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  еАY-?19В.Б9,БZ-aё9?1А !--,тАcБ?Y .bcс!Yт?АсaБa0cА 9тXсY1Z_?Y0.еZттZе.0Y?_Z1YсXт9 Аc0aБaсА?тY!сcb. Y?БcАт,--! А1?9ёa-ZБ,9Б.В91?-YАе \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_67",
+    "input": "ВтcБеА 0-В0тcё_БXеX9,1Y--еb-_YВ-1-ZетёaZ!_Вс-Б _?,,БcZА?ААaaтbБё!Xт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ВтcБеА 0-В0тcё_БXеX9,1Y--еb-_YВ-1-ZетёaZ!_Вс-Б _?,,БcZА?ААaaтbБё!XттX!ёБbтaaАА?АZcБ,,?_ Б-сВ_!ZaётеZ-1-ВY_-bе--Y1,9XеXБ_ёcт0В-0 АеБcтВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_68",
+    "input": "--Yb0В,АY!XБ?!-те0 ,!,9еb  ?-.!т9т?0А-X!0!В YсАcb.ёе.есb. Xab0-тБbте",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: --Yb0В,АY!XБ?!-те0 ,!,9еb  ?-.!т9т?0А-X!0!В YсАcb.ёе.есb. Xab0-тБbтеетbБт-0baX .bсе.её.bcАсY В!0!X-А0?т9т!.-?  bе9,!, 0ет-!?БX!YА,В0bY--\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_69",
+    "input": "т.тYАБВВтБc0bБА_АZXБZb,XАa?Y еВ9 Z,b!a,сАсb-стbX,сВ._caБ.тсБY-,еXcА-0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т.тYАБВВтБc0bБА_АZXБZb,XАa?Y еВ9 Z,b!a,сАсb-стbX,сВ._caБ.тсБY-,еXcА-00-АcXе,-YБст.Бac_.Вс,Xbтс-bсАс,a!b,Z 9Ве Y?aАX,bZБXZА_АБb0cБтВВБАYт.т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_70",
+    "input": "YАa,aaББXc0XY-a9ёс1_ёёZb?ёВВYёc АеВ-_Б9bВbabaАБтc.  ётZ-тb!?сё_-БZYX?А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YАa,aaББXc0XY-a9ёс1_ёёZb?ёВВYёc АеВ-_Б9bВbabaАБтc.  ётZ-тb!?сё_-БZYX?АА?XYZБ-_ёс?!bт-Zтё  .cтБАababВb9Б_-ВеА cёYВВё?bZёё_1сё9a-YX0cXББaa,aАY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_71",
+    "input": "ZА,-._9с! 9bтАВт!тёaYт с,1..Б.т1_ Вa!99,Zсb YсY9еБ-?еcее-.0ё1 тbБ._В09с",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ZА,-._9с! 9bтАВт!тёaYт с,1..Б.т1_ Вa!99,Zсb YсY9еБ-?еcее-.0ё1 тbБ._В09сс90В_.Бbт 1ё0.-ееcе?-Бе9YсY bсZ,99!aВ _1т.Б..1,с тYaёт!тВАтb9 !с9_.-,АZ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_72",
+    "input": "a._еcе?c1.ст9т!-тс0000cZВ ?сс?.тY1b-?X?А_cY!тa?9ттaXb0с-сс099,X_стY9b!0Z",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: a._еcе?c1.ст9т!-тс0000cZВ ?сс?.тY1b-?X?А_cY!тa?9ттaXb0с-сс099,X_стY9b!0ZZ0!b9Yтс_X,990сс-с0bXaтт9?aт!Yc_А?X?-b1Yт.?сс? ВZc0000ст-!т9тс.1c?еcе_.a\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_73",
+    "input": ".cabbе?В_-cтА.XВc9!с1АcБт.Z_Z?1ё1Zb9?bеab9тВёА-bXY!a0Бё сс_АX-!?9.X?-.Z_1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .cabbе?В_-cтА.XВc9!с1АcБт.Z_Z?1ё1Zb9?bеab9тВёА-bXY!a0Бё сс_АX-!?9.X?-.Z_11_Z.-?X.9?!-XА_сс ёБ0a!YXb-АёВт9baеb?9bZ1ё1?Z_Z.тБcА1с!9cВX.Атc-_В?еbbac.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_74",
+    "input": "YБa_В0bZ1cт?ёY_X.aАc_!!1-XА?Y!1ёbZВ_еY_Y9,,1Ya9с !Z9-X!_-XYтbАБ0е- X90?,91",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YБa_В0bZ1cт?ёY_X.aАc_!!1-XА?Y!1ёbZВ_еY_Y9,,1Ya9с !Z9-X!_-XYтbАБ0е- X90?,9119,?09X -е0БАbтYX-_!X-9Z! с9aY1,,9Y_Yе_ВZbё1!Y?АX-1!!_cАa.X_Yё?тc1Zb0В_aБY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_75",
+    "input": "1X. ,Zbё YАa_т!тY_aт Z?,b,09сZYZт1ВZ0тccтё-9Z0YтБВА0с 0acВёт,ёbт?! А-ca,-YБ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1X. ,Zbё YАa_т!тY_aт Z?,b,09сZYZт1ВZ0тccтё-9Z0YтБВА0с 0acВёт,ёbт?! А-ca,-YББY-,ac-А !?тbё,тёВca0 с0АВБтY0Z9-ётccт0ZВ1тZYZс90,b,?Z тa_Yт!т_aАY ёbZ, .X1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_76",
+    "input": "91Zс?bZВ?стa?т_тcX?В1!В.сb Xё-_тaтеYa1c1тZZX 9еaaXВё09aтАс_т1В_X?XВZb9X_-ст9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 91Zс?bZВ?стa?т_тcX?В1!В.сb Xё-_тaтеYa1c1тZZX 9еaaXВё09aтАс_т1В_X?XВZb9X_-ст99тс-_X9bZВX?X_В1т_сАтa90ёВXaaе9 XZZт1c1aYетaт_-ёX bс.В!1В?Xcт_т?aтс?ВZb?сZ19\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_77",
+    "input": "XXX.Yес11YБс_ё.ZaА.В,тттb.b?!.1!В,с!.еb!тYБ?1,БАa?XтZc!,0тБa1Y,._АbbbАт9Бт9Ае",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XXX.Yес11YБс_ё.ZaА.В,тттb.b?!.1!В,с!.еb!тYБ?1,БАa?XтZc!,0тБa1Y,._АbbbАт9Бт9АееА9тБ9тАbbbА_.,Y1aБт0,!cZтX?aАБ,1?БYт!bе.!с,В!1.!?b.bттт,В.АaZ.ё_сБY11сеY.XXX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_78",
+    "input": "bтX9Xтa,1b X ?АZXbтт9c_сеY_XтY ,с 91ёcёе _тВс1А.0еВ?_е т-- a1!10те.с.a?Z1!е!-9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bтX9Xтa,1b X ?АZXbтт9c_сеY_XтY ,с 91ёcёе _тВс1А.0еВ?_е т-- a1!10те.с.a?Z1!е!-99-!е!1Z?a.с.ет01!1a --т е_?Ве0.А1сВт_ еёcё19 с, YтX_Yес_c9ттbXZА? X b1,aтX9Xтb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_79",
+    "input": " 0 baZеcт?_Бbт._?ёXт1БёY,!Б?YБ0тт9тXёё-9АВАВY,Xa,есX-.сY,9ттX._В_ ё? ?.тет.А!aё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  0 baZеcт?_Бbт._?ёXт1БёY,!Б?YБ0тт9тXёё-9АВАВY,Xa,есX-.сY,9ттX._В_ ё? ?.тет.А!aёёa!А.тет.? ?ё _В_.Xтт9,Yс.-Xсе,aX,YВАВА9-ёёXт9тт0БY?Б!,YёБ1тXё?_.тbБ_?тcеZab 0 \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_80",
+    "input": "-._ Zе Y,с.с1c!!т1!0,aab9с- е ет,ттёБ,._?bтБ?_aБcт1X,?т.АесY0,-._тс!ВтёcZ?!?c тZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -._ Zе Y,с.с1c!!т1!0,aab9с- е ет,ттёБ,._?bтБ?_aБcт1X,?т.АесY0,-._тс!ВтёcZ?!?c тZZт c?!?ZcётВ!ст_.-,0YсеА.т?,X1тcБa_?Бтb?_.,Бётт,те е -с9baa,0!1т!!c1с.с,Y еZ _.-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_81",
+    "input": "XА В!т,АZт т0т0,ZbАстX?сААёbВ,aa ВВеa .XсaБa0Z-ес9АетYс0,тXYZттXaXcZт-_т,bАaБс!YВ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XА В!т,АZт т0т0,ZbАстX?сААёbВ,aa ВВеa .XсaБa0Z-ес9АетYс0,тXYZттXaXcZт-_т,bАaБс!YВВY!сБaАb,т_-тZcXaXттZYXт,0сYтеА9се-Z0aБaсX. aеВВ aa,ВbёААс?XтсАbZ,0т0т тZА,т!В АX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_82",
+    "input": "1?9Zb9АXсc?0_т.ab1.сb_bт111bZсZ!a_ ,т9-c1Б.БВс1, .В-a1cZZ?.Za .е?X!е.!.АcX,?е1.0_ ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1?9Zb9АXсc?0_т.ab1.сb_bт111bZсZ!a_ ,т9-c1Б.БВс1, .В-a1cZZ?.Za .е?X!е.!.АcX,?е1.0_  _0.1е?,XcА.!.е!X?е. aZ.?ZZc1a-В. ,1сВБ.Б1c-9т, _a!ZсZb111тb_bс.1ba.т_0?cсXА9bZ9?1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_83",
+    "input": "?1,b9Бa!Y1ВYc09еYе__1Z??0ё..Ас0 -т01_БYВ9т_с?е1.тт0YXБтcе9ё.aБВсY a.ВcВZ1!0БXcе?т 0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?1,b9Бa!Y1ВYc09еYе__1Z??0ё..Ас0 -т01_БYВ9т_с?е1.тт0YXБтcе9ё.aБВсY a.ВcВZ1!0БXcе?т 00 т?еcXБ0!1ZВcВ.a YсВБa.ё9еcтБXY0тт.1е?с_т9ВYБ_10т- 0сА..ё0??Z1__еYе90cYВ1Y!aБ9b,1?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_84",
+    "input": "cВ c1 YВ. ?._ААY9Za?ББВ?,aБВВ_1.?АXZ X9тё1ВБb.bтZ,0 Y.ёbе ААZс1с-Вт9,ББс?aXА bстВb1Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cВ c1 YВ. ?._ААY9Za?ББВ?,aБВВ_1.?АXZ X9тё1ВБb.bтZ,0 Y.ёbе ААZс1с-Вт9,ББс?aXА bстВb1ББ1bВтсb АXa?сББ,9тВ-с1сZАА еbё.Y 0,Zтb.bБВ1ёт9X ZXА?.1_ВВБa,?ВББ?aZ9YАА_.? .ВY 1c Вc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_85",
+    "input": "Xb!0?ёc,Вё.ёт19тc?,_!ВтёВАА_тbБВ0,БтY-0bВе9ZеZА1е91bZ??,c0А YYБВ-Б-1В1aтВ_YА?В YВYсс1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Xb!0?ёc,Вё.ёт19тc?,_!ВтёВАА_тbБВ0,БтY-0bВе9ZеZА1е91bZ??,c0А YYБВ-Б-1В1aтВ_YА?В YВYсс11ссYВY В?АY_Втa1В1-Б-ВБYY А0c,??Zb19е1АZеZ9еВb0-YтБ,0ВБbт_ААВётВ!_,?cт91тё.ёВ,cё?0!bX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_86",
+    "input": "!АXе,ZББYт_.0XВ a?-0bb9 0XВ _XZ!__с? Zеcba_-cёВ!ёс9XА-,-0е!a?cА АтёАВ9А1cYёaa.Y ?ZАтБZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !АXе,ZББYт_.0XВ a?-0bb9 0XВ _XZ!__с? Zеcba_-cёВ!ёс9XА-,-0е!a?cА АтёАВ9А1cYёaa.Y ?ZАтБZZБтАZ? Y.aaёYc1А9ВАётА Аc?a!е0-,-АX9сё!Вёc-_abcеZ ?с__!ZX_ ВX0 9bb0-?a ВX0._тYББZ,еXА!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_87",
+    "input": "Xё ёт!.ZА?!1?Yе?91bbXсАВ.b0-,-ёZ тсАcYВ1ZY_А.cb_-00ё?abтт,Y cБbтВ,!c_aБZёZ. a_сБ?с0-cе!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Xё ёт!.ZА?!1?Yе?91bbXсАВ.b0-,-ёZ тсАcYВ1ZY_А.cb_-00ё?abтт,Y cБbтВ,!c_aБZёZ. a_сБ?с0-cе!!еc-0с?Бс_a .ZёZБa_c!,ВтbБc Y,ттba?ё00-_bc.А_YZ1ВYcАст Zё-,-0b.ВАсXbb19?еY?1!?АZ.!тё ёX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_88",
+    "input": "т_,еАY.ттcbёБ!тБ сс,?-БАY !тАa01Бё_ВcYБс?ес,?т1с_.9X1Z0еёX19АX0тБ9В-1е_1есВXётссc,Бc_Yте",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т_,еАY.ттcbёБ!тБ сс,?-БАY !тАa01Бё_ВcYБс?ес,?т1с_.9X1Z0еёX19АX0тБ9В-1е_1есВXётссc,Бc_YтеетY_cБ,cсстёXВсе1_е1-В9Бт0XА91Xёе0Z1X9._с1т?,се?сБYcВ_ёБ10aАт! YАБ-?,сс Бт!Бёbcтт.YАе,_т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_89",
+    "input": "тВXАётX_Б.еZ0с-cY?тb.1b?baВт0_ XВY,cт0сXё?Z?ё!ёБa9X1?тёт?ё-bт?X?е!тXbБ19?0В_aс_Xa-Xc9ZYе ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тВXАётX_Б.еZ0с-cY?тb.1b?baВт0_ XВY,cт0сXё?Z?ё!ёБa9X1?тёт?ё-bт?X?е!тXbБ19?0В_aс_Xa-Xc9ZYе  еYZ9cX-aX_сa_В0?91БbXт!е?X?тb-ё?тёт?1X9aБё!ё?Z?ёXс0тc,YВX _0тВab?b1.bт?Yc-с0Zе.Б_XтёАXВт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_90",
+    "input": "ББ.Yс9еВ9_aa!Y-т-bbcZтАБт.-ZВ_.1ттc?!т0 Yстb0Z?ё_!с_.?!a!с-!1a1_тbАYёБY9.9cт9?сстсYВbеX0,А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ББ.Yс9еВ9_aa!Y-т-bbcZтАБт.-ZВ_.1ттc?!т0 Yстb0Z?ё_!с_.?!a!с-!1a1_тbАYёБY9.9cт9?сстсYВbеX0,АА,0XеbВYстсс?9тc9.9YБёYАbт_1a1!-с!a!?._с!_ё?Z0bтсY 0т!?cтт1._ВZ-.тБАтZcbb-т-Y!aa_9Ве9сY.ББ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_91",
+    "input": "сАX? 1YБc !ё?тА1?еВ.!bВ!Б!-т?11?YY0aБ_._.с ZсcY ё 9ёсеБ!c0сcсZ с?_?В,ёc-!Z99еaZА91Вa0b._0т ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: сАX? 1YБc !ё?тА1?еВ.!bВ!Б!-т?11?YY0aБ_._.с ZсcY ё 9ёсеБ!c0сcсZ с?_?В,ёc-!Z99еaZА91Вa0b._0т  т0_.b0aВ19АZaе99Z!-cё,В?_?с Zсcс0c!Бесё9 ё YcсZ с._._Бa0YY?11?т-!Б!Вb!.Ве?1Ат?ё! cБY1 ?XАс\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_92",
+    "input": "тАX01ёbYтbccс!ёYa09еАaА!a0!!ёaА-.тБ!Zb,bcАт!-т.9_aa!сА!b,тВё!ZcaY0Yтc??,?еБсеYБтс!1ёт9В-bА А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тАX01ёbYтbccс!ёYa09еАaА!a0!!ёaА-.тБ!Zb,bcАт!-т.9_aa!сА!b,тВё!ZcaY0Yтc??,?еБсеYБтс!1ёт9В-bА АА Аb-В9тё1!стБYесБе?,??cтY0YacZ!ёВт,b!Ас!aa_9.т-!тАcb,bZ!Бт.-Аaё!!0a!АaАе90aYё!сccbтYbё10XАт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_93",
+    "input": "еВ_е9?тт9Y9aе-XА?YА1.caтYXbет0еZ9т?ёYZёZтa?В1_-0А?._0!aXБёacА.Б?b1с.,.БА1a9a9В,11?0!,А9 -0сZ-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еВ_е9?тт9Y9aе-XА?YА1.caтYXbет0еZ9т?ёYZёZтa?В1_-0А?._0!aXБёacА.Б?b1с.,.БА1a9a9В,11?0!,А9 -0сZ--Zс0- 9А,!0?11,В9a9a1АБ.,.с1b?Б.АcaёБXa!0_.?А0-_1В?aтZёZYё?т9Zе0теbXYтac.1АY?АX-еa9Y9тт?9е_Ве\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_94",
+    "input": "9Y  c!a-1Z!Бтт_0сb0ё?b_Z,Y БaXYaY Yтё?XZ_Б.c,!АБВ.!bс10АВabYтт1с,ВXёab!cXX-Yт,aZ1БеYАёетXт?-c?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9Y  c!a-1Z!Бтт_0сb0ё?b_Z,Y БaXYaY Yтё?XZ_Б.c,!АБВ.!bс10АВabYтт1с,ВXёab!cXX-Yт,aZ1БеYАёетXт?-c??c-?тXтеёАYеБ1Za,тY-XXc!baёXВ,с1ттYbaВА01сb!.ВБА!,c.Б_ZX?ётY YaYXaБ Y,Z_b?ё0bс0_ттБ!Z1-a!c  Y9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_95",
+    "input": "01ёc9ВZa99cb0тb,е?9a!ВbА_е е!В,ёВ9.,!е,.Y..,YАa1тт9Втё.10БXcтbВb.Ве!БА_еБ!_сa-ёА-т!се.1Аё.?Вc.т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 01ёc9ВZa99cb0тb,е?9a!ВbА_е е!В,ёВ9.,!е,.Y..,YАa1тт9Втё.10БXcтbВb.Ве!БА_еБ!_сa-ёА-т!се.1Аё.?Вc.тт.cВ?.ёА1.ес!т-Аё-aс_!Бе_АБ!еВ.bВbтcXБ01.ётВ9тт1aАY,..Y.,е!,.9Вё,В!е е_АbВ!a9?е,bт0bc99aZВ9cё10\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_96",
+    "input": "9тББ!cАеБ1т99-ё?тс-с1Ycт?т0тZ?1БZYБ_ZААb!.?,X,YВ9.X??Бтт _Бc9. _ВX_А-ёZтYaБY?-тБ1т?т!.9aе0aс9bсZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9тББ!cАеБ1т99-ё?тс-с1Ycт?т0тZ?1БZYБ_ZААb!.?,X,YВ9.X??Бтт _Бc9. _ВX_А-ёZтYaБY?-тБ1т?т!.9aе0aс9bсZZсb9сa0еa9.!т?т1Бт-?YБaYтZё-А_XВ_ .9cБ_ ттБ??X.9ВY,X,?.!bААZ_БYZБ1?Zт0т?тcY1с-ст?ё-99т1БеАc!ББт9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_97",
+    "input": " Ве9!919_cтА-c0Y, т?bВ_.?bВ ,,Ат9?1.сYт0Вс?cБ0!cc_..т,-АaXсс__В,,-Zc_.-YтaБ1ё0.еbБ е!._Xc1cсaX-c0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  Ве9!919_cтА-c0Y, т?bВ_.?bВ ,,Ат9?1.сYт0Вс?cБ0!cc_..т,-АaXсс__В,,-Zc_.-YтaБ1ё0.еbБ е!._Xc1cсaX-c00c-Xaсc1cX_.!е Бbе.0ё1БaтY-._cZ-,,В__ссXaА-,т.._cc!0Бc?сВ0тYс.1?9тА,, Вb?._Вb?т ,Y0c-Атc_919!9еВ \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_98",
+    "input": "с_bБ0В!-bеВё,сY,bАY!!0тaZе9т9c!.9Б е.т,Бb  1.,е9 0Yb0еА?_Б-ВсY?!0_ВеБbё!aеc,с!b91_ 0В0ст_.ё_00bZ,А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: с_bБ0В!-bеВё,сY,bАY!!0тaZе9т9c!.9Б е.т,Бb  1.,е9 0Yb0еА?_Б-ВсY?!0_ВеБbё!aеc,с!b91_ 0В0ст_.ё_00bZ,АА,Zb00_ё._тс0В0 _19b!с,cеa!ёbБеВ_0!?YсВ-Б_?Ае0bY0 9е,.1  bБ,т.е Б9.!c9т9еZaт0!!YАb,Yс,ёВеb-!В0Бb_с\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_99",
+    "input": "XbYcт-ZaёеёZ-1БёБё 0еZYВ0тX_X0cb,1Б9В_Б,YbВYbZ_ 1с!ВеёY 9!е0YБ1.b!.YА 1АеВc0_YёZ,!Б.Xb?XБ0Аттc -?a-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XbYcт-ZaёеёZ-1БёБё 0еZYВ0тX_X0cb,1Б9В_Б,YbВYbZ_ 1с!ВеёY 9!е0YБ1.b!.YА 1АеВc0_YёZ,!Б.Xb?XБ0Аттc -?a--a?- cттА0БX?bX.Б!,ZёY_0cВеА1 АY.!b.1БY0е!9 YёеВ!с1 _ZbYВbY,Б_В9Б1,bc0X_Xт0ВYZе0 ёБёБ1-ZёеёaZ-тcYbX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_100",
+    "input": "c0-9 тсеc0Y-91с bстXa?0YБ bZ!?_-1!ё?ZX cёе_XёеXZт._bbbтсX,АВY,с?c?ёБёZ?ZБc!aА- Y9XX1XY-9ееX!_1Zсеbт9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: c0-9 тсеc0Y-91с bстXa?0YБ bZ!?_-1!ё?ZX cёе_XёеXZт._bbbтсX,АВY,с?c?ёБёZ?ZБc!aА- Y9XX1XY-9ееX!_1Zсеbт99тbесZ1_!Xее9-YX1XX9Y -Аa!cБZ?ZёБё?c?с,YВА,Xстbbb_.тZXеёX_еёc XZ?ё!1-_?!Zb БY0?aXтсb с19-Y0cест 9-0c\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_101",
+    "input": "?0 .е0Y1ёет1XaXb-Вс0Вё1cZY9a,.ттX сXcБс011ттВb1cт!Xb0тВZ !c_сZa!,,bc1YётБZY?Y001Б!Вca-b-т!cтАc0Аb?,cА",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?0 .е0Y1ёет1XaXb-Вс0Вё1cZY9a,.ттX сXcБс011ттВb1cт!Xb0тВZ !c_сZa!,,bc1YётБZY?Y001Б!Вca-b-т!cтАc0Аb?,cААc,?bА0cАтc!т-b-acВ!Б100Y?YZБтёY1cb,,!aZс_c! ZВт0bX!тc1bВтт110сБcXс Xтт.,a9YZc1ёВ0сВ-bXaX1теё1Y0е. 0?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_102",
+    "input": "В?сZ-Бё-Y9В bё_БсZ,.Ат ёсеААXc9110с_е1-сБВb.Б.АБ!..c1АБ!Бт, a -тaX-,,т _Y!е0c?._тb !c9ZВ_,Бе1X0БАb.Z.9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: В?сZ-Бё-Y9В bё_БсZ,.Ат ёсеААXc9110с_е1-сБВb.Б.АБ!..c1АБ!Бт, a -тaX-,,т _Y!е0c?._тb !c9ZВ_,Бе1X0БАb.Z.99.Z.bАБ0X1еБ,_ВZ9c! bт_.?c0е!Y_ т,,-Xaт- a ,тБ!БА1c..!БА.Б.bВБс-1е_с0119cXААесё тА.,ZсБ_ёb В9Y-ёБ-Zс?В\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_103",
+    "input": "!Y?Z1?т. -!тт0Z.тaaZX1_сБ9ё?БXеётБ.Y9Б,cтт!_9 ? БВАБ.тБbА--?ВabБXе._ тYётё_b!-Ya9Y0сстb.ZёсА9А1 еa,е,Аc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !Y?Z1?т. -!тт0Z.тaaZX1_сБ9ё?БXеётБ.Y9Б,cтт!_9 ? БВАБ.тБbА--?ВabБXе._ тYётё_b!-Ya9Y0сстb.ZёсА9А1 еa,е,АccА,е,aе 1А9АсёZ.bтсс0Y9aY-!b_ётёYт _.еXБbaВ?--АbБт.БАВБ ? 9_!ттc,Б9Y.БтёеXБ?ё9Бс_1XZaaт.Z0тт!- .т?1Z?Y!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_104",
+    "input": "БА.-В?В9!Zс-bе?Y0тbZ ётZБ bс .?ВZ9 -0т!_.XБ9?.!.-9X0т_т,АZ!bY9е-БеБ,c9.?В.т АX9_abеВс ?т?91cеXтБ,ВX ZАZё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БА.-В?В9!Zс-bе?Y0тbZ ётZБ bс .?ВZ9 -0т!_.XБ9?.!.-9X0т_т,АZ!bY9е-БеБ,c9.?В.т АX9_abеВс ?т?91cеXтБ,ВX ZАZёёZАZ XВ,БтXеc19?т? сВеba_9XА т.В?.9c,БеБ-е9Yb!ZА,т_т0X9-.!.?9БX._!т0- 9ZВ?. сb БZтё Zbт0Y?еb-сZ!9В?В-.АБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_105",
+    "input": "АёВX..ё!..-!?ZВYеёт,Б Y0!Бc,cтaсБ1с,.0сё9БYY1Б1тX bёА. YАВВ.т9Вcттт9т01 X?Бсc?aВтcX!0a_АY_9тb_сетbbе_X-1 ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: АёВX..ё!..-!?ZВYеёт,Б Y0!Бc,cтaсБ1с,.0сё9БYY1Б1тX bёА. YАВВ.т9Вcттт9т01 X?Бсc?aВтcX!0a_АY_9тb_сетbbе_X-1  1-X_еbbтес_bт9_YА_a0!XcтВa?cсБ?X 10т9тттcВ9т.ВВАY .Аёb Xт1Б1YYБ9ёс0.,с1Бсaтc,cБ!0Y Б,тёеYВZ?!-..!ё..XВёА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_106",
+    "input": "А!!тс10е0 сеВa1Zaт9,?cА9ёcсX..тс,1Бb?е!Б9cА-сY,_БВт_0!т0X.Z 0cётa_0Вё090еВ ёaёётёac?0,aАёёАе9е?АZсА!? XbёZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А!!тс10е0 сеВa1Zaт9,?cА9ёcсX..тс,1Бb?е!Б9cА-сY,_БВт_0!т0X.Z 0cётa_0Вё090еВ ёaёётёac?0,aАёёАе9е?АZсА!? XbёZZёbX ?!АсZА?е9еАёёАa,0?caётёёaё Ве090ёВ0_aтёc0 Z.X0т!0_тВБ_,Yс-Аc9Б!е?bБ1,ст..Xсcё9Аc?,9тaZ1aВес 0е01ст!!А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_107",
+    "input": "В?,aВ_X!XY?--c!!-YXтс9т.0?9Бa0В9т,ёё.Z,YYaX0ёсе.aac_b0сеc!!те_-А0a10?.XXсY0__ссАБВ_cсёёb-Z.АБВ1ВА-В-тYX-т.c",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: В?,aВ_X!XY?--c!!-YXтс9т.0?9Бa0В9т,ёё.Z,YYaX0ёсе.aac_b0сеc!!те_-А0a10?.XXсY0__ссАБВ_cсёёb-Z.АБВ1ВА-В-тYX-т.cc.т-XYт-В-АВ1ВБА.Z-bёёсc_ВБАсс__0YсXX.?01a0А-_ет!!cес0b_caa.есё0XaYY,Z.ёё,т9В0aБ9?0.т9стXY-!!c--?YX!X_Вa,?В\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_108",
+    "input": "В11a.сё1АёёАb1X0ab_b.11БbеАс,9bY_a-XВXZYтZтт!Xт.acaеАcтетттеcВbБет _.Бaеё0aZт_0XВАё0Б,Xтcет?БXcё1Xc?9   Y-тс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: В11a.сё1АёёАb1X0ab_b.11БbеАс,9bY_a-XВXZYтZтт!Xт.acaеАcтетттеcВbБет _.Бaеё0aZт_0XВАё0Б,Xтcет?БXcё1Xc?9   Y-тсст-Y   9?cX1ёcXБ?теcтX,Б0ёАВX0_тZa0ёеaБ._ теБbВcетттетcАеaca.тX!ттZтYZXВX-a_Yb9,сАеbБ11.b_ba0X1bАёёА1ёс.a11В\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_109",
+    "input": "!0accbXБВт0т._,тсА0ёcabВёaББY,bZт _9ВY9 ?a!.XZ_ZАА-т!91a,еa!1е?!a1!cеZXb!,А!?cеX_Z0тbАБе1,тВАcА00 aВ9,ВXZт_тБ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !0accbXБВт0т._,тсА0ёcabВёaББY,bZт _9ВY9 ?a!.XZ_ZАА-т!91a,еa!1е?!a1!cеZXb!,А!?cеX_Z0тbАБе1,тВАcА00 aВ9,ВXZт_тББт_тZXВ,9Вa 00АcАВт,1еБАbт0Z_Xеc?!А,!bXZеc!1a!?е1!aе,a19!т-ААZ_ZX.!a? 9YВ9_ тZb,YББaёВbacё0Аст,_.т0тВБXbcca0!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_110",
+    "input": "ZВё .1!9acВ0А9тААёсYАcтcВ. ccёcеac?cYеXё-АтВ9_ZX9 .,ВВZ_ёX_!!0a.1X0?Б!9тa0ccZББс Б9ZbY-Xb.9Аcсс1bc a9Y??еёZY?ё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ZВё .1!9acВ0А9тААёсYАcтcВ. ccёcеac?cYеXё-АтВ9_ZX9 .,ВВZ_ёX_!!0a.1X0?Б!9тa0ccZББс Б9ZbY-Xb.9Аcсс1bc a9Y??еёZY?ёё?YZёе??Y9a cb1ссcА9.bX-YbZ9Б сББZcc0aт9!Б?0X1.a0!!_Xё_ZВВ,. 9XZ_9ВтА-ёXеYc?caеcёcc .ВcтcАYсёААт9А0Вca9!1. ёВZ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_111",
+    "input": "9??ZтБX1Z .a1А01.?1А-9abXБ.?1 a-_-XX_еВ-c.X--Z1,_bX0c9?_-1!еbcт1-ё0ст.Xb,тb1тZт!0Xc-9__ёYc_А!X09Б?cXВ--9ZтaААтa",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9??ZтБX1Z .a1А01.?1А-9abXБ.?1 a-_-XX_еВ-c.X--Z1,_bX0c9?_-1!еbcт1-ё0ст.Xb,тb1тZт!0Xc-9__ёYc_А!X09Б?cXВ--9ZтaААтaaтААaтZ9--ВXc?Б90X!А_cYё__9-cX0!тZт1bт,bX.тс0ё-1тcbе!1-_?9c0Xb_,1Z--X.c-Ве_XX-_-a 1?.БXba9-А1?.10А1a. Z1XБтZ??9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_112",
+    "input": "А-БёbеА1-БтYА?Y.!ёb?БАZВ1aт_ёc_0b _Y0 ё!с0c.aБZa?-1c-?тё-Б0т00-0 _91!b,Z!,БВaс?Z1aYт9т_-ееВ.Y91еX9,YYтYс!bZ1,Zcс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А-БёbеА1-БтYА?Y.!ёb?БАZВ1aт_ёc_0b _Y0 ё!с0c.aБZa?-1c-?тё-Б0т00-0 _91!b,Z!,БВaс?Z1aYт9т_-ееВ.Y91еX9,YYтYс!bZ1,ZcссcZ,1Zb!сYтYY,9Xе19Y.Вее-_т9тYa1Z?сaВБ,!Z,b!19_ 0-00т0Б-ёт?-c1-?aZБa.c0с!ё 0Y_ b0_cё_тa1ВZАБ?bё!.Y?АYтБ-1АеbёБ-А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_113",
+    "input": "_,9сБ1Yё9В,Xb,Xa c ZY,cт. БАВтсX_1-БтсБ?те0,cс9с.ZВ9А1,?т9БcВёbтБ-0Б!a_-!БВАZ_!1,c0е,.Yё1?ёВ?.Б-?Y1А09XbтY.т,Аc-с",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _,9сБ1Yё9В,Xb,Xa c ZY,cт. БАВтсX_1-БтсБ?те0,cс9с.ZВ9А1,?т9БcВёbтБ-0Б!a_-!БВАZ_!1,c0е,.Yё1?ёВ?.Б-?Y1А09XbтY.т,Аc-сс-cА,т.YтbX90А1Y?-Б.?Вё?1ёY.,е0c,1!_ZАВБ!-_a!Б0-БтbёВcБ9т?,1А9ВZ.с9сc,0ет?БстБ-1_XстВАБ .тc,YZ c aX,bX,В9ёY1Бс9,_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_114",
+    "input": "_!се??В,!Z-ВaББZ.?XА еА0А1Вс0? А9Zcт_Бсb0aте,ёе9acaZcВ1aZ1Z9В1aaXcc0Y-!cт?! ,ё-9!bc9Z9ccтbВ9Yё!!т-Y0теbYВ,. Вa1 c-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _!се??В,!Z-ВaББZ.?XА еА0А1Вс0? А9Zcт_Бсb0aте,ёе9acaZcВ1aZ1Z9В1aaXcc0Y-!cт?! ,ё-9!bc9Z9ccтbВ9Yё!!т-Y0теbYВ,. Вa1 c--c 1aВ .,ВYbет0Y-т!!ёY9Вbтcc9Z9cb!9-ё, !?тc!-Y0ccXaa1В9Z1Za1ВcZaca9её,етa0bсБ_тcZ9А ?0сВ1А0Ае АX?.ZББaВ-Z!,В??ес!_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_115",
+    "input": "XcсY0В__1тcБ-с,Ya0с0XА_19т,те!ёba1ёa1т 0АВВ_т0Z0 Б9YZb1_!ВВБВ .!тё bт!c b!т1YZА1_a0!XтВт?БВ-т cXБcт.,-c9Бт1_!-В,В?е",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XcсY0В__1тcБ-с,Ya0с0XА_19т,те!ёba1ёa1т 0АВВ_т0Z0 Б9YZb1_!ВВБВ .!тё bт!c b!т1YZА1_a0!XтВт?БВ-т cXБcт.,-c9Бт1_!-В,В?ее?В,В-!_1тБ9c-,.тcБXc т-ВБ?тВтX!0a_1АZY1т!b c!тb ёт!. ВБВВ!_1bZY9Б 0Z0т_ВВА0 т1aё1abё!ет,т91_АX0с0aY,с-Бcт1__В0YсcX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_116",
+    "input": "_ё!тbX_cА9YbеYc_Бтb БcБ!,тcY.ВXВёbb БYтXВc!Zет,Z1Z.,В!?X1_еXc9ёё.-1Zт _.В0ёYё0-Xт!1a9т-ВYт!!Zёё!Б0Б,ba1с?a9тbb!1!9? ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _ё!тbX_cА9YbеYc_Бтb БcБ!,тcY.ВXВёbb БYтXВc!Zет,Z1Z.,В!?X1_еXc9ёё.-1Zт _.В0ёYё0-Xт!1a9т-ВYт!!Zёё!Б0Б,ba1с?a9тbb!1!9?  ?9!1!bbт9a?с1ab,Б0Б!ёёZ!!тYВ-т9a1!тX-0ёYё0В._ тZ1-.ёё9cXе_1X?!В,.Z1Z,теZ!cВXтYБ bbёВXВ.Ycт,!БcБ bтБ_cYеbY9Аc_Xbт!ё_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_117",
+    "input": "?т?.. X1aБ,Ас1АbёZY 9тА!., Y1еВ!Бb?Z!YёБеАbе_!-_ё0ё!?1cXX!aa1?cтc-ёb0_А. -. ААс-!?ё ё?сXтстc-_,aБ100?е?БВXАсb_сс,aВY,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?т?.. X1aБ,Ас1АbёZY 9тА!., Y1еВ!Бb?Z!YёБеАbе_!-_ё0ё!?1cXX!aa1?cтc-ёb0_А. -. ААс-!?ё ё?сXтстc-_,aБ100?е?БВXАсb_сс,aВY,,YВa,сс_bсАXВБ?е?001Бa,_-cтстXс?ё ё?!-сАА .- .А_0bё-cтc?1aa!XXc1?!ё0ё_-!_еbАеБёY!Z?bБ!Ве1Y ,.!Ат9 YZёbА1сА,Бa1X ..?т?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_118",
+    "input": "cZт тё?X1ётb1?ё,Z.АВc,0! !тёZ-етaБYт.еZZaАеXс?bb0тaтВВ0т_Yе0YYА_a,YтВ9т91,0тА_bca!ВZё1е91тZ1тZ0сёёXё_ВтВ09,тb-a_ccеБ,Y",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cZт тё?X1ётb1?ё,Z.АВc,0! !тёZ-етaБYт.еZZaАеXс?bb0тaтВВ0т_Yе0YYА_a,YтВ9т91,0тА_bca!ВZё1е91тZ1тZ0сёёXё_ВтВ09,тb-a_ccеБ,YY,Беcc_a-bт,90ВтВ_ёXёёс0Zт1Zт19е1ёZВ!acb_Ат0,19т9ВтY,a_АYY0еY_т0ВВтaт0bb?сXеАaZZе.тYБaте-Zёт! !0,cВА.Z,ё?1bтё1X?ёт тZc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_119",
+    "input": "!_ZА0е!,ё101Z,?т,  ZА0_cY0с!Xт Z,-_с--9-т0-стYтZ1c?В.c.X?ё,!?ВВ.АY_сеabё-?тАВБ.,т ZеАБёёaБYА?Б.!ссБ1!Zее.АZ XYaт!-_-9?т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !_ZА0е!,ё101Z,?т,  ZА0_cY0с!Xт Z,-_с--9-т0-стYтZ1c?В.c.X?ё,!?ВВ.АY_сеabё-?тАВБ.,т ZеАБёёaБYА?Б.!ссБ1!Zее.АZ XYaт!-_-9?тт?9-_-!тaYX ZА.ееZ!1Бсс!.Б?АYБaёёБАеZ т,.БВАт?-ёbaес_YА.ВВ?!,ё?X.c.В?c1ZтYтс-0т-9--с_-,Z тX!с0Yc_0АZ  ,т?,Z101ё,!е0АZ_!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_120",
+    "input": "a?ее!А-X!9.ттс9a?.c?Аеa9! -ZВ.ac00bёYY 11b,9XёёXYееcY,0bё-ё.,cАВZтY bcbZXba!ВВАZX_ZXZ0т?Б0?X,!.,9_1-aБВZZZY?АёАb_ттБb_ес",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: a?ее!А-X!9.ттс9a?.c?Аеa9! -ZВ.ac00bёYY 11b,9XёёXYееcY,0bё-ё.,cАВZтY bcbZXba!ВВАZX_ZXZ0т?Б0?X,!.,9_1-aБВZZZY?АёАb_ттБb_ессе_bБтт_bАёА?YZZZВБa-1_9,.!,X?0Б?т0ZXZ_XZАВВ!abXZbcb YтZВАc,.ё-ёb0,YcееYXёёX9,b11 YYёb00ca.ВZ- !9aеА?c.?a9стт.9!X-А!ее?a\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_121",
+    "input": "a__aтА!Б.тYbетY-ZВ.ZВАaтВтa?,ВБ0с.ёБ,!-стZ!.090БтaсВ!!Ае9т!Zсе-9c-bY,cс, ст,ВacсYX.9Xт,_ё9cё_А?Xb-ё 0cА99?0ттт,сВА9_А!.БВ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: a__aтА!Б.тYbетY-ZВ.ZВАaтВтa?,ВБ0с.ёБ,!-стZ!.090БтaсВ!!Ае9т!Zсе-9c-bY,cс, ст,ВacсYX.9Xт,_ё9cё_А?Xb-ё 0cА99?0ттт,сВА9_А!.БВВБ.!А_9АВс,ттт0?99Аc0 ё-bX?А_ёc9ё_,тX9.XYсcaВ,тс ,сc,Yb-c9-есZ!т9еА!!ВсaтБ090.!Zтс-!,Бё.с0БВ,?aтВтaАВZ.ВZ-YтеbYт.Б!Атa__a\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_122",
+    "input": "-XbёYБ bтеёёY?А.19тb_-accb0_т-Вcё !тZYАXАZт9!ZZ1-199b1Zт cА.ет_0X,-!Бbё.1А_-т09ZтБXе!.ZY---9с?Xе-с!Z!X?.XY-с !.сеZ!a!0_X _",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -XbёYБ bтеёёY?А.19тb_-accb0_т-Вcё !тZYАXАZт9!ZZ1-199b1Zт cА.ет_0X,-!Бbё.1А_-т09ZтБXе!.ZY---9с?Xе-с!Z!X?.XY-с !.сеZ!a!0_X __ X_0!a!Zес.! с-YX.?X!Z!с-еX?с9---YZ.!еXБтZ90т-_А1.ёbБ!-,X0_те.Аc тZ1b991-1ZZ!9тZАXАYZт! ёcВ-т_0bcca-_bт91.А?Yёёетb БYёbX-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_123",
+    "input": "А?сБВ?-А0еББZ?0т0  В1Всc,a0еc0ттБX1БXБ X0БсВБa9b,c9!сВaт,?ВсеZaс0Z1X0X9сёт!Б..ВacтВ,Xё9тY,?Бaab,теА.Z?ё?еY??9еYZZYYXсXZ тсс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А?сБВ?-А0еББZ?0т0  В1Всc,a0еc0ттБX1БXБ X0БсВБa9b,c9!сВaт,?ВсеZaс0Z1X0X9сёт!Б..ВacтВ,Xё9тY,?Бaab,теА.Z?ё?еY??9еYZZYYXсXZ тсссст ZXсXYYZZYе9??Yе?ё?Z.Ает,baaБ?,Yт9ёX,ВтcaВ..Б!тёс9X0X1Z0сaZесВ?,тaВс!9c,b9aБВсБ0X БXБ1XБтт0cе0a,cсВ1В  0т0?ZББе0А-?ВБс?А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_124",
+    "input": "Xе-,_еaёb1,Y1a1?1c-с.,!-b1Бb_т1bтZ0c9c!c!Аc, cт_1БYZ ,!XВт,Zсb-XёАёZАb тb!bXтёёВ0т.Z1Б0,9Б_c1_aВ1Б.X0,cеБ ?!19ББ!1b.,В,cYccb",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Xе-,_еaёb1,Y1a1?1c-с.,!-b1Бb_т1bтZ0c9c!c!Аc, cт_1БYZ ,!XВт,Zсb-XёАёZАb тb!bXтёёВ0т.Z1Б0,9Б_c1_aВ1Б.X0,cеБ ?!19ББ!1b.,В,cYccbbccYc,В,.b1!ББ91!? Беc,0X.Б1Вa_1c_Б9,0Б1Z.т0ВёётXb!bт bАZёАёX-bсZ,тВX!, ZYБ1_тc ,cА!c!c9c0Zтb1т_bБ1b-!,.с-c1?1a1Y,1bёaе_,-еX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_125",
+    "input": "е09АX.тБ-90XБ-с_ cс-YYc-,YББaВZсёbВcX!1b1сё9?ZВ?,В9Z__ZaYcеё,1АYБ9ВXX.cБ1aYb?c с!ёес_Асе0 т0-ё!Y??тес1т9БтYтa,,БтZbе 9XАВ_?т-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: е09АX.тБ-90XБ-с_ cс-YYc-,YББaВZсёbВcX!1b1сё9?ZВ?,В9Z__ZaYcеё,1АYБ9ВXX.cБ1aYb?c с!ёес_Асе0 т0-ё!Y??тес1т9БтYтa,,БтZbе 9XАВ_?т--т?_ВАX9 еbZтБ,,aтYтБ9т1сет??Y!ё-0т 0есА_сеё!с c?bYa1Бc.XXВ9БYА1,ёеcYaZ__Z9В,?ВZ?9ёс1b1!XcВbёсZВaББY,-cYY-сc _с-БX09-Бт.XА90е\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_126",
+    "input": "1Вте.е  .Вb9-!ёБ0ё_?В _?c?ёА01,АёБ9А?Вa9еb!?,b,ттБ 1!!-XёёёZ-X?09-bВY!,_ ,Y!YАZВZ?9bБ1!bZb,,0Y?тXX9_т.т9a..Z.aё?X!!YБbтВ00aсБс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1Вте.е  .Вb9-!ёБ0ё_?В _?c?ёА01,АёБ9А?Вa9еb!?,b,ттБ 1!!-XёёёZ-X?09-bВY!,_ ,Y!YАZВZ?9bБ1!bZb,,0Y?тXX9_т.т9a..Z.aё?X!!YБbтВ00aсБссБсa00ВтbБY!!X?ёa.Z..a9т.т_9XXт?Y0,,bZb!1Бb9?ZВZАY!Y, _,!YВb-90?X-ZёёёX-!!1 Бтт,b,?!bе9aВ?А9БёА,10Аё?c?_ В?_ё0Бё!-9bВ.  е.етВ1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_127",
+    "input": "т1 X0В11-сс!Xbс!тАтcт_X10_ ,?a1X!.1А,1!с1.Аbте 9-В-_abБ._1ттZт-е.ZX9ё_c _0ВacccZ?a,,т_ В?т?ВZXтт-X? е01.?!ттес9 cтВ?X?БеА!Y!БX!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т1 X0В11-сс!Xbс!тАтcт_X10_ ,?a1X!.1А,1!с1.Аbте 9-В-_abБ._1ттZт-е.ZX9ё_c _0ВacccZ?a,,т_ В?т?ВZXтт-X? е01.?!ттес9 cтВ?X?БеА!Y!БX!!XБ!Y!АеБ?X?Втc 9сетт!?.10е ?X-ттXZВ?т?В _т,,a?ZcccaВ0_ c_ё9XZ.е-тZтт1_.Бba_-В-9 етbА.1с!1,А1.!X1a?, _01X_тcтАт!сbX!сс-11В0X 1т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_128",
+    "input": "Z,a?1.aZБ0Бе_?.91ZВ_Z?ёba.1!Б.Бb-е-0еZcАZВZ9АтYВтZБт! ееYВ-ётXY9  Б0етс1Б_ё!сY?-_еZbАXcттbсВтёY9cZтaaт1_cВ_е1Z0!А!тaY!?ccaтёXbZВ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Z,a?1.aZБ0Бе_?.91ZВ_Z?ёba.1!Б.Бb-е-0еZcАZВZ9АтYВтZБт! ееYВ-ётXY9  Б0етс1Б_ё!сY?-_еZbАXcттbсВтёY9cZтaaт1_cВ_е1Z0!А!тaY!?ccaтёXbZВВZbXётacc?!Yaт!А!0Z1е_Вc_1тaaтZc9YётВсbттcXАbZе_-?Yс!ё_Б1сте0Б  9YXтё-ВYее !тБZтВYтА9ZВZАcZе0-е-bБ.Б!1.abё?Z_ВZ19.?_еБ0БZa.1?a,Z\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_129",
+    "input": " Б9 ёc0_т9еabё 1 cБе-ттY.Ве_._0199ёт1YВ .b1X0_?_т?т-aтёВ?.0Z?-ёБ.ZтY,Z-т00Аё1?сX99?АX- .сс0!,a 9YеетсАYВZ БXБ,_,БВ,0XY,ZтY!1А,.9Y",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  Б9 ёc0_т9еabё 1 cБе-ттY.Ве_._0199ёт1YВ .b1X0_?_т?т-aтёВ?.0Z?-ёБ.ZтY,Z-т00Аё1?сX99?АX- .сс0!,a 9YеетсАYВZ БXБ,_,БВ,0XY,ZтY!1А,.9YY9.,А1!YтZ,YX0,ВБ,_,БXБ ZВYАстееY9 a,!0сс. -XА?99Xс?1ёА00т-Z,YтZ.Бё-?Z0.?Вётa-т?т_?_0X1b. ВY1тё9910_._еВ.Yтт-еБc 1 ёbaе9т_0cё 9Б \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_130",
+    "input": "XZёс0Z-се0_Ат-Xa0_bАсXе,0 Аёт1сZА??X-cАZВ Y9еёXbсb010c99c9-Z9a _1?1ё,X1aX!ёX_В-a10?b!.,Ае.1 ,cттё_Б,ст-9Z,,0Бbе0_с1етXcБ?,aa9А-АZ0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XZёс0Z-се0_Ат-Xa0_bАсXе,0 Аёт1сZА??X-cАZВ Y9еёXbсb010c99c9-Z9a _1?1ё,X1aX!ёX_В-a10?b!.,Ае.1 ,cттё_Б,ст-9Z,,0Бbе0_с1етXcБ?,aa9А-АZ00ZА-А9aa,?БcXте1с_0еbБ0,,Z9-тс,Б_ёттc, 1.еА,.!b?01a-В_Xё!Xa1X,ё1?1_ a9Z-9c99c010bсbXёе9Y ВZАc-X??АZс1тёА 0,еXсАb_0aX-тА_0ес-Z0сёZX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_131",
+    "input": "-Y ,ВАё0YА.БaБ a._ё!тт1!cYbБc b  еВZXcёАc aё?ВZт.Атё,XXт_ -_.X,1.0!-АВ..те9XсbА_90Y_.т9?YттZ,Y91Xеa,cbт_Б с_ВcXX. тВa.?Y-caaYт1Аccе",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -Y ,ВАё0YА.БaБ a._ё!тт1!cYbБc b  еВZXcёАc aё?ВZт.Атё,XXт_ -_.X,1.0!-АВ..те9XсbА_90Y_.т9?YттZ,Y91Xеa,cbт_Б с_ВcXX. тВa.?Y-caaYт1АccееccА1тYaac-Y?.aВт .XXcВ_с Б_тbc,aеX19Y,ZттY?9т._Y09_АbсX9ет..ВА-!0.1,X._- _тXX,ётА.тZВ?ёa cАёcXZВе  b cБbYc!1тт!ё_.a БaБ.АY0ёАВ, Y-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_132",
+    "input": "0ттcY ,_9с1!bсёXеБ, тbXX,cсВ0сё9Б- Zс,a _с! е9ААтcXт-!1?X!тт ё ?1,т9тт1,_9т0YеАYеac9ВZ?9Вт0._ZВАX БXZ-ААтБ,b0..Б,0?БВеёА .Бс.т.0.Yт!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0ттcY ,_9с1!bсёXеБ, тbXX,cсВ0сё9Б- Zс,a _с! е9ААтcXт-!1?X!тт ё ?1,т9тт1,_9т0YеАYеac9ВZ?9Вт0._ZВАX БXZ-ААтБ,b0..Б,0?БВеёА .Бс.т.0.Yт!!тY.0.т.сБ. АёеВБ?0,Б..0b,БтАА-ZXБ XАВZ_.0тВ9?ZВ9caеYАеY0т9_,1тт9т,1? ё тт!X?1!-тXcтАА9е !с_ a,сZ -Б9ёс0Всc,XXbт ,БеXёсb!1с9_, Ycтт0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_133",
+    "input": "е_bc1БёcВеZ?9_-! т?ZеБZZcYст0-!XтYYВе1!  c90.a,1._a_А.aX1.91aсX_В,сБтc1_ 0b?сbXсaАВсВ-еY.Yе_9?.Z0cВсБА!т,0 сБ!bт?тXb!9ВёА9Б9,т____с!X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: е_bc1БёcВеZ?9_-! т?ZеБZZcYст0-!XтYYВе1!  c90.a,1._a_А.aX1.91aсX_В,сБтc1_ 0b?сbXсaАВсВ-еY.Yе_9?.Z0cВсБА!т,0 сБ!bт?тXb!9ВёА9Б9,т____с!XX!с____т,9Б9АёВ9!bXт?тb!Бс 0,т!АБсВc0Z.?9_еY.Yе-ВсВАaсXbс?b0 _1cтБс,В_Xсa19.1Xa.А_a_.1,a.09c  !1еВYYтX!-0тсYcZZБеZ?т !-_9?ZеВcёБ1cb_е\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_134",
+    "input": "ВтZX1ёББВY0Y0-Б!0!ё_-bАZbZ_cc_aa-ё,тc,1Ybс,1! А-,.bАтa!bт,01!aaXb,-В-?Xс.с!a.А9,тc-ет.X-X.БX-ё,ттaXёт- bт,Бт9Бa-1?с_.X Аттb! е1с.сБa,_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ВтZX1ёББВY0Y0-Б!0!ё_-bАZbZ_cc_aa-ё,тc,1Ybс,1! А-,.bАтa!bт,01!aaXb,-В-?Xс.с!a.А9,тc-ет.X-X.БX-ё,ттaXёт- bт,Бт9Бa-1?с_.X Аттb! е1с.сБa,__,aБс.с1е !bттА X._с?1-aБ9тБ,тb -тёXaтт,ё-XБ.X-X.те-cт,9А.a!с.сX?-В-,bXaa!10,тb!aтАb.,-А !1,сbY1,cт,ё-aa_cc_ZbZАb-_ё!0!Б-0Y0YВББё1XZтВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_135",
+    "input": "еАёсYтё- АеbВ БaY!ВВb1aАZ91ё.1ёВВтт!тсYX1_т.?Y_Zе ?aт9-bXZa.еБёc!!cY.Y еВbсX_тY-X0Y 1ab9XZ_Ат!YZ!ВБ.БYБс_99теZYт?Y1ВВaБX0 a !Xё Б_еZ_Xc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еАёсYтё- АеbВ БaY!ВВb1aАZ91ё.1ёВВтт!тсYX1_т.?Y_Zе ?aт9-bXZa.еБёc!!cY.Y еВbсX_тY-X0Y 1ab9XZ_Ат!YZ!ВБ.БYБс_99теZYт?Y1ВВaБX0 a !Xё Б_еZ_XccX_Zе_Б ёX! a 0XБaВВ1Y?тYZет99_сБYБ.БВ!ZY!тА_ZX9ba1 Y0X-Yт_XсbВе Y.Yc!!cёБе.aZXb-9тa? еZ_Y?.т_1XYст!ттВВё1.ё19ZАa1bВВ!YaБ ВbеА -ётYсёАе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_136",
+    "input": "?.ZZ0cacБ.cY1_Бb,А_Xa.!01с,В?_е?ВY.c ,  ёX0,!_ 0А- .тcX_cс_,9-9.X1тВАZт,0a-.!.АXеАёёc.БY ,тY !__ с-ттYZ9Атa,Вa9е-?0,a_,ё0ВБёccА1 .0,?сББ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?.ZZ0cacБ.cY1_Бb,А_Xa.!01с,В?_е?ВY.c ,  ёX0,!_ 0А- .тcX_cс_,9-9.X1тВАZт,0a-.!.АXеАёёc.БY ,тY !__ с-ттYZ9Атa,Вa9е-?0,a_,ё0ВБёccА1 .0,?сББББс?,0. 1АccёБВ0ё,_a,0?-е9aВ,aтА9ZYтт-с __! Yт, YБ.cёёАеXА.!.-a0,тZАВт1X.9-9,_сc_Xcт. -А0 _!,0Xё  , c.YВ?е_?В,с10!.aX_А,bБ_1Yc.Бcac0ZZ.?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_137",
+    "input": "_А,?.X1c тXсё_,Б?с,АZ1Асте,!9.!-ё_b-ст0БbZb? c01- _е,еcbёcZБ0Вc.Yтё ?cYе!А,1Xbc-!bё.Аё9?_19Z_ZZ_В?YтВА.еc0 ?Б9е1АXе!.1т!aa_В,Аё? -1сВ1 0ё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _А,?.X1c тXсё_,Б?с,АZ1Асте,!9.!-ё_b-ст0БbZb? c01- _е,еcbёcZБ0Вc.Yтё ?cYе!А,1Xbc-!bё.Аё9?_19Z_ZZ_В?YтВА.еc0 ?Б9е1АXе!.1т!aa_В,Аё? -1сВ1 0ёё0 1Вс1- ?ёА,В_aa!т1.!еXА1е9Б? 0cе.АВтY?В_ZZ_Z91_?9ёА.ёb!-cbX1,А!еYc? ётY.cВ0БZcёbcе,е_ -10c ?bZbБ0тс-b_ё-!.9!,етсА1ZА,с?Б,_ёсXт c1X.?,А_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_138",
+    "input": "А?е-с?В.caсaсеВ.АА!-0,Ает0-b-0!-aВ9 БВYА_ётБ0 е-тZё0 .!aX ?ё0сYZ,ё X?сYX 9т,9А_ ёБВе!9Бёa1!1!0,9!aёА  aт9Y0?XА?!XтZ,9cс_- ?ттёb!,т9еZ--!Y1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А?е-с?В.caсaсеВ.АА!-0,Ает0-b-0!-aВ9 БВYА_ётБ0 е-тZё0 .!aX ?ё0сYZ,ё X?сYX 9т,9А_ ёБВе!9Бёa1!1!0,9!aёА  aт9Y0?XА?!XтZ,9cс_- ?ттёb!,т9еZ--!Y11Y!--Zе9т,!bётт? -_сc9,ZтX!?АX?0Y9тa  Аёa!9,0!1!1aёБ9!еВБё _А9,т9 XYс?X ё,ZYс0ё? Xa!. 0ёZт-е 0Бтё_АYВБ 9Вa-!0-b-0теА,0-!АА.Весaсac.В?с-е?А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_139",
+    "input": "9тВX111b0Вт1YеБ-?-?Бb0БА1,т-0bВ!bc9?X-YттZАXттY.Y 0с!-c-!.0?a--00етXВ_ё1тX!YX0еёА!?Бc,Xеb А._-9! еa0-Zc0?Бс,0ёcБcтВёbтYaт-_тБ99a,с9тb9Y_0ё0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9тВX111b0Вт1YеБ-?-?Бb0БА1,т-0bВ!bc9?X-YттZАXттY.Y 0с!-c-!.0?a--00етXВ_ё1тX!YX0еёА!?Бc,Xеb А._-9! еa0-Zc0?Бс,0ёcБcтВёbтYaт-_тБ99a,с9тb9Y_0ё00ё0_Y9bт9с,a99Бт_-тaYтbёВтcБcё0,сБ?0cZ-0aе !9-_.А bеX,cБ?!Аёе0XY!Xт1ё_ВXте00--a?0.!-c-!с0 Y.YттXАZттY-X?9cb!Вb0-т,1АБ0bБ?-?-БеY1тВ0b111XВт9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_140",
+    "input": "1YaАББс9Y-,?a,,ВbтX-сёb.ВY--ZYт.Yт,99c1X_А?сXтетZт0Yac!1!1Xb,Zbc--БВё0, ёА0YеБт_-Zb?е0!Xё0_XXёёё!АттсеYБАbА9сa-с,сbY!,А,c,1ет?т.Y,9? тc_a!ёX",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1YaАББс9Y-,?a,,ВbтX-сёb.ВY--ZYт.Yт,99c1X_А?сXтетZт0Yac!1!1Xb,Zbc--БВё0, ёА0YеБт_-Zb?е0!Xё0_XXёёё!АттсеYБАbА9сa-с,сbY!,А,c,1ет?т.Y,9? тc_a!ёXXё!a_cт ?9,Y.т?те1,c,А,!Ybс,с-aс9АbАБYесттА!ёёёXX_0ёX!0е?bZ-_тБеY0Аё ,0ёВБ--cbZ,bX1!1!caY0тZтетXс?А_X1c99,тY.тYZ--YВ.bёс-XтbВ,,a?,-Y9сББАaY1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_141",
+    "input": ".-_ZсX?b1сaYbВ _Б!b1Б1_9В-_.X1Z?X?сВВ_Yb,ё0cё_Бс-тYXВсa,,1тВёXс1_!0с!c_тZёёт!ёc!тaX9,тZАт!b_X!е0Z етYт99сБ9_ёY 9В_0тZс0_Y0ё!Z. .-.Y?b,А9Zт!Б0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .-_ZсX?b1сaYbВ _Б!b1Б1_9В-_.X1Z?X?сВВ_Yb,ё0cё_Бс-тYXВсa,,1тВёXс1_!0с!c_тZёёт!ёc!тaX9,тZАт!b_X!е0Z етYт99сБ9_ёY 9В_0тZс0_Y0ё!Z. .-.Y?b,А9Zт!Б00Б!тZ9А,b?Y.-. .Z!ё0Y_0сZт0_В9 Yё_9Бс99тYте Z0е!X_b!тАZт,9Xaт!cё!тёёZт_c!с0!_1сXёВт1,,aсВXYт-сБ_ёc0ё,bY_ВВс?X?Z1X._-В9_1Б1b!Б_ ВbYaс1b?XсZ_-.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_142",
+    "input": ".9YY?В_ттт0YZА!Бе9aБВё,Zc9c0X е-!т1 9?БВbВёсАБXсbaZс9тcАс,01-е!_b 9X.А?е ВXё0тАВБ! 99тc1bcт.?сZА,!91АZАБтт ZсXеZa1?тт-Yеё,с_Zb?caА!YaтbZY  ВXт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .9YY?В_ттт0YZА!Бе9aБВё,Zc9c0X е-!т1 9?БВbВёсАБXсbaZс9тcАс,01-е!_b 9X.А?е ВXё0тАВБ! 99тc1bcт.?сZА,!91АZАБтт ZсXеZa1?тт-Yеё,с_Zb?caА!YaтbZY  ВXттXВ  YZbтaY!Аac?bZ_с,ёеY-тт?1aZеXсZ ттБАZА19!,АZс?.тcb1cт99 !БВАт0ёXВ е?А.X9 b_!е-10,сАcт9сZabсXБАсёВbВБ?9 1т!-е X0c9cZ,ёВБa9еБ!АZY0ттт_В?YY9.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_143",
+    "input": "БZ,АYеБ !ZY_Z_.ZY .Yе!е1.?cт!т_ёXееАсXс9тXY!!,aеXXZВ,9!bYё9ВX??!АY__Аb! !ВтXё!b?ВВт.Б?еес?_9Yc АcВ0Б,bbт ееZ,ееcY1XБYБ_АтВa1b1aё1Y.еYZтёс.-9a1Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БZ,АYеБ !ZY_Z_.ZY .Yе!е1.?cт!т_ёXееАсXс9тXY!!,aеXXZВ,9!bYё9ВX??!АY__Аb! !ВтXё!b?ВВт.Б?еес?_9Yc АcВ0Б,bbт ееZ,ееcY1XБYБ_АтВa1b1aё1Y.еYZтёс.-9a1ББ1a9-.сётZYе.Y1ёa1b1aВтА_БYБX1Ycее,Zее тbb,Б0ВcА cY9_?сее?Б.тВВ?b!ёXтВ! !bА__YА!??XВ9ёYb!9,ВZXXеa,!!YXт9сXсАееXё_т!тc?.1е!еY. YZ._Z_YZ! БеYА,ZБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_144",
+    "input": "! её-b?,YБт_YстБт!АaВВВ-ееYa!-В.?сaА-bX-ccс.!19А_Аc_ее_с тте?-ё0,c,Xт?ВYе,Б01111!a.9 baт, Бе.тё ёсВАВZ-__ .bX_т!ZАтaё-Z19?ёттX!aс??.тX!!В! YZaсc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ! её-b?,YБт_YстБт!АaВВВ-ееYa!-В.?сaА-bX-ccс.!19А_Аc_ее_с тте?-ё0,c,Xт?ВYе,Б01111!a.9 baт, Бе.тё ёсВАВZ-__ .bX_т!ZАтaё-Z19?ёттX!aс??.тX!!В! YZaсccсaZY !В!!Xт.??сa!Xттё?91Z-ёaтАZ!т_Xb. __-ZВАВсё ёт.еБ ,тab 9.a!11110Б,еYВ?тX,c,0ё-?етт с_ее_cА_А91!.сcc-Xb-Аaс?.В-!aYее-ВВВaА!тБтсY_тБY,?b-ёе !\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_145",
+    "input": "_её!1тXa?0,е9!9еacе9ВеА?cсеВ.с9a?,a 9a?bсb1еВтА_Xт!cеВ9?XYcё__1ZВе9т!ё-Б9,тес0caеесbY_!Z,,с ,0aБcВеYY9_сБВZВaaт?!ab,911сX_0cАВ1X11X_сX!,!-Z.-ВZ!.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _её!1тXa?0,е9!9еacе9ВеА?cсеВ.с9a?,a 9a?bсb1еВтА_Xт!cеВ9?XYcё__1ZВе9т!ё-Б9,тес0caеесbY_!Z,,с ,0aБcВеYY9_сБВZВaaт?!ab,911сX_0cАВ1X11X_сX!,!-Z.-ВZ!..!ZВ-.Z-!,!Xс_X11X1ВАc0_Xс119,ba!?тaaВZВБс_9YYеВcБa0, с,,Z!_Ybсееac0сет,9Б-ё!т9еВZ1__ёcYX?9Веc!тX_АтВе1bсb?a9 a,?a9с.Весc?АеВ9еcaе9!9е,0?aXт1!ёе_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_146",
+    "input": "_ZеXБАX_е-Xcё1Б?YcтБ,--.БYт,-Z_ еXтеZ!?1тАё11_В.т-,еАY01?!cc X-Zё_АБ_a.cсbт,0aтАY0?,!0?Ат0е90a1!ётbbБ aтВXa.т,ё_?aАётВ_YсbZБВА_!с9е_a !?acc_aт,Xё-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _ZеXБАX_е-Xcё1Б?YcтБ,--.БYт,-Z_ еXтеZ!?1тАё11_В.т-,еАY01?!cc X-Zё_АБ_a.cсbт,0aтАY0?,!0?Ат0е90a1!ётbbБ aтВXa.т,ё_?aАётВ_YсbZБВА_!с9е_a !?acc_aт,Xё--ёX,тa_cca?! a_е9с!_АВБZbсY_ВтёАa?_ё,т.aXВтa Бbbтё!1a09е0тА?0!,?0YАтa0,тbсc.a_БА_ёZ-X cc!?10YАе,-т.В_11ёАт1?!ZетXе _Z-,тYБ.--,БтcY?Б1ёcX-е_XАБXеZ_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_147",
+    "input": "cX9a.cеАт1.1XБ!тaВт,ВссZтААacZ11Z!!.b?,БYт-0В тa0!,0ё_В1 b!ё.с1,с.ccXX еX-bВcёВтb0bёYтт1тс,.19?YА!А_Z_9т_b 0е1- сБАссе?АaёеёYcX1ёБАYaZ-Zaе9?.0-a9Б1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cX9a.cеАт1.1XБ!тaВт,ВссZтААacZ11Z!!.b?,БYт-0В тa0!,0ё_В1 b!ё.с1,с.ccXX еX-bВcёВтb0bёYтт1тс,.19?YА!А_Z_9т_b 0е1- сБАссе?АaёеёYcX1ёБАYaZ-Zaе9?.0-a9Б11Б9a-0.?9еaZ-ZaYАБё1XcYёеёaА?ессАБс -1е0 b_т9_Z_А!АY?91.,ст1ттYёb0bтВёcВb-Xе XXcc.с,1с.ё!b 1В_ё0,!0aт В0-тYБ,?b.!!Z11ZcaААтZссВ,тВaт!БX1.1тАеc.a9Xc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_148",
+    "input": "!Y,9?!!Yaт ёт-БaА1c-_Б0-YXт_еXa!ZтеБ0Атт.тcБa0с cXZ_?X0с.909.сXБ,19.,X,тZZY9YАБАYтВ0-еZ01ZY.c-?В!АБc1cстaaБXсстcX?1с,т!?ё.с,ееВZБеВАb 00Zс._1,-1ёВc-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !Y,9?!!Yaт ёт-БaА1c-_Б0-YXт_еXa!ZтеБ0Атт.тcБa0с cXZ_?X0с.909.сXБ,19.,X,тZZY9YАБАYтВ0-еZ01ZY.c-?В!АБc1cстaaБXсстcX?1с,т!?ё.с,ееВZБеВАb 00Zс._1,-1ёВc--cВё1-,1_.сZ00 bАВеБZВее,с.ё?!т,с1?XcтссXБaaтсc1cБА!В?-c.YZ10Zе-0ВтYАБАY9YZZт,X,.91,БXс.909.с0X?_ZXc с0aБcт.ттА0БетZ!aXе_тXY-0Б_-c1АaБ-тё тaY!!?9,Y!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_149",
+    "input": ",,В9ё ,ё9ВБ-Вb_-?тaА-Zе  X--ccZ__?-т9т!.тY_aАеc? Y?!!ё,-тaYY0?1.!.Yс_сстbАст1!ВbёYессcё ?,А- .т?09т11-9Z-ёеX0-c,тВВ9cXX?-1-c-?9Y-YbZВ0с-тY1-9_aX.9ёёё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,,В9ё ,ё9ВБ-Вb_-?тaА-Zе  X--ccZ__?-т9т!.тY_aАеc? Y?!!ё,-тaYY0?1.!.Yс_сстbАст1!ВbёYессcё ?,А- .т?09т11-9Z-ёеX0-c,тВВ9cXX?-1-c-?9Y-YbZВ0с-тY1-9_aX.9ёёёёёё9.Xa_9-1Yт-с0ВZbY-Y9?-c-1-?XXc9ВВт,c-0Xеё-Z9-11т90?т. -А,? ёcссеYёbВ!1тсАbтсс_сY.!.1?0YYaт-,ё!!?Y ?cеАa_Yт.!т9т-?__Zcc--X  еZ-Аaт?-_bВ-БВ9ё, ё9В,,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_150",
+    "input": "1тт X тb9АZ1АYттс_Y-aY0Ве?  b!_c1.9_Y9ёXY1т0_ZX!_!т.ZZY9.aт-Xcc,Z1ёX11b!cАc.т?XВВbтYетX-сё_!c!ВcX.X!b19тАеb!?XА-1т-X00ВYaтYтВaacZ9с90XX!1етaZт0т,ттbXX",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1тт X тb9АZ1АYттс_Y-aY0Ве?  b!_c1.9_Y9ёXY1т0_ZX!_!т.ZZY9.aт-Xcc,Z1ёX11b!cАc.т?XВВbтYетX-сё_!c!ВcX.X!b19тАеb!?XА-1т-X00ВYaтYтВaacZ9с90XX!1етaZт0т,ттbXXXXbтт,т0тZaте1!XX09с9ZcaaВтYтaYВ00X-т1-АX?!bеАт91b!X.XcВ!c!_ёс-XтеYтbВВX?т.cАc!b11Xё1Z,ccX-тa.9YZZ.т!_!XZ_0т1YXё9Y_9.1c_!b  ?еВ0Ya-Y_сттYА1ZА9bт X тт1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_151",
+    "input": "1ZАbcёX 9ё.е.?-bс1cс_b?Б,_с.тА,Zbс!с-aВYaт9!ет-_Аc X9Yтaе1.-1?!9Y Б?1 cсАтaaБ !т_9Б Z.?1cБ_сXX0т9b ААс--еВ,-aт? b_b-.a!?0cтaте-?1Zc.a?В.тXАттbb._тaтYb?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1ZАbcёX 9ё.е.?-bс1cс_b?Б,_с.тА,Zbс!с-aВYaт9!ет-_Аc X9Yтaе1.-1?!9Y Б?1 cсАтaaБ !т_9Б Z.?1cБ_сXX0т9b ААс--еВ,-aт? b_b-.a!?0cтaте-?1Zc.a?В.тXАттbb._тaтYb??bYтaт_.bbттАXт.В?a.cZ1?-етaтc0?!a.-b_b ?тa-,Ве--сАА b9т0XXс_Бc1?.Z Б9_т! БaaтАсc 1?Б Y9!?1-.1еaтY9X cА_-те!9тaYВa-с!сbZ,Ат.с_,Б?b_сc1сb-?.е.ё9 XёcbАZ1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_152",
+    "input": "XБcеZ0ВАc9_,!БYZсВ?aXcет_Xтс!Z!Y_ВbБА0YXcсе.?-c!ВZеёY-е!9Б В1_с9, Ве1ZZ -?Б.c9-b9А XcX-Y!bВт,-Б0тсZcВ-YБ  XстВ_-Y.еАaБ?.b9тcА?Z-1 _XАZтёА9 е19a,??еcсБ9-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XБcеZ0ВАc9_,!БYZсВ?aXcет_Xтс!Z!Y_ВbБА0YXcсе.?-c!ВZеёY-е!9Б В1_с9, Ве1ZZ -?Б.c9-b9А XcX-Y!bВт,-Б0тсZcВ-YБ  XстВ_-Y.еАaБ?.b9тcА?Z-1 _XАZтёА9 е19a,??еcсБ9--9Бсcе??,a91е 9АётZАX_ 1-Z?Аcт9b.?БaАе.Y-_ВтсX  БY-ВcZст0Б-,тВb!Y-XcX А9b-9c.Б?- ZZ1еВ ,9с_1В Б9!е-YёеZВ!c-?.есcXY0АБbВ_Y!Z!стX_теcXa?ВсZYБ!,_9cАВ0ZеcБX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_153",
+    "input": ",ет_cb?cБYеb-Б91Бb!aтВ!9тт0XX? cетX_1?9bёт1cБВА0., т?т?е!0aеАёАсc-c0ё?т-a0сА0b!етётZY?Y?В0е_АБеZ!c!-ё0 -еbbb_!ёcсZ?.?cе0А_е_е9АтВ-Y0Yттc.,bb,YВbАеY9т,X_,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,ет_cb?cБYеb-Б91Бb!aтВ!9тт0XX? cетX_1?9bёт1cБВА0., т?т?е!0aеАёАсc-c0ё?т-a0сА0b!етётZY?Y?В0е_АБеZ!c!-ё0 -еbbb_!ёcсZ?.?cе0А_е_е9АтВ-Y0Yттc.,bb,YВbАеY9т,X_,,_X,т9YеАbВY,bb,.cттY0Y-ВтА9е_е_А0еc?.?Zсcё!_bbbе- 0ё-!c!ZеБА_е0В?Y?YZтёте!b0Ас0a-т?ё0c-cсАёАеa0!е?т?т ,.0АВБc1тёb9?1_Xтеc ?XX0тт9!Втa!bБ19Б-bеYБc?bc_те,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_154",
+    "input": "В,!.т9bт0ВYе?0ё?b?Б?Z ,0!ееX9Б-,АВ! 1_се?ВтА,,c X-Y?ZтZБ!111Z_YВБёс9ccБ-,тБе_ёc?-?XАcc.c? ?т9a0YcБт1?_Z,aY0? т9т!,Y,сYБе-90X9,сс сА9bc0АYе!bcY-тА0.Zт 0b10",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: В,!.т9bт0ВYе?0ё?b?Б?Z ,0!ееX9Б-,АВ! 1_се?ВтА,,c X-Y?ZтZБ!111Z_YВБёс9ccБ-,тБе_ёc?-?XАcc.c? ?т9a0YcБт1?_Z,aY0? т9т!,Y,сYБе-90X9,сс сА9bc0АYе!bcY-тА0.Zт 0b1001b0 тZ.0Ат-Ycb!еYА0cb9Ас сс,9X09-еБYс,Y,!т9т ?0Ya,Z_?1тБcY0a9т? ?c.ccАX?-?cё_еБт,-Бcc9сёБВY_Z111!БZтZ?Y-X c,,АтВ?ес_1 !ВА,-Б9Xее!0, Z?Б?b?ё0?еYВ0тb9т.!,В\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_155",
+    "input": "АYbтcВе-?Xт-!.Веb,Втеb.Вс?b ZБ.тbеБ0еbYёZстa.aZ1АтXеБ,тZa,-b0-c0X.cсс_1bВ_Z.В-тcВ,с _Бb.?тсет19-bXY!тaБ-тс_. ,Ает0ba1_тXтYcbс1cY?Б,тaе?ётXе,_Z,ZВВXВ_Аcе-??",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: АYbтcВе-?Xт-!.Веb,Втеb.Вс?b ZБ.тbеБ0еbYёZстa.aZ1АтXеБ,тZa,-b0-c0X.cсс_1bВ_Z.В-тcВ,с _Бb.?тсет19-bXY!тaБ-тс_. ,Ает0ba1_тXтYcbс1cY?Б,тaе?ётXе,_Z,ZВВXВ_Аcе-????-еcА_ВXВВZ,Z_,еXтё?еaт,Б?Yc1сbcYтXт_1ab0теА, ._ст-Бaт!YXb-91тест?.bБ_ с,Вcт-В.Z_Вb1_ссc.X0c-0b-,aZт,БеXтА1Za.aтсZёYbе0Беbт.БZ b?сВ.bетВ,bеВ.!-тX?-еВcтbYА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_156",
+    "input": "XтcтеВтZ?ё_0-Y-Z0!ттё1_, -.a,.1-,В-?Бё-a0? е Z0cc0?YcтYbБ9т!ZБ 0_е1тXXБтaАтcе_ еётZттZ,ZcВёYcт,b _теёaт9cт.9-cтВБYZ-Za!ёёА?еbY0cbВbZ09aВX0?!cт-Y?_ёX-тcZ-c1с",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: XтcтеВтZ?ё_0-Y-Z0!ттё1_, -.a,.1-,В-?Бё-a0? е Z0cc0?YcтYbБ9т!ZБ 0_е1тXXБтaАтcе_ еётZттZ,ZcВёYcт,b _теёaт9cт.9-cтВБYZ-Za!ёёА?еbY0cbВbZ09aВX0?!cт-Y?_ёX-тcZ-c1сс1c-Zcт-Xё_?Y-тc!?0XВa90ZbВbc0Ybе?Аёё!aZ-ZYБВтc-9.тc9тaёет_ b,тcYёВcZ,ZттZтёе _еcтАaтБXXт1е_0 БZ!т9БbYтcY?0cc0Z е ?0a-ёБ?-В,-1.,a.- ,_1ётт!0Z-Y-0_ё?ZтВетcтX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_157",
+    "input": "БтZZ0!X1ё0!тa!c?с?c? т?А1В.сёс9Y1 aYАе9Вc!a-т-еёcтY9сВ9-0Z1_т?ёaё99еaёАXВт--Б тет_cZ-Y 9ВX.ac91bеБ0_.!сZётБ.т-тте09-Z!В9ВcтАсZБтa_ ,0?_bc 9_Yb т,Y9т,?т_Бе?Бa",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БтZZ0!X1ё0!тa!c?с?c? т?А1В.сёс9Y1 aYАе9Вc!a-т-еёcтY9сВ9-0Z1_т?ёaё99еaёАXВт--Б тет_cZ-Y 9ВX.ac91bеБ0_.!сZётБ.т-тте09-Z!В9ВcтАсZБтa_ ,0?_bc 9_Yb т,Y9т,?т_Бе?БaaБ?еБ_т?,т9Y,т bY_9 cb_?0, _aтБZсАтcВ9В!Z-90етт-т.БтёZс!._0Беb19ca.XВ9 Y-Zc_тет Б--тВXАёaе99ёaё?т_1Z0-9Вс9Yтcёе-т-a!cВ9еАYa 1Y9сёс.В1А?т ?c?с?c!aт!0ё1X!0ZZтБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_158",
+    "input": "Xcaё9,Xc1еАБ0ВВ!тcёbcс1В!1Y!ё_сZYc1-caеbX_БY9ёY?ёё!есbте.тт9  Б,!АВXZБёстX т?ё?БcX-9ст.!_YесБ_  9ZАXеa1YВ?aе!  -c10тaт9-сБYXт!cYXВXтbт-1Ат X.c-bX?1YВbсX,АYБ Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Xcaё9,Xc1еАБ0ВВ!тcёbcс1В!1Y!ё_сZYc1-caеbX_БY9ёY?ёё!есbте.тт9  Б,!АВXZБёстX т?ё?БcX-9ст.!_YесБ_  9ZАXеa1YВ?aе!  -c10тaт9-сБYXт!cYXВXтbт-1Ат X.c-bX?1YВbсX,АYБ ББ БYА,XсbВY1?Xb-c.X тА1-тbтXВXYc!тXYБс-9тaт01c-  !еa?ВY1aеXАZ9  _БсеY_!.тс9-XcБ?ё?т XтсёБZXВА!,Б  9тт.етbсе!ёё?Yё9YБ_Xbеac-1cYZс_ё!Y1!В1сcbёcт!ВВ0БАе1cX,9ёacX\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_159",
+    "input": "-1.-0.ААВтZb!тт0ст-ёее990т0_a.тБёY0ттВсВсb_тВ_aтabБ,Xё9,! ?0- _1ё ?еВт!ZА .тX!ВY-т,_??_ё,.т?Z?Yab0!!ZБ--YВАБ,11!Бa!9a0В 91В.YaАaе1bc ,АёYтсАc1ёёZZ11cbеёc00Zbc ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -1.-0.ААВтZb!тт0ст-ёее990т0_a.тБёY0ттВсВсb_тВ_aтabБ,Xё9,! ?0- _1ё ?еВт!ZА .тX!ВY-т,_??_ё,.т?Z?Yab0!!ZБ--YВАБ,11!Бa!9a0В 91В.YaАaе1bc ,АёYтсАc1ёёZZ11cbеёc00Zbc  cbZ00cёеbc11ZZёё1cАстYёА, cb1еaАaY.В19 В0a9!aБ!11,БАВY--БZ!!0baY?Z?т.,ё_??_,т-YВ!Xт. АZ!тВе? ё1_ -0? !,9ёX,Бbaтa_Вт_bсВсВтт0YёБт.a_0т099ееё-тс0тт!bZтВАА.0-.1-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_160",
+    "input": "YcZБYc.т Xaе !ёbbXеёYтё0.9В0ВВXYYёbс_ё9ZеВБa09b-А?В_aZс?тYА,Аёт_-b0е-,0!.a1 ё0Б_1тYcт0ёX._ZВт-Аc?XaсZ. БYесстYYсстY0c9ВёБт9- А.c baА!еc ,ёБccтсXАе!т0YZ1,YВ?еZ.,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YcZБYc.т Xaе !ёbbXеёYтё0.9В0ВВXYYёbс_ё9ZеВБa09b-А?В_aZс?тYА,Аёт_-b0е-,0!.a1 ё0Б_1тYcт0ёX._ZВт-Аc?XaсZ. БYесстYYсстY0c9ВёБт9- А.c baА!еc ,ёБccтсXАе!т0YZ1,YВ?еZ.,,.Zе?ВY,1ZY0т!еАXстccБё, cе!Аab c.А -9тБёВ9c0YтссYYтссеYБ .ZсaX?cА-тВZ_.Xё0тcYт1_Б0ё 1a.!0,-е0b-_тёА,АYт?сZa_В?А-b90aБВеZ9ё_сbёYYXВВ0В9.0ётYёеXbbё! еaX т.cYБZcY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_161",
+    "input": "ёБac,baXYZX ст!т1aтX0Б0.bcс-В?bтZccсееa.X1ет?9Вaт_9В, те.bс.c,YX.тс9.ёa.bВё01т1aс0Z ?ёXacX?тcт_ab0АА!!Yacaт.ттБ,Zс?09Z!Б_,_тX1cс9Z-?е-сВВ_-1aс 0b.А!9,ёеYт?,тYтс?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ёБac,baXYZX ст!т1aтX0Б0.bcс-В?bтZccсееa.X1ет?9Вaт_9В, те.bс.c,YX.тс9.ёa.bВё01т1aс0Z ?ёXacX?тcт_ab0АА!!Yacaт.ттБ,Zс?09Z!Б_,_тX1cс9Z-?е-сВВ_-1aс 0b.А!9,ёеYт?,тYтс??стYт,?тYеё,9!А.b0 сa1-_ВВс-е?-Z9сc1Xт_,_Б!Z90?сZ,Бтт.тacaY!!АА0ba_тcт?XcaXё? Z0сa1т10ёВb.aё.9ст.XY,c.сb.ет ,В9_тaВ9?те1X.aеесccZтb?В-сcb.0Б0Xтa1т!тс XZYXab,caБё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_162",
+    "input": "0-!,т!Вbе0Yс_БbcZ.ВY,?bт91с01А!aеВсX-,!aВ?,т-!0!ВZ1!-?-X,1aБ-X_Атё.е-cXВ?ттZтb,09-?ZY9!!т!a1c Б!X0Бс1b-,0ZX_1,ёссYX Ycё-aY_0В90 А_тт0тb!Бab-XYтёZ,abБ90ст-!?X9!cеВ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0-!,т!Вbе0Yс_БbcZ.ВY,?bт91с01А!aеВсX-,!aВ?,т-!0!ВZ1!-?-X,1aБ-X_Атё.е-cXВ?ттZтb,09-?ZY9!!т!a1c Б!X0Бс1b-,0ZX_1,ёссYX Ycё-aY_0В90 А_тт0тb!Бab-XYтёZ,abБ90ст-!?X9!cеВВеc!9X?!-тс09Бba,ZётYX-baБ!bт0тт_А 09В0_Ya-ёcY XYссё,1_XZ0,-b1сБ0X!Б c1a!т!!9YZ?-90,bтZтт?ВXc-е.ётА_X-Бa1,X-?-!1ZВ!0!-т,?Вa!,-XсВеa!А10с19тb?,YВ.ZcbБ_сY0еbВ!т,!-0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_163",
+    "input": "bБВтт1ёbт?1Ycсё _-XaеX9_9!?тБёе,9_В,1?!b. ВБ00aZБ9Y!_cёВ!АёY-Y,9А.БтYтт XbАеВВc._aYYa1е9тZ1т-a-b-тc.Ает!е1АYБ,XYX!9,Вё.bт1Аb!еёсbВ!стВё!. БВa?ZтА-.9 ..тА-Y!1тXёY,a",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bБВтт1ёbт?1Ycсё _-XaеX9_9!?тБёе,9_В,1?!b. ВБ00aZБ9Y!_cёВ!АёY-Y,9А.БтYтт XbАеВВc._aYYa1е9тZ1т-a-b-тc.Ает!е1АYБ,XYX!9,Вё.bт1Аb!еёсbВ!стВё!. БВa?ZтА-.9 ..тА-Y!1тXёY,aa,YёXт1!Y-Ат.. 9.-АтZ?aВБ .!ёВтс!Вbсёе!bА1тb.ёВ,9!XYX,БYА1е!теА.cт-b-a-т1Zт9е1aYYa_.cВВеАbX ттYтБ.А9,Y-YёА!Вёc_!Y9БZa00БВ .b!?1,В_9,еёБт?!9_9XеaX-_ ёсcY1?тbё1ттВБb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_164",
+    "input": "9.Асc 0с_!ac1В!АYZ1-Y9с!В!тY9тБc,БВ-е .?Аa1-Атa-Z_с_ё-?X1_В0А!b 9.т - cсb?сZ.Y?1.Zт_ сБтcБaaX, -YY,1?_ёВБc,ВАY-тYa YZYВbcёт aXё !!a ёcВт ?с!1.?10В,с_- ёY-1X.9,ё??ВY",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9.Асc 0с_!ac1В!АYZ1-Y9с!В!тY9тБc,БВ-е .?Аa1-Атa-Z_с_ё-?X1_В0А!b 9.т - cсb?сZ.Y?1.Zт_ сБтcБaaX, -YY,1?_ёВБc,ВАY-тYa YZYВbcёт aXё !!a ёcВт ?с!1.?10В,с_- ёY-1X.9,ё??ВYYВ??ё,9.X1-Yё -_с,В01?.1!с? тВcё a!! ёXa тёcbВYZY aYт-YАВ,cБВё_?1,YY- ,XaaБcтБс _тZ.1?Y.Zс?bсc - т.9 b!А0В_1X?-ё_с_Z-aтА-1aА?. е-ВБ,cБт9Yт!В!с9Y-1ZYА!В1ca!_с0 cсА.9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_165",
+    "input": "ёе.Za!т ?aYb _ aВ?aББ!-cYсВ-еZ,-!-с-Бёё-!с0.ББ.aВёX.?,тсbе тcс0?ё.ёb_,тX0еYё0т-_т?-_,-А1ёZ1b.ттсАё! тБ0?-сАёX91a aтcА1Б.-.._ё1?, ?!Y,0БbZcетАе Y.-19XтАт_ёАБZa?Вс9Zbе",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ёе.Za!т ?aYb _ aВ?aББ!-cYсВ-еZ,-!-с-Бёё-!с0.ББ.aВёX.?,тсbе тcс0?ё.ёb_,тX0еYё0т-_т?-_,-А1ёZ1b.ттсАё! тБ0?-сАёX91a aтcА1Б.-.._ё1?, ?!Y,0БbZcетАе Y.-19XтАт_ёАБZa?Вс9ZbееbZ9сВ?aZБАё_тАтX91-.Y еАтеcZbБ0,Y!? ,?1ё_..-.Б1Аcтa a19XёАс-?0Бт !ёАстт.b1Zё1А-,_-?т_-т0ёYе0Xт,_bё.ё?0сcт еbст,?.XёВa.ББ.0с!-ёёБ-с-!-,Zе-ВсYc-!ББa?Вa _ bYa? т!aZ.её\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_166",
+    "input": "b!ё9тё?ё0ёА.0bсcеВс,БеБ,aт,тс,?1,тZaтZ,сY-0 09XbX 9!тБZ_ c?cА!?БеY b,с-ёXYb!Б!c9YВXZ.,Вbc?bА_с!ттА-. .сБе??!,.0c?ё0А-1 Xст1Xт-А01ААБ1-1е !9._ё0ё_А-c.т0В т-сb0ВАт.ё-ё9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: b!ё9тё?ё0ёА.0bсcеВс,БеБ,aт,тс,?1,тZaтZ,сY-0 09XbX 9!тБZ_ c?cА!?БеY b,с-ёXYb!Б!c9YВXZ.,Вbc?bА_с!ттА-. .сБе??!,.0c?ё0А-1 Xст1Xт-А01ААБ1-1е !9._ё0ё_А-c.т0В т-сb0ВАт.ё-ё99ё-ё.тАВ0bс-т В0т.c-А_ё0ё_.9! е1-1БАА10А-тX1тсX 1-А0ё?c0.,!??еБс. .-Атт!с_Аb?cbВ,.ZXВY9c!Б!bYXё-с,b YеБ?!Аc?c _ZБт!9 XbX90 0-Yс,ZтaZт,1?,ст,тa,БеБ,сВеcсb0.Аё0ё?ёт9ё!b\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_167",
+    "input": "-9 тёbё1-?cеcXтXБ-_,Xт!0есc_ВXБ9_тbеБсa10_ZcXетёXё0тВсbc!ZБА.1aXYZе!_!_тaт9?cbaY.Z_ZXёт!тccYАБ-YтёеX!,bт-Y.b9Xb90тYZ 0?Б1Вc,тXё?  Y,т9тbА cБYтb ?,X!е X.еВXё_АaВ.Z0X.c ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -9 тёbё1-?cеcXтXБ-_,Xт!0есc_ВXБ9_тbеБсa10_ZcXетёXё0тВсbc!ZБА.1aXYZе!_!_тaт9?cbaY.Z_ZXёт!тccYАБ-YтёеX!,bт-Y.b9Xb90тYZ 0?Б1Вc,тXё?  Y,т9тbА cБYтb ?,X!е X.еВXё_АaВ.Z0X.c  c.X0Z.ВaА_ёXВе.X е!X,? bтYБc Аbт9т,Y  ?ёXт,cВ1Б?0 ZYт09bX9b.Y-тb,!XеётY-БАYccт!тёXZ_Z.Yabc?9тaт_!_!еZYXa1.АБZ!cbсВт0ёXётеXcZ_01aсБеbт_9БXВ_cсе0!тX,_-БXтXcеc?-1ёbёт 9-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_168",
+    "input": "еX!.,0ё,aZ,те?т!baБ БbААYА9YтВБX!ZАc т9,-тт_b ё-с 0ёееb1bА,XYА?Z.a.ёc_теXБтcсbёXВБ?0_БXZYББё -Бе,ВАcт?,ВY?cZБ_Yе-еX!ёb0,ёXYАтА00Ате.тZт-.тБ1!.bс-тт,aXт_В ._-b,c.!0!Yc9!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: еX!.,0ё,aZ,те?т!baБ БbААYА9YтВБX!ZАc т9,-тт_b ё-с 0ёееb1bА,XYА?Z.a.ёc_теXБтcсbёXВБ?0_БXZYББё -Бе,ВАcт?,ВY?cZБ_Yе-еX!ёb0,ёXYАтА00Ате.тZт-.тБ1!.bс-тт,aXт_В ._-b,c.!0!Yc9!!9cY!0!.c,b-_. В_тXa,тт-сb.!1Бт.-тZт.етА00АтАYXё,0bё!Xе-еY_БZc?YВ,?тcАВ,еБ- ёББYZXБ_0?БВXёbсcтБXет_cё.a.Z?АYX,Аb1bееё0 с-ё b_тт-,9т cАZ!XБВтY9АYААbБ Бab!т?ет,Za,ё0,.!Xе\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_169",
+    "input": "?ттт0!ёсbсYВБ-Y.bтb9,Zетт Xa!c?,ё!!ВXZ_9ZY?тВa?Вс_XтXт,!,сВ_,YВБсZётb1ёВY9ё!БсcёАБ?9_!с9,YZ0,тYZZ abст-.АБеББc-!aZе?YXтY.?Б-cс0.?-.9!те X9тБXсa,Б.т.В__XВсca! 0Yc.c1a1,0т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?ттт0!ёсbсYВБ-Y.bтb9,Zетт Xa!c?,ё!!ВXZ_9ZY?тВa?Вс_XтXт,!,сВ_,YВБсZётb1ёВY9ё!БсcёАБ?9_!с9,YZ0,тYZZ abст-.АБеББc-!aZе?YXтY.?Б-cс0.?-.9!те X9тБXсa,Б.т.В__XВсca! 0Yc.c1a1,0тт0,1a1c.cY0 !acсВX__В.т.Б,aсXБт9X ет!9.-?.0сc-Б?.YтXY?еZa!-cББеБА.-тсba ZZYт,0ZY,9с!_9?БАёcсБ!ё9YВё1bтёZсБВY,_Вс,!,тXтX_сВ?aВт?YZ9_ZXВ!!ё,?c!aX ттеZ,9bтb.Y-БВYсbсё!0ттт?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_170",
+    "input": "bYaс 09_.Z,сВZ А?_тВ1,9ёВтZbZ?сb1.-еb?XZВYc91Xее0,А0ё!b!0cтБ?._!сВёс1 Z.!БВёА_т_XАё!-Вc -Z,9тё.В-,,Бc!Z9БВ_-__a1aё._ етеa .се_bbYYXс9т.ё_ _Z_БАca,X1a a?ё-?XXсcт9е?c_.ёX-9",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bYaс 09_.Z,сВZ А?_тВ1,9ёВтZbZ?сb1.-еb?XZВYc91Xее0,А0ё!b!0cтБ?._!сВёс1 Z.!БВёА_т_XАё!-Вc -Z,9тё.В-,,Бc!Z9БВ_-__a1aё._ етеa .се_bbYYXс9т.ё_ _Z_БАca,X1a a?ё-?XXсcт9е?c_.ёX-99-Xё._c?е9тcсXX?-ё?a a1X,acАБ_Z_ _ё.т9сXYYbb_ес. aете _.ёa1a__-_ВБ9Z!cБ,,-В.ёт9,Z- cВ-!ёАX_т_АёВБ!.Z 1сёВс!_.?Бтc0!b!ё0А,0ееX19cYВZX?bе-.1bс?ZbZтВё9,1Вт_?А ZВс,Z._90 сaYb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_171",
+    "input": "c0?1 ,.ёАXbАYБВX0,Б!9bт??Бе,.??1тВ_!Z_т?тё?БББZ,е_9?тZс.!0еcВ11с.тYYcААААb ,1тВ!?тБXВb.!a,ББ,тт b?0?тА_,Ya-.9,тт? тБ.,aXYa_-_А_ aXВa-b-!В-bст1ёА А1,c ёX, 10aБ99ё-ZaБсb_Атт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: c0?1 ,.ёАXbАYБВX0,Б!9bт??Бе,.??1тВ_!Z_т?тё?БББZ,е_9?тZс.!0еcВ11с.тYYcААААb ,1тВ!?тБXВb.!a,ББ,тт b?0?тА_,Ya-.9,тт? тБ.,aXYa_-_А_ aXВa-b-!В-bст1ёА А1,c ёX, 10aБ99ё-ZaБсb_АттттА_bсБaZ-ё99Бa01 ,Xё c,1А Аё1тсb-В!-b-aВXa _А_-_aYXa,.Бт ?тт,9.-aY,_Ат?0?b тт,ББ,a!.bВXБт?!Вт1, bААААcYYт.с11Вcе0!.сZт?9_е,ZБББ?ёт?т_Z!_Вт1??.,еБ??тb9!Б,0XВБYАbXАё., 1?0c\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_172",
+    "input": ",Xcеc?!--тZБc_АaaZ.,_Yт_Бе,!YaВZZтbт ёАXтbё!Zёе.ZВXВ1,_X_XВYё?!В1Y9Xс_10_X0ВёВёБcY1bXсАcYВ9е,b.Ат1 сb_ВБАБтX_?.bYВ е,тYА-Z-. 9,00 ,А1 ё9т,?-1!В? Z_aБ_тёет1Б9е.1c.,?!Zе_АXт,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ,Xcеc?!--тZБc_АaaZ.,_Yт_Бе,!YaВZZтbт ёАXтbё!Zёе.ZВXВ1,_X_XВYё?!В1Y9Xс_10_X0ВёВёБcY1bXсАcYВ9е,b.Ат1 сb_ВБАБтX_?.bYВ е,тYА-Z-. 9,00 ,А1 ё9т,?-1!В? Z_aБ_тёет1Б9е.1c.,?!Zе_АXт,,тXА_еZ!?,.c1.е9Б1теёт_Бa_Z ?В!1-?,т9ё 1А, 00,9 .-Z-АYт,е ВYb.?_XтБАБВ_bс 1тА.b,е9ВYcАсXb1YcБёВёВ0X_01_сX9Y1В!?ёYВX_X_,1ВXВZ.еёZ!ёbтXАё тbтZZВaY!,еБ_тY_,.ZaaА_cБZт--!?cеcX,\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_173",
+    "input": "91Yт,т_Y _X теbАё!YА?,!ёе.ёёссВ.0Y!?_!Вa__т-0ВacеYсВеbё_т,!0,,!т,?0_Аётaё?т?ёе-с1,_сБетXёсБ119БВ 9ттba1тт1  еZётZ,cZ1А?.c ё?ВсZY,т1А 1Б1YaееZтБ-01ё0т.XВеББ0В!,X1т?-0е1Z-_Y 1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 91Yт,т_Y _X теbАё!YА?,!ёе.ёёссВ.0Y!?_!Вa__т-0ВacеYсВеbё_т,!0,,!т,?0_Аётaё?т?ёе-с1,_сБетXёсБ119БВ 9ттba1тт1  еZётZ,cZ1А?.c ё?ВсZY,т1А 1Б1YaееZтБ-01ё0т.XВеББ0В!,X1т?-0е1Z-_Y 11 Y_-Z1е0-?т1X,!В0ББеВX.т0ё10-БтZееaY1Б1 А1т,YZсВ?ё c.?А1Zc,ZтёZе  1тт1abтт9 ВБ911БсёXтеБс_,1с-её?т?ёaтёА_0?,т!,,0!,т_ёbеВсYеcaВ0-т__aВ!_?!Y0.Вссёё.её!,?АY!ёАbет X_ Y_т,тY19\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_174",
+    "input": "aёВa,т0,В.9.--0YaX!? ,?.е1Yc,В9,10b1Y.Аёет?1Вa1ет_,bYАZZБZе,_b0тY!В_?aсb?9,ZX,,АYaY?11Zе_YaZВВе,,ё,!XZ9А0 9bАБY,Z 91тaтеёеX0,9А9Zb-!,Y-сВ ВXcВБе.9_1Аё,c?тсА1_сb БтXеВbX.,YВе-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: aёВa,т0,В.9.--0YaX!? ,?.е1Yc,В9,10b1Y.Аёет?1Вa1ет_,bYАZZБZе,_b0тY!В_?aсb?9,ZX,,АYaY?11Zе_YaZВВе,,ё,!XZ9А0 9bАБY,Z 91тaтеёеX0,9А9Zb-!,Y-сВ ВXcВБе.9_1Аё,c?тсА1_сb БтXеВbX.,YВе--еВY,.XbВеXтБ bс_1Аст?c,ёА1_9.еБВcXВ Вс-Y,!-bZ9А9,0Xеёетaт19 Z,YБАb9 0А9ZX!,ё,,еВВZaY_еZ11?YaYА,,XZ,9?bсa?_В!Yт0b_,еZБZZАYb,_те1aВ1?теёА.Y1b01,9В,cY1е.?, ?!XaY0--.9.В,0т,aВёa\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_175",
+    "input": "сА !т,XXстс.9е ,Zт-XВ,ст??Вaс,те,1тa,ёт0БZс!Y!те1,b,Y1тБ.тZ0Вb?е?А.с.? сВсс? -9- a0_ВВa?АXcтт!ёеbАёaXb!9тcВ1А,-c _cabтБ_ёт??1сX9Yт0._с!,!_9Z?9с99Zcс, !aеXт_ a9с_т?Б Б  ВX!ZX9В",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: сА !т,XXстс.9е ,Zт-XВ,ст??Вaс,те,1тa,ёт0БZс!Y!те1,b,Y1тБ.тZ0Вb?е?А.с.? сВсс? -9- a0_ВВa?АXcтт!ёеbАёaXb!9тcВ1А,-c _cabтБ_ёт??1сX9Yт0._с!,!_9Z?9с99Zcс, !aеXт_ a9с_т?Б Б  ВX!ZX9ВВ9XZ!XВ  Б Б?т_с9a _тXеa! ,сcZ99с9?Z9_!,!с_.0тY9Xс1??тё_Бтbac_ c-,А1Вcт9!bXaёАbеё!ттcXА?aВВ_0a -9- ?ссВс ?.с.А?е?bВ0Zт.Бт1Y,b,1ет!Y!сZБ0тё,aт1,ет,сaВ??тс,ВX-тZ, е9.стсXX,т! Ас\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_176",
+    "input": "0с.!0?еaaтеaZе,a0-!тaе-0-_Zb-?cе1,cZБ1!_е0!!a.ВXт0т9!ет.Yс,!А!ё?Б,Б0.cВ,??1тXcеbZ! 9 c?е,-тес.aе-БтАтт?XZВ0Ycc bbе,cсX1т_ тa, БтXе9Yё.?1?bБ_X9Б.b, ,!БВ1-!c10!aт9ттYZX19?с,.еcZb",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0с.!0?еaaтеaZе,a0-!тaе-0-_Zb-?cе1,cZБ1!_е0!!a.ВXт0т9!ет.Yс,!А!ё?Б,Б0.cВ,??1тXcеbZ! 9 c?е,-тес.aе-БтАтт?XZВ0Ycc bbе,cсX1т_ тa, БтXе9Yё.?1?bБ_X9Б.b, ,!БВ1-!c10!aт9ттYZX19?с,.еcZbbZcе.,с?91XZYтт9тa!01c!-1ВБ!, ,b.Б9X_Бb?1?.ёY9еXтБ ,aт _т1Xсc,еbb ccY0ВZX?ттАтБ-еa.сет-,е?c 9 !ZbеcXт1??,Вc.0Б,Б?ё!А!,сY.те!9т0тXВ.a!!0е_!1БZc,1еc?-bZ_-0-еaт!-0a,еZaетaaе?0!.с0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_177",
+    "input": "ё0тсbтстa  a,ст!ёБ-,0!cА9_Аетcс-Б?--Бт1 ?-А1е  ZА,,Z,Y9-есcXБВ01bbZ-bБт,aсcтbYbтс?Вс_В9!YтАВт.!c!91В,a.19.Zac0.еВ1c. .-!abZт.9Zb1сАВетББbZ 1сВ,т0?cZ!БА 9-ВYaАX1ёX .т0!.?,те-тБт,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ё0тсbтстa  a,ст!ёБ-,0!cА9_Аетcс-Б?--Бт1 ?-А1е  ZА,,Z,Y9-есcXБВ01bbZ-bБт,aсcтbYbтс?Вс_В9!YтАВт.!c!91В,a.19.Zac0.еВ1c. .-!abZт.9Zb1сАВетББbZ 1сВ,т0?cZ!БА 9-ВYaАX1ёX .т0!.?,те-тБт,,тБт-ет,?.!0т. Xё1XАaYВ-9 АБ!Zc?0т,Вс1 ZbББтеВАс1bZ9.тZba!-. .c1Ве.0caZ.91.a,В19!c!.тВАтY!9В_сВ?стbYbтcсa,тБb-Zbb10ВБXcсе-9Y,Z,,АZ  е1А-? 1тБ--?Б-сcтеА_9Аc!0,-Бё!тс,a  aтстbст0ё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_178",
+    "input": "X9 т?ВZ090cXА т!тZёАБ_-ттY?1?Y?Б 1Z1,сcZт00-Xc1-ёсaт1.ёАБе_9сZт?1cbё, ,тY-В!1b0_сёВXсcёё!!1.,9ёБА? ,ёZетX т _Вт__сс Y ётc Бтт..ВА1aё9.А9b!,a.Ybт-a9Xё!Б.тZ1YБсет_?0Xтc!XА,YX0_А0А-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: X9 т?ВZ090cXА т!тZёАБ_-ттY?1?Y?Б 1Z1,сcZт00-Xc1-ёсaт1.ёАБе_9сZт?1cbё, ,тY-В!1b0_сёВXсcёё!!1.,9ёБА? ,ёZетX т _Вт__сс Y ётc Бтт..ВА1aё9.А9b!,a.Ybт-a9Xё!Б.тZ1YБсет_?0Xтc!XА,YX0_А0А--А0А_0XY,АX!cтX0?_тесБY1Zт.Б!ёX9a-тbY.a,!b9А.9ёa1АВ..ттБ cтё Y сс__тВ_ т XтеZё, ?АБё9,.1!!ёёcсXВёс_0b1!В-Yт, ,ёbc1?тZс9_еБАё.1тaсё-1cX-00тZcс,1Z1 Б?Y?1?Yтт-_БАёZт!т АXc090ZВ?т 9X\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_179",
+    "input": "1,т.А.с0_0 ВZ 1Xт.Б_9..т.Б,ё!_.11БY_-1АтX-XZетт?9Бcт.!.тc_0т!АYс,_?,еББе!Б?ё_-т,.с_Xa-. сZcтБВтт--Бт,01aёсВе.?._!11c!b9.с,_aYеёАе !.9?X!cXБеZ.В bтcX т0_ёт1YВX.c_т!1? ?90  .АеbБтZт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1,т.А.с0_0 ВZ 1Xт.Б_9..т.Б,ё!_.11БY_-1АтX-XZетт?9Бcт.!.тc_0т!АYс,_?,еББе!Б?ё_-т,.с_Xa-. сZcтБВтт--Бт,01aёсВе.?._!11c!b9.с,_aYеёАе !.9?X!cXБеZ.В bтcX т0_ёт1YВX.c_т!1? ?90  .АеbБтZттZтБbеА.  09? ?1!т_c.XВY1тё_0т Xcтb В.ZеБXc!X?9.! еАёеYa_,с.9b!c11!_.?.еВсёa10,тБ--ттВБтcZс .-aX_с.,т-_ё?Б!еББе,?_,сYА!т0_cт.!.тcБ9?ттеZX-XтА1-_YБ11._!ё,Б.т..9_Б.тX1 ZВ 0_0с.А.т,1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_180",
+    "input": "т_!тYАёaa.АВYеБbc?!!сaYcX-_БcА_,1b1ст.aё 19Y  _тБ_. БеaБc?ёА,YbтБZ bZc1c сс9Б  т!!0с,Xтa0.е90т_a9А1XсX_е,?т т,bтё.!Yт_9Вёc- 1_АaXc1c.Бbbтё0!,тс,тZcтё!ВёсБВYZ,1тbbcXсX9?ZБXтёВтВс9_c",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: т_!тYАёaa.АВYеБbc?!!сaYcX-_БcА_,1b1ст.aё 19Y  _тБ_. БеaБc?ёА,YbтБZ bZc1c сс9Б  т!!0с,Xтa0.е90т_a9А1XсX_е,?т т,bтё.!Yт_9Вёc- 1_АaXc1c.Бbbтё0!,тс,тZcтё!ВёсБВYZ,1тbbcXсX9?ZБXтёВтВс9_cc_9сВтВётXБZ?9XсXcbbт1,ZYВБсёВ!ётcZт,ст,!0ётbbБ.c1cXaА_1 -cёВ9_тY!.ётb,т т?,е_XсX1А9a_т09е.0aтX,с0!!т  Б9сс c1cZb ZБтbY,Аё?cБaеБ ._Бт_  Y91 ёa.тс1b1,_АcБ_-XcYaс!!?cbБеYВА.aaёАYт!_т\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_181",
+    "input": ".X1.те.БА1Б9Zсё,?bёёY_ё119!ccY?aYZ!А  Y,с111В,1Y,тВт10,ZБ??09ттё1Xт9 -ZёaXАbY0сYс-сZa??ВАcc9YтВтZ -ее-е -Y0ё_тX!ё__А9?еА1-Аac,-1..1Ya1,БZВ,9a!тY?Z_9Вт-c!0,_ZтXАтZ?_т X!?ст0caт..сВYт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .X1.те.БА1Б9Zсё,?bёёY_ё119!ccY?aYZ!А  Y,с111В,1Y,тВт10,ZБ??09ттё1Xт9 -ZёaXАbY0сYс-сZa??ВАcc9YтВтZ -ее-е -Y0ё_тX!ё__А9?еА1-Аac,-1..1Ya1,БZВ,9a!тY?Z_9Вт-c!0,_ZтXАтZ?_т X!?ст0caт..сВYттYВс..тac0тс?!X т_?ZтАXтZ_,0!c-тВ9_Z?Yт!a9,ВZБ,1aY1..1-,caА-1Ае?9А__ё!Xт_ё0Y- е-ее- ZтВтY9ccАВ??aZс-сYс0YbАXaёZ- 9тX1ётт90??БZ,01тВт,Y1,В111с,Y  А!ZYa?Ycc!911ё_Yёёb?,ёсZ9Б1АБ.ет.1X.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_182",
+    "input": "А-ccYa т,Z?9АX0Y0БZ_1сc!X?БёccВБY-!Zё-тААё!cbb_9ет.YА0Xё-ёY09БВстВ!ZaБтXе-т9.ААYтZbтaВa тАbёАXbacВе.b0_1?9Yc0А0_ё_9X,?0с,,Y,сaе,X._b1сё9,a1тёYсётВaттZё0_0 -.тс!1Z.БеY ZБА!XВbАе0т!9?b",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: А-ccYa т,Z?9АX0Y0БZ_1сc!X?БёccВБY-!Zё-тААё!cbb_9ет.YА0Xё-ёY09БВстВ!ZaБтXе-т9.ААYтZbтaВa тАbёАXbacВе.b0_1?9Yc0А0_ё_9X,?0с,,Y,сaе,X._b1сё9,a1тёYсётВaттZё0_0 -.тс!1Z.БеY ZБА!XВbАе0т!9?bb?9!т0еАbВX!АБZ YеБ.Z1!ст.- 0_0ёZттaВтёсYёт1a,9ёс1b_.X,еaс,Y,,с0?,X9_ё_0А0cY9?1_0b.еВcabXАёbАт aВaтbZтYАА.9т-еXтБaZ!ВтсВБ90Yё-ёX0АY.те9_bbc!ёААт-ёZ!-YБВccёБ?X!cс1_ZБ0Y0XА9?Z,т aYcc-А\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_183",
+    "input": "? b1ВZ-.0В!!Yёс91,c1Б9!еБa1сА9ёБbтё_.В0aБa?ZcА,b1 bZYёе9Z99?БёZА-т?YесттZ9c19ёb!е9тbёВ! _a,.В,0-XАbbВеZ!тАbaВ0,-a0АcYсYе_bеZ0?-Y!c!ёАZ9aёY ,тёXYВZ0стБсВc1-ёaё?ст9Б!0__ Бa1тБс.bXYАXXБc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ? b1ВZ-.0В!!Yёс91,c1Б9!еБa1сА9ёБbтё_.В0aБa?ZcА,b1 bZYёе9Z99?БёZА-т?YесттZ9c19ёb!е9тbёВ! _a,.В,0-XАbbВеZ!тАbaВ0,-a0АcYсYе_bеZ0?-Y!c!ёАZ9aёY ,тёXYВZ0стБсВc1-ёaё?ст9Б!0__ Бa1тБс.bXYАXXБccБXXАYXb.сБт1aБ __0!Б9тс?ёaё-1cВсБтс0ZВYXёт, Yёa9ZАё!c!Y-?0Zеb_еYсYcА0a-,0ВabАт!ZеВbbАX-0,В.,a_ !Вёbт9е!bё91c9ZттсеY?т-АZёБ?99Z9еёYZb 1b,АcZ?aБa0В._ётbБё9Ас1aБе!9Б1c,19сёY!!В0.-ZВ1b ?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_184",
+    "input": "Б стеZ!1тcеXе.с с, 9А90сa0_c910Аa-aс?Аcbab0??cВ0тc!bY XВ1bZ1тт!9b-!т_9БXВ,ZYееесё?b т9 -т_т!ттет1т?_Y_Z1ВXВ.е ._тZ1БX,т.Yёa-,ст,0 -b 90т?1Аё XXZcВaтZ1тa!сВАZ_bYa99Z.ВёВ91a9!1тX.!XXaсY-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Б стеZ!1тcеXе.с с, 9А90сa0_c910Аa-aс?Аcbab0??cВ0тc!bY XВ1bZ1тт!9b-!т_9БXВ,ZYееесё?b т9 -т_т!ттет1т?_Y_Z1ВXВ.е ._тZ1БX,т.Yёa-,ст,0 -b 90т?1Аё XXZcВaтZ1тa!сВАZ_bYa99Z.ВёВ91a9!1тX.!XXaсY--YсaXX!.Xт1!9a19ВёВ.Z99aYb_ZАВс!aт1ZтaВcZXX ёА1?т09 b- 0,тс,-aёY.т,XБ1Zт_. е.ВXВ1Z_Y_?т1тетт!т_т- 9т b?ёсеееYZ,ВXБ9_т!-b9!тт1Zb1ВX Yb!cт0Вc??0babcА?сa-aА019c_0aс09А9 ,с с.еXеcт1!Zетс Б\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_185",
+    "input": "Zb? 100В99Y!е9 тс9В1_YZт._?ZеXёaАВААетX0Xе_,9Z.е._aXВтa9a1_ a.А.,cYaА,т.В9YёАсётcВ.1ёБb? -!c,1,0YZ1Z9 ,,е._b!!тXb_-Б_А--тabБс?! Y_Бе9_YтеZсАВbтc-!,?9__c-cYYaтbс.X_aYе!Аеa!ВБ.bXYтБ 0Z.А?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Zb? 100В99Y!е9 тс9В1_YZт._?ZеXёaАВААетX0Xе_,9Z.е._aXВтa9a1_ a.А.,cYaА,т.В9YёАсётcВ.1ёБb? -!c,1,0YZ1Z9 ,,е._b!!тXb_-Б_А--тabБс?! Y_Бе9_YтеZсАВbтc-!,?9__c-cYYaтbс.X_aYе!Аеa!ВБ.bXYтБ 0Z.А??А.Z0 БтYXb.БВ!aеА!еYa_X.сbтaYYc-c__9?,!-cтbВАсZетY_9еБ_Y !?сБbaт--А_Б-_bXт!!b_.е,, 9Z1ZY0,1,c!- ?bБё1.ВcтёсАёY9В.т,АaYc,.А.a _1a9aтВXa_.е.Z9,_еX0XтеААВАaёXеZ?_.тZY_1В9ст 9е!Y99В001 ?bZ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_186",
+    "input": "11е00ZВВт01еYА011,b1_БY1-9,,0Z?b!c-a0Б9b -0тё .е,с!тb?ZZYт0,!.XтZ0cт-В-Бёс9_!09bZВ??В 9c0Zт9-1b_1Z1Z1bт_9,c,АВ91Вb.a0еетY1Б.9Zт91ё?-_Z-е?1ётеZт_ё0ёт01с?? _ВВ.В-_тттВ.9?ВБеВ1._.909Веa9XYс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 11е00ZВВт01еYА011,b1_БY1-9,,0Z?b!c-a0Б9b -0тё .е,с!тb?ZZYт0,!.XтZ0cт-В-Бёс9_!09bZВ??В 9c0Zт9-1b_1Z1Z1bт_9,c,АВ91Вb.a0еетY1Б.9Zт91ё?-_Z-е?1ётеZт_ё0ёт01с?? _ВВ.В-_тттВ.9?ВБеВ1._.909Веa9XYссYX9aеВ909._.1ВеБВ?9.Вттт_-В.ВВ_ ??с10тё0ё_тZетё1?е-Z_-?ё19тZ9.Б1Yтее0a.bВ19ВА,c,9_тb1Z1Z1_b1-9тZ0c9 В??ВZb90!_9сёБ-В-тc0ZтX.!,0тYZZ?bт!с,е. ёт0- b9Б0a-c!b?Z0,,9-1YБ_1b,110АYе10тВВZ00е11\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_187",
+    "input": "9?1c.с.тc,_9? 1ёБ..Вее1 9Бa_сY9 XY0a.В-ссY.Y9bстZБ9БАт.! X!a9А А1bВbёaZ,сАБ9 Б.Б_ё.сБееБZт91БX0Xе!0  a ёZXт?0cтa c!!1_с-т?Z! bc_aтеX_0YZc0cеё1Веb В0Z0cY-cеZтБ-ZВ,тY!cZ-.е сa ?c_еYZБ!_АБте",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9?1c.с.тc,_9? 1ёБ..Вее1 9Бa_сY9 XY0a.В-ссY.Y9bстZБ9БАт.! X!a9А А1bВbёaZ,сАБ9 Б.Б_ё.сБееБZт91БX0Xе!0  a ёZXт?0cтa c!!1_с-т?Z! bc_aтеX_0YZc0cеё1Веb В0Z0cY-cеZтБ-ZВ,тY!cZ-.е сa ?c_еYZБ!_АБтеетБА_!БZYе_c? aс е.-Zc!Yт,ВZ-БтZеc-Yc0Z0В bеВ1ёеc0cZY0_Xетa_cb !Z?т-с_1!!c aтc0?тXZё a  0!еX0XБ19тZБееБс.ё_Б.Б 9БАс,ZaёbВb1А А9a!X !.тАБ9БZтсb9Y.Yсс-В.a0YX 9Yс_aБ9 1ееВ..Бё1 ?9_,cт.с.c1?9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_188",
+    "input": "0Б!cёX?В0bА?тZт0Xт0!тaАaс,00 ZXс-!е0В!0ZттёYтXXYXX1?!,-Б0,Yс9,.91a.9ёё ББc_a,ё0В1есБ..еZ-, ,b,с. _?1тY--сaе_А_a0YZ--А bb!c?XYтY10е9Вca-?А.В1Б1т_9-b0?БееZ-baАbcс1_,тXт 9-_X1сВВ.ссБ тёaтZ0Б_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0Б!cёX?В0bА?тZт0Xт0!тaАaс,00 ZXс-!е0В!0ZттёYтXXYXX1?!,-Б0,Yс9,.91a.9ёё ББc_a,ё0В1есБ..еZ-, ,b,с. _?1тY--сaе_А_a0YZ--А bb!c?XYтY10е9Вca-?А.В1Б1т_9-b0?БееZ-baАbcс1_,тXт 9-_X1сВВ.ссБ тёaтZ0Б__Б0Zтaёт Бсс.ВВс1X_-9 тXт,_1сcbАab-ZееБ?0b-9_т1Б1В.А?-acВ9е01YтYX?c!bb А--ZY0a_А_еaс--Yт1?_ .с,b, ,-Zе..Бсе1В0ё,a_cББ ёё9.a19.,9сY,0Б-,!?1XXYXXтYёттZ0!В0е!-сXZ 00,сaАaт!0тX0тZт?Аb0В?Xёc!Б0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_189",
+    "input": "b1!с_с1А?тс-!,!?Б-ZАА Б.ттX1ёАёa?_?XaX,АYеY9с,тa9тY.!!bc01-В.!Yc0тББ!90!Y!?.._1!Бё 0-b.! b_т0с_ВА.11ZтБZ!е,ёВ c9тca_Zс9Z0те,т9ZY_c_ё.сZa.Xе0Y!ёт00-е?bтВ?XX1-т?сётАcАbт_т!е,1т?ZВА..т,1тА--9a",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: b1!с_с1А?тс-!,!?Б-ZАА Б.ттX1ёАёa?_?XaX,АYеY9с,тa9тY.!!bc01-В.!Yc0тББ!90!Y!?.._1!Бё 0-b.! b_т0с_ВА.11ZтБZ!е,ёВ c9тca_Zс9Z0те,т9ZY_c_ё.сZa.Xе0Y!ёт00-е?bтВ?XX1-т?сётАcАbт_т!е,1т?ZВА..т,1тА--9aa9--Ат1,т..АВZ?т1,е!т_тbАcАтёс?т-1XX?Втb?е-00тё!Y0еX.aZс.ё_c_YZ9т,ет0Z9сZ_acт9c Вё,е!ZБтZ11.АВ_с0т_b !.b-0 ёБ!1_..?!Y!09!ББт0cY!.В-10cb!!.Yт9aт,с9YеYА,XaX?_?aёАё1Xтт.Б ААZ-Б?!,!-ст?А1с_с!1b\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_190",
+    "input": "bБ0сВ9_т9XВc,_!.XттYВ?.YX0тА!Y,bА9 е.a?_АYт1ёАБАе1тАВ ёXе,1е1_! 0Бс?! ттXb XXт-Yт !XБ_cБё99aе1ba-Xе1тc1,a.Втт.?-ё9_Zтc,ет10_тZc !БaYАттYcb0Y0 Б?cАВabaY.XА?-_!aZaВе.тcbБААт,Y9-ё1еАт_ё?АaВ09Zт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bБ0сВ9_т9XВc,_!.XттYВ?.YX0тА!Y,bА9 е.a?_АYт1ёАБАе1тАВ ёXе,1е1_! 0Бс?! ттXb XXт-Yт !XБ_cБё99aе1ba-Xе1тc1,a.Втт.?-ё9_Zтc,ет10_тZc !БaYАттYcb0Y0 Б?cАВabaY.XА?-_!aZaВе.тcbБААт,Y9-ё1еАт_ё?АaВ09ZттZ90ВaА?ё_тАе1ё-9Y,тААБbcт.еВaZa!_-?АX.YabaВАc?Б 0Y0bcYттАYaБ! cZт_01те,cтZ_9ё-?.ттВ.a,1cт1еX-ab1еa99ёБc_БX! тY-тXX bXтт !?сБ0 !_1е1,еXё ВАт1еАБАё1тYА_?a.е 9Аb,Y!Ат0XY.?ВYттX.!_,cВX9т_9Вс0Бb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_191",
+    "input": "cВbacВXт0YВ.ее1 т1т9aё,Ат?c-сс,есa-_a0!1-сaБ_9X 9т9тX1с-ёb! еY,с cт,т0_с,cтт,ё_XВВ?ZеёВст.?YАb_т_.9 А00XА?е?АВБт.БaБ?АтXА0Б1А?bтYт9-a_-В9етXc,т!111-тY -?1?9ёY,Zё?0Xтa X?ВеZ9_,_aсё1е11!YтВёВсY",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cВbacВXт0YВ.ее1 т1т9aё,Ат?c-сс,есa-_a0!1-сaБ_9X 9т9тX1с-ёb! еY,с cт,т0_с,cтт,ё_XВВ?ZеёВст.?YАb_т_.9 А00XА?е?АВБт.БaБ?АтXА0Б1А?bтYт9-a_-В9етXc,т!111-тY -?1?9ёY,Zё?0Xтa X?ВеZ9_,_aсё1е11!YтВёВсYYсВёВтY!11е1ёсa_,_9ZеВ?X aтX0?ёZ,Yё9?1?- Yт-111!т,cXте9В-_a-9тYтb?А1Б0АXтА?БaБ.тБВА?е?АX00А 9._т_bАY?.тсВёеZ?ВВX_ё,ттc,с_0т,тc с,Yе !bё-с1Xт9т9 X9_Бaс-1!0a_-aсе,сс-c?тА,ёa9т1т 1ее.ВY0тXВcabВc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_192",
+    "input": "?!9Б1БXa b!Вa1ттZ!ВБ0-ёbZ0 АXZY0сYВ!е?В.тXc-cXё!_ZтZё_А.-В,_А0с! !9Бac0.9ёXbстАБ00!ZZa_b0cYтБX1Б БY!тёbеВ!X.cZАc1е Y?ё!теА!е-cе,_9ёё ,c?1-Аcёе. тb--X!,ееётт!_ тсbbYе!0YёсёZaY10Ве!-b!ZX9b9-В-b,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?!9Б1БXa b!Вa1ттZ!ВБ0-ёbZ0 АXZY0сYВ!е?В.тXc-cXё!_ZтZё_А.-В,_А0с! !9Бac0.9ёXbстАБ00!ZZa_b0cYтБX1Б БY!тёbеВ!X.cZАc1е Y?ё!теА!е-cе,_9ёё ,c?1-Аcёе. тb--X!,ееётт!_ тсbbYе!0YёсёZaY10Ве!-b!ZX9b9-В-b,,b-В-9b9XZ!b-!еВ01YaZёсёY0!еYbbст _!ттёее,!X--bт .еёcА-1?c, ёё9_,еc-е!Ает!ё?Y е1cАZc.X!Веbёт!YБ Б1XБтYc0b_aZZ!00БАтсbXё9.0caБ9! !с0А_,В-.А_ёZтZ_!ёXc-cXт.В?е!ВYс0YZXА 0Zbё-0БВ!Zтт1aВ!b aXБ1Б9!?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_193",
+    "input": "-с!,caБbБт0ВёАY01_b,АZс.?cеВ!!е.тZYёВБX.0XВ?a ,c,0БттВ,YВb,Z._тaZВbеcY-,1АБXёВе Yb-ZYZ,_Ya-b?Бетё1-с9_9b.ёё-В0!-е!!ZёXёZX0ВXеccX?1!В?В.?1Y-1Z_9тёYтёе!Вс?!,етZY!c1ё.ттa,ё1?-Y -.0!YВ?с?aт9 Ае_АXb",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -с!,caБbБт0ВёАY01_b,АZс.?cеВ!!е.тZYёВБX.0XВ?a ,c,0БттВ,YВb,Z._тaZВbеcY-,1АБXёВе Yb-ZYZ,_Ya-b?Бетё1-с9_9b.ёё-В0!-е!!ZёXёZX0ВXеccX?1!В?В.?1Y-1Z_9тёYтёе!Вс?!,етZY!c1ё.ттa,ё1?-Y -.0!YВ?с?aт9 Ае_АXbbXА_еА 9тa?с?ВY!0.- Y-?1ё,aтт.ё1c!YZте,!?сВ!еётYёт9_Z1-Y1?.В?В!1?XccеXВ0XZёXёZ!!е-!0В-ёё.b9_9с-1ётеБ?b-aY_,ZYZ-bY еВёXБА1,-YcеbВZaт_.Z,bВY,ВттБ0,c, a?ВX0.XБВёYZт.е!!Веc?.сZА,b_10YАёВ0тБbБac,!с-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_194",
+    "input": "е,е0_ -Б9А.aт1!т9,АaА0ВXc!b0еАёВсZтYе!-?,90cес,А1bтcZе Yе9ВБ9_0Z.тс-9b?Б-.b.с.т9ВYbА т9,aАт Z9XеАБА_ё ?-.с9сYеА0-АcXс_1X 9,-сеbaёXc01тc?Z_БZ1Ас-cёёXтВbВт _т!е!сbc1теXт.0,?ёт?Zё bА1ZВт01c1БXbYтББ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: е,е0_ -Б9А.aт1!т9,АaА0ВXc!b0еАёВсZтYе!-?,90cес,А1bтcZе Yе9ВБ9_0Z.тс-9b?Б-.b.с.т9ВYbА т9,aАт Z9XеАБА_ё ?-.с9сYеА0-АcXс_1X 9,-сеbaёXc01тc?Z_БZ1Ас-cёёXтВbВт _т!е!сbc1теXт.0,?ёт?Zё bА1ZВт01c1БXbYтББББтYbXБ1c10тВZ1Аb ёZ?тё?,0.тXет1cbс!е!т_ тВbВтXёёc-сА1ZБ_Z?cт10cXёabес-,9 X1_сXcА-0АеYс9с.-? ё_АБАеX9Z тАa,9т АbYВ9т.с.b.-Б?b9-ст.Z0_9БВ9еY еZcтb1А,сеc09,?-!еYтZсВёАе0b!cXВ0АaА,9т!1тa.А9Б- _0е,е\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_195",
+    "input": "cёёXYАbАaтaсёБaa-Ycb,b!0ZтXbА?YВАbY0Ве9_YБaеБXБёБ,с..c ее!ёВ1a.ст-.ZcВ__-YYВaБbYZсc сё XБb0т1Z,тт0сс9ё1YсX,aXс.с_е00aсВ.-ст_?ёb0-b00-0А._ZZ т c?А!еX-т0А,b_БYс1,Аb Z0АтБВ_!А,bсZbё,!.с,!_т1_-,В9Z1Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cёёXYАbАaтaсёБaa-Ycb,b!0ZтXbА?YВАbY0Ве9_YБaеБXБёБ,с..c ее!ёВ1a.ст-.ZcВ__-YYВaБbYZсc сё XБb0т1Z,тт0сс9ё1YсX,aXс.с_е00aсВ.-ст_?ёb0-b00-0А._ZZ т c?А!еX-т0А,b_БYс1,Аb Z0АтБВ_!А,bсZbё,!.с,!_т1_-,В9Z1ББ1Z9В,-_1т_!,с.!,ёbZсb,А!_ВБтА0Z bА,1сYБ_b,А0т-Xе!А?c т ZZ_.А0-00b-0bё?_тс-.Всa00е_с.сXa,XсY1ё9сс0тт,Z1т0bБX ёс cсZYbБaВYY-__ВcZ.-тс.a1Вё!ее c..с,БёБXБеaБY_9еВ0YbАВY?АbXтZ0!b,bcY-aaБёсaтaАbАYXёёc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_196",
+    "input": "Z ё??т.-?YY.1b__-9_Б.0 cYс,т?ёbaБX,Аb--,9Ае0т1Бт,XБ1тВb9Z- В-Y0? т0c9-0Ае теZт!. 1БbБтБ99сёёАaттт0.a9_тетa_?0В.0т_ bY-Xb- ZтY0Zс?_тYX,Zbеa9ZА1X-тZa0Xc!aБ1 Z-ё0т?cbБZ!.1 Вb9АВ0cёБ,В.ёёеa9ВY_т_Вaстa",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Z ё??т.-?YY.1b__-9_Б.0 cYс,т?ёbaБX,Аb--,9Ае0т1Бт,XБ1тВb9Z- В-Y0? т0c9-0Ае теZт!. 1БbБтБ99сёёАaттт0.a9_тетa_?0В.0т_ bY-Xb- ZтY0Zс?_тYX,Zbеa9ZА1X-тZa0Xc!aБ1 Z-ё0т?cbБZ!.1 Вb9АВ0cёБ,В.ёёеa9ВY_т_ВaстaaтсaВ_т_YВ9aеёё.В,Бёc0ВА9bВ 1.!ZБbc?т0ё-Z 1Бa!cX0aZт-X1АZ9aеbZ,XYт_?сZ0YтZ -bX-Yb _т0.В0?_aтет_9a.0тттaАёёс99БтБbБ1 .!тZет еА0-9c0т ?0Y-В -Z9bВт1БX,тБ1т0еА9,--bА,XБabё?т,сYc 0.Б_9-__b1.YY?-.т??ё Z\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_197",
+    "input": "1А9-В.АbАYa9bс0е, В?!А!АZ.,сеX0a_ё?сZ ba,В!.,Бт_Б_Б-!0еАс_bсZ1,ёcтё.? cёеcт0тZ1Б1!с11Z.91т.b!!А9БaАY9- ?0,c-b.1YbX_YZ!b .1АтaБaтёВе?a-YXXZАс_А0 a!ВВАZb_сВ b?1.сВXтВёесcZ-ёАZb! b ,ёттXВab.91сba,!Бтё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1А9-В.АbАYa9bс0е, В?!А!АZ.,сеX0a_ё?сZ ba,В!.,Бт_Б_Б-!0еАс_bсZ1,ёcтё.? cёеcт0тZ1Б1!с11Z.91т.b!!А9БaАY9- ?0,c-b.1YbX_YZ!b .1АтaБaтёВе?a-YXXZАс_А0 a!ВВАZb_сВ b?1.сВXтВёесcZ-ёАZb! b ,ёттXВab.91сba,!БтёётБ!,abс19.baВXттё, b !bZАё-ZcсеёВтXВс.1?b Вс_bZАВВ!a 0А_сАZXXY-a?еВётaБaтА1. b!ZY_XbY1.b-c,0? -9YАaБ9А!!b.т19.Z11с!1Б1Zт0тcеёc ?.ётcё,1Zсb_сАе0!-Б_Б_тБ,.!В,ab Zс?ё_a0Xес,.ZА!А!?В ,е0сb9aYАbА.В-9А1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_198",
+    "input": ".ВZcАcb,!ееВ00aXт--ББZ ,9!?ёcтт9тАтёт?0X-Бт.БтВZА?,тётZВ0БА-bYa__те!?ётc.ac_1Zё0т е-ВXАc !_a,9.  Б0т-тY9!!X_0т!!aXеёb0,Б 1bВ _-ВZ91.!bАX_!0?т1--?т-ёac1е1Б0т!X 1сВ0_т9с т_-,Вb-Yс  YY1ZсБaБZcсБтт!,cZё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .ВZcАcb,!ееВ00aXт--ББZ ,9!?ёcтт9тАтёт?0X-Бт.БтВZА?,тётZВ0БА-bYa__те!?ётc.ac_1Zё0т е-ВXАc !_a,9.  Б0т-тY9!!X_0т!!aXеёb0,Б 1bВ _-ВZ91.!bАX_!0?т1--?т-ёac1е1Б0т!X 1сВ0_т9с т_-,Вb-Yс  YY1ZсБaБZcсБтт!,cZёёZc,!ттБсcZБaБсZ1YY  сY-bВ,-_т с9т_0Вс1 X!т0Б1е1caё-т?--1т?0!_XАb!.19ZВ-_ Вb1 Б,0bёеXa!!т0_X!!9Yт-т0Б  .9,a_! cАXВ-е т0ёZ1_ca.cтё?!ет__aYb-АБ0ВZтёт,?АZВтБ.тБ-X0?тётАт9ттcё?!9, ZББ--тXa00Вее!,bcАcZВ.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_199",
+    "input": "Z?.YАсББВ91!т!тВ,В_Y_Y!АbАБ?XZ0т9еcВ1.cXZсстВ-Y??1_a Y-90т,9.?Ybё ?ААab! -caY_c тВе,тВ9 9cБ90т_Б-.ёВс,a_.тY ?тY-те0bс-1Z?b?00 9Всb1ёbaт,aт!ВY!,_еYБ0,т.ZYт1тaXcсZ,?a9ZАБac_  ?БАYтY-?!!Yст?,bY?!е,Xbс1b",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Z?.YАсББВ91!т!тВ,В_Y_Y!АbАБ?XZ0т9еcВ1.cXZсстВ-Y??1_a Y-90т,9.?Ybё ?ААab! -caY_c тВе,тВ9 9cБ90т_Б-.ёВс,a_.тY ?тY-те0bс-1Z?b?00 9Всb1ёbaт,aт!ВY!,_еYБ0,т.ZYт1тaXcсZ,?a9ZАБac_  ?БАYтY-?!!Yст?,bY?!е,Xbс1bb1сbX,е!?Yb,?тсY!!?-YтYАБ?  _caБАZ9a?,ZсcXaт1тYZ.т,0БYе_,!YВ!тa,тabё1bсВ9 00?b?Z1-сb0ет-Yт? Yт._a,сВё.-Б_т09Бc9 9Вт,еВт c_Yac- !baАА? ёbY?.9,т09-Y a_1??Y-ВтссZXc.1Вcе9т0ZX?БАbА!Y_Y_В,Вт!т!19ВББсАY.?Z\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_200",
+    "input": "1Y?т!ZБ ёbbcY9Б1ZБВcАБ?1!_bё1.ВАт0?!Б?Yт_еcccББ,,0!с -е-тZеВ? .Z сZ YYc!cВАb9_??ёcbYё_? Z.0ёе 1А1-,Ycе.тёБ_В.cБX?baZ--.ет1с9a._ ёА.тXсZY1bbbВ ё?0c!А1.етБb!Z,ееБ1.9cXcе 1В,с.1ё!,1aе 9сеБ !XёВ99,b.ё9.В,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1Y?т!ZБ ёbbcY9Б1ZБВcАБ?1!_bё1.ВАт0?!Б?Yт_еcccББ,,0!с -е-тZеВ? .Z сZ YYc!cВАb9_??ёcbYё_? Z.0ёе 1А1-,Ycе.тёБ_В.cБX?baZ--.ет1с9a._ ёА.тXсZY1bbbВ ё?0c!А1.етБb!Z,ееБ1.9cXcе 1В,с.1ё!,1aе 9сеБ !XёВ99,b.ё9.В,,В.9ё.b,99ВёX! Бес9 еa1,!ё1.с,В1 еcXc9.1Бее,Z!bБте.1А!c0?ё Вbbb1YZсXт.Аё _.a9с1те.--Zab?XБc.В_Бёт.еcY,-1А1 её0.Z ?_ёYbcё??_9bАВc!cYY Zс Z. ?ВеZт-е- с!0,,ББcccе_тY?Б!?0тАВ.1ёb_!1?БАcВБZ1Б9Ycbbё БZ!т?Y1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_201",
+    "input": "?её,!c Xbтaёеbт1 ,c,?b0ВеАБ_aтт9т-00.Б .,сс,0т c0 ,!Zc !,.X?сВ990cb--,Б9 Y_с0cт1ст-!b_!aa_Y?.тт.Z.тaabcВ!b?1.,ёZ1ВaYВ?ВXY .е ВX?Ас?!ё! cтт0aтXaYе9Zb1!0т-9a т1ё9?b!ВY0_cYYтсX0XZ т_-,БВY.aсcВZYВ!. Y,_Вёc",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?её,!c Xbтaёеbт1 ,c,?b0ВеАБ_aтт9т-00.Б .,сс,0т c0 ,!Zc !,.X?сВ990cb--,Б9 Y_с0cт1ст-!b_!aa_Y?.тт.Z.тaabcВ!b?1.,ёZ1ВaYВ?ВXY .е ВX?Ас?!ё! cтт0aтXaYе9Zb1!0т-9a т1ё9?b!ВY0_cYYтсX0XZ т_-,БВY.aсcВZYВ!. Y,_ВёccёВ_,Y .!ВYZВcсa.YВБ,-_т ZX0XстYYc_0YВ!b?9ё1т a9-т0!1bZ9еYaXтa0ттc !ё!?сА?XВ е. YXВ?ВYaВ1Zё,.1?b!Вcbaaт.Z.тт.?Y_aa!_b!-тс1тc0с_Y 9Б,--bc099Вс?X.,! cZ!, 0c т0,сс,. Б.00-т9ттa_БАеВ0b?,c, 1тbеёaтbX c!,ёе?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_202",
+    "input": "b1еАВ_ВАXБYБ1cc.,Yтт c_cY_ет?.-.АеВВ0,еZ-b_0,0cтёт-XтсZБ?cYё9 .сX0bтттX0.cXсab.,b,b9?_.9ё АX.ёБе?aa?9ВАт_,с.bтacВ1aa1!Ycbее.10Б.-_ё0_a. с1? ..XАcYc?0.т0_.ёВ _е.c.Ас9Y-ББАbс?Zc9,-aZс_c?__АВБт!В1.тБ.X Z-1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: b1еАВ_ВАXБYБ1cc.,Yтт c_cY_ет?.-.АеВВ0,еZ-b_0,0cтёт-XтсZБ?cYё9 .сX0bтттX0.cXсab.,b,b9?_.9ё АX.ёБе?aa?9ВАт_,с.bтacВ1aa1!Ycbее.10Б.-_ё0_a. с1? ..XАcYc?0.т0_.ёВ _е.c.Ас9Y-ББАbс?Zc9,-aZс_c?__АВБт!В1.тБ.X Z-11-Z X.Бт.1В!тБВА__?c_сZa-,9cZ?сbАББ-Y9сА.c.е_ Вё._0т.0?cYcАX.. ?1с .a_0ё_-.Б01.ееbcY!1aa1Вcaтb.с,_тАВ9?aa?еБё.XА ё9._?9b,b,.baсXc.0Xтттb0Xс. 9ёYc?БZстX-тётc0,0_b-Zе,0ВВеА.-.?те_Yc_c ттY,.cc1БYБXАВ_ВАе1b\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_203",
+    "input": "09 ББ1c,т1YZbc !?1bВтБтс,Yс1ВеБ11?тт .0В0XZА!.ё-a1ёёba9ёa 1aёXВесcА9ZВa1с_тё.е!еbВ?тВВ9Xт0X?,,0c _?_!т1?0 АY_c,ёБт.cZсc.0ccА_?cZ0-ееАY!11,bё0!b?abXaе!_--bc YВё ёт1-?,В,! _Ya,ААZ.XБт0еXтaX!ZтZ1А-е0X_се_А ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 09 ББ1c,т1YZbc !?1bВтБтс,Yс1ВеБ11?тт .0В0XZА!.ё-a1ёёba9ёa 1aёXВесcА9ZВa1с_тё.е!еbВ?тВВ9Xт0X?,,0c _?_!т1?0 АY_c,ёБт.cZсc.0ccА_?cZ0-ееАY!11,bё0!b?abXaе!_--bc YВё ёт1-?,В,! _Ya,ААZ.XБт0еXтaX!ZтZ1А-е0X_се_А  А_ес_X0е-А1ZтZ!XaтXе0тБX.ZАА,aY_ !,В,?-1тё ёВY cb--_!еaXba?b!0ёb,11!YАее-0Zc?_Аcc0.cсZc.тБё,c_YА 0?1т!_?_ c0,,?X0тX9ВВт?Вbе!е.ёт_с1aВZ9АcсеВXёa1 aё9abёё1a-ё.!АZX0В0. тт?11БеВ1сY,стБтВb1?! cbZY1т,c1ББ 90\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_204",
+    "input": "ёYYёВВ_е0Б09_Y,,.тт1тXтА?тX .0т1!0-a 9с9b-- 9c0.-_т X1Y-ac.ВZ,9Z1cБ-те0Б_.a?тac?9_0еY9 0!Ybёb-bY? ?a_-ётт ?!9Втт_тX!-ёёБттВ-.-Вc0cст, a-1ZА1X_еb е?X_?a ё1!?Y!Б!1Б -b9cст19c11bZ,?_етcе1БYт-9Yс9a.,,, ?еYА!Б",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ёYYёВВ_е0Б09_Y,,.тт1тXтА?тX .0т1!0-a 9с9b-- 9c0.-_т X1Y-ac.ВZ,9Z1cБ-те0Б_.a?тac?9_0еY9 0!Ybёb-bY? ?a_-ётт ?!9Втт_тX!-ёёБттВ-.-Вc0cст, a-1ZА1X_еb е?X_?a ё1!?Y!Б!1Б -b9cст19c11bZ,?_етcе1БYт-9Yс9a.,,, ?еYА!ББ!АYе? ,,,.a9сY9-тYБ1еcте_?,Zb11c91тсc9b- Б1!Б!Y?!1ё a?_X?е bе_X1АZ1-a ,тсc0cВ-.-ВттБёё-!Xт_ттВ9!? ттё-_a? ?Yb-bёbY!0 9Yе0_9?caт?a._Б0ет-Бc1Z9,ZВ.ca-Y1X т_-.0c9 --b9с9 a-0!1т0. Xт?АтXт1тт.,,Y_90Б0е_ВВёYYё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_205",
+    "input": "9,_c?сa9.,-,А?ё- ёcёёbАbВ YБ!?_т99X,Y?_Xa_,_9 9!тXВе,YВ.с.ё..a.?XеaZтс!aYВZ-?_ААттБbт,,X-е?bеaВ0Ве-_В,-- т9bZеБте9,X е9ZётaВтсbYеБс!.Z-ББc? ,ZБВтВXaтВbА1 Z-XXе,еYВ!?Xaa0е-. ! ст9т.е?.с-тZ?еba0тё.т.bёсZ.-А0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9,_c?сa9.,-,А?ё- ёcёёbАbВ YБ!?_т99X,Y?_Xa_,_9 9!тXВе,YВ.с.ё..a.?XеaZтс!aYВZ-?_ААттБbт,,X-е?bеaВ0Ве-_В,-- т9bZеБте9,X е9ZётaВтсbYеБс!.Z-ББc? ,ZБВтВXaтВbА1 Z-XXе,еYВ!?Xaa0е-. ! ст9т.е?.с-тZ?еba0тё.т.bёсZ.-А00А-.Zсёb.т.ёт0abе?Zт-с.?е.т9тс ! .-е0aaX?!ВYе,еXX-Z 1АbВтaXВтВБZ, ?cББ-Z.!сБеYbстВaтёZ9е X,9етБеZb9т --,В_-еВ0Вaеb?е-X,,тbБттАА_?-ZВYa!стZaеX?.a..ё.с.ВY,еВXт!9 9_,_aX_?Y,X99т_?!БY ВbАbёёcё -ё?А,-,.9aс?c_,9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_206",
+    "input": "c19.,АеZА91bYА!т9Б.19т0Z9ё9 b9,?c1А!.0Бс.0!aт!А00В_bВa1.?ее_aт-АXё тcВ_aY _cZ0_0Y9X0А_cтеБY.А?1cА,ётb?Вёт .b,.е.ZXс.X1ZY, a.bБАYсёY-тZВabXb1А.c! ,!Yт_11.Бет_a?ст1!!?X99сВтYАYZ1А?cттYт0!е?Yacё_1е10cZcеXY?ёст",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: c19.,АеZА91bYА!т9Б.19т0Z9ё9 b9,?c1А!.0Бс.0!aт!А00В_bВa1.?ее_aт-АXё тcВ_aY _cZ0_0Y9X0А_cтеБY.А?1cА,ётb?Вёт .b,.е.ZXс.X1ZY, a.bБАYсёY-тZВabXb1А.c! ,!Yт_11.Бет_a?ст1!!?X99сВтYАYZ1А?cттYт0!е?Yacё_1е10cZcеXY?ёсттсё?YXеcZc01е1_ёcaY?е!0тYттc?А1ZYАYтВс99X?!!1тс?a_теБ.11_тY!, !c.А1bXbaВZт-YёсYАБb.a ,YZ1X.сXZ.е.,b. тёВ?bтё,Аc1?А.YБетc_А0X9Y0_0Zc_ Ya_Вcт ёXА-тa_ее?.1aВb_В00А!тa!0.сБ0.!А1c?,9b 9ё9Z0т91.Б9т!АYb19АZеА,.91c\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_207",
+    "input": "bс9Z1Z!1  1?_ссеё?9?aсА!т0!,ёттВтbте!В ,ёbёacX-.т.ёcbАБXa,ZY- Бbе,c!1тb cс А?ё1Z-9!0 c1А_Xa1.9Yёт!сZеbYВеттБ1те, 90ё00-ёa9aе-bтY_a1В_10Y-ст!a ? тbБ9,?ёт0c1ё0Zb_Б!9Z!,0Z.-В9Xт.ё1!9тcсАт,!0!с!БXXсY-0В?1ВБ0.?!0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: bс9Z1Z!1  1?_ссеё?9?aсА!т0!,ёттВтbте!В ,ёbёacX-.т.ёcbАБXa,ZY- Бbе,c!1тb cс А?ё1Z-9!0 c1А_Xa1.9Yёт!сZеbYВеттБ1те, 90ё00-ёa9aе-bтY_a1В_10Y-ст!a ? тbБ9,?ёт0c1ё0Zb_Б!9Z!,0Z.-В9Xт.ё1!9тcсАт,!0!с!БXXсY-0В?1ВБ0.?!00!?.0БВ1?В0-YсXXБ!с!0!,тАсcт9!1ё.тX9В-.Z0,!Z9!Б_bZ0ё1c0тё?,9Бbт ? a!тс-Y01_В1a_Yтb-еa9aё-00ё09 ,ет1БттеВYbеZс!тёY9.1aX_А1c 0!9-Z1ё?А сc bт1!c,еbБ -YZ,aXБАbcё.т.-Xcaёbё, В!етbтВттё,!0т!Асa?9?ёесс_?1  1!Z1Z9сb\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_208",
+    "input": "Асе?АБ_Аc?__XXaXё-Бb9т0YсaXZcБ _0!Вт?её-еёс!0сY1c?тa1тX_ZYX9.!ёё.с--_АZb0,е!9 Z0aёa,,Z9Z, т?тВт9-.АВZБ?Z_Аcb Вст,9Аc!сYY,a!?ёc!XaА1bВ9Б?c_aсеZ1тaБ.X-1Yaё1,т1сbbYеАё10А0ёте??-тaБА,!ё-ё_,1Y-Z .еb 1Yе0,cт?её0c.,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Асе?АБ_Аc?__XXaXё-Бb9т0YсaXZcБ _0!Вт?её-еёс!0сY1c?тa1тX_ZYX9.!ёё.с--_АZb0,е!9 Z0aёa,,Z9Z, т?тВт9-.АВZБ?Z_Аcb Вст,9Аc!сYY,a!?ёc!XaА1bВ9Б?c_aсеZ1тaБ.X-1Yaё1,т1сbbYеАё10А0ёте??-тaБА,!ё-ё_,1Y-Z .еb 1Yе0,cт?её0c.,,.c0ёе?тc,0еY1 bе. Z-Y1,_ё-ё!,АБaт-??етё0А01ёАеYbbс1т,1ёaY1-X.Бaт1Zесa_c?Б9Вb1АaX!cё?!a,YYс!cА9,тсВ bcА_Z?БZВА.-9тВт?т ,Z9Z,,aёa0Z 9!е,0bZА_--с.ёё!.9XYZ_Xт1aт?c1Yс0!сёе-ёе?тВ!0_ БcZXaсY0т9bБ-ёXaXX__?cА_БА?есА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_209",
+    "input": "Ассс! 0bВbАa1,Zbт1.Вb?YX.БтАa9!етА1ёYёт!XБY_1.1!bАВтZXеZ.--90YёYbb,YaYXВАY?тb?,bbАYВ-.?_c?Асс,Аеcт9с9! тc19с,-1!еZВВZтт,,,!т-YZXZ-Za1,Yт0.??9тА9Ат9a?_ В  aaттА.b_c,ВеВ1сетYX_._0aaБтYВстт..Б?тa,ёa0aX_?т9т9.c09Z",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Ассс! 0bВbАa1,Zbт1.Вb?YX.БтАa9!етА1ёYёт!XБY_1.1!bАВтZXеZ.--90YёYbb,YaYXВАY?тb?,bbАYВ-.?_c?Асс,Аеcт9с9! тc19с,-1!еZВВZтт,,,!т-YZXZ-Za1,Yт0.??9тА9Ат9a?_ В  aaттА.b_c,ВеВ1сетYX_._0aaБтYВстт..Б?тa,ёa0aX_?т9т9.c09ZZ90c.9т9т?_Xa0aё,aт?Б..ттсВYтБaa0_._XYтес1ВеВ,c_b.Аттaa  В _?a9тА9Ат9??.0тY,1aZ-ZXZY-т!,,,ттZВВZе!1-,с91cт !9с9тcеА,ссА?c_?.-ВYАbb,?bт?YАВXYaY,bbYёY09--.ZеXZтВАb!1.1_YБX!тёYё1Ате!9aАтБ.XY?bВ.1тbZ,1aАbВb0 !сссА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_210",
+    "input": "БcX.Y__.Y X0ёБc9?Z1ёт..-a!ёВZ0-АZ?YББтБb?Yт_1!1т?ёZ,_Z!?!В т1тaё!сёёёё?т9!ёcБZZАес-!сcY-В, Аb1   0.-В-с-В!ZYY!b..ё?ё9a,.?!тАёZБВ1-еВе,е_ё1?0!т0ВА1сёc-ттВте-е! Б!т_ёетБАсе!ттсc__1стc--?. bе!-ст,!БАесе9XaАaXтт90ё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БcX.Y__.Y X0ёБc9?Z1ёт..-a!ёВZ0-АZ?YББтБb?Yт_1!1т?ёZ,_Z!?!В т1тaё!сёёёё?т9!ёcБZZАес-!сcY-В, Аb1   0.-В-с-В!ZYY!b..ё?ё9a,.?!тАёZБВ1-еВе,е_ё1?0!т0ВА1сёc-ттВте-е! Б!т_ёетБАсе!ттсc__1стc--?. bе!-ст,!БАесе9XaАaXтт90ёё09ттXaАaX9есеАБ!,тс-!еb .?--cтс1__cстт!есАБтеё_т!Б !е-етВтт-cёс1АВ0т!0?1ё_е,еВе-1ВБZёАт!?.,a9ё?ё..b!YYZ!В-с-В-.0   1bА ,В-Ycс!-сеАZZБcё!9т?ёёёёс!ёaт1т В!?!Z_,Zё?т1!1_тY?bБтББY?ZА-0ZВё!a-..тё1Z?9cБё0X Y.__Y.XcБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_211",
+    "input": "X!тbБZ9!?А?В_cе9bВБт?YтZе.91,БX?Yт!АА ??9АА т-Аее!?0А,9ёbZZ1Б?ВYZYZВ?ес9-Y._ В,е.е1 9с_b ё0_-_тсa.90_-ВXёБ тX9ВтYXёaY0 т9Z_БА9c X?XБ_ВВ.,??Вc,aт!,.c0те!ёеВYcXbтВсётa1Бb1,,В119?-0.b YсYёт.-X0Ат9,т?,_т.тcВaXА9ccт-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: X!тbБZ9!?А?В_cе9bВБт?YтZе.91,БX?Yт!АА ??9АА т-Аее!?0А,9ёbZZ1Б?ВYZYZВ?ес9-Y._ В,е.е1 9с_b ё0_-_тсa.90_-ВXёБ тX9ВтYXёaY0 т9Z_БА9c X?XБ_ВВ.,??Вc,aт!,.c0те!ёеВYcXbтВсётa1Бb1,,В119?-0.b YсYёт.-X0Ат9,т?,_т.тcВaXА9ccт--тcc9АXaВcт.т_,?т,9тА0X-.тёYсY b.0-?911В,,1bБ1aтёсВтbXcYВеё!ет0c.,!тa,cВ??,.ВВ_БX?X c9АБ_Z9т 0YaёXYтВ9Xт БёXВ-_09.aст_-_0ё b_с9 1е.е,В _.Y-9се?ВZYZYВ?Б1ZZbё9,А0?!ееА-т АА9?? АА!тY?XБ,19.еZтY?тБВb9еc_В?А?!9ZБbт!X\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_212",
+    "input": "?c-АX!т1ёabсАaВБттaт_a9b?Бс!bZ91е.9В!a-1етY__cc.09b1еА,Б,еb1еYXВ1Y,ZbZ-b a_Z9!?!АY т_Ае9Y?А.Аa ,XтсАБ 901.Y!стYБ!тВт9YтcАБ.1Z1еАXетacА1.-,1тВеY-БББ?_bZБ_1сВ!А1Yb- !!Z9Z_cеXеВА1XБ!?9Zе0caт.bZ__т?_т  19YАБ-В_,,ёX ё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?c-АX!т1ёabсАaВБттaт_a9b?Бс!bZ91е.9В!a-1етY__cc.09b1еА,Б,еb1еYXВ1Y,ZbZ-b a_Z9!?!АY т_Ае9Y?А.Аa ,XтсАБ 901.Y!стYБ!тВт9YтcАБ.1Z1еАXетacА1.-,1тВеY-БББ?_bZБ_1сВ!А1Yb- !!Z9Z_cеXеВА1XБ!?9Zе0caт.bZ__т?_т  19YАБ-В_,,ёX ёё Xё,,_В-БАY91  т_?т__Zb.тac0еZ9?!БX1АВеXеc_Z9Z!! -bY1А!Вс1_БZb_?БББ-YеВт1,-.1АcaтеXАе1Z1.БАcтY9тВт!БYтс!Y.109 БАстX, aА.А?Y9еА_т YА!?!9Z_a b-ZbZ,Y1ВXYе1bе,Б,Ае1b90.cc__Yте1-a!В9.е19Zb!сБ?b9a_тaттБВaАсbaё1т!XА-c?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_213",
+    "input": " ,bbc,XXББY!Z!,0А91,_.е,!-ттZеБ!aaё!0, Z?есZ0АZсYcbтaт!АВXБY- сВтё1,Z?b еX,bё 1Б?ттс1,есееБ!!?.ZАВе1тс_.тZacсb1ёY bтX0.сX-1БтА_!b,ттс,bY _,b?XБ_Xес1т .-9В_?9,_тYbёеZтёеZт?ёВ.ттАёё.т? aZ.bcВё!09. Б0_91.Yё-0cZВеba.c",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  ,bbc,XXББY!Z!,0А91,_.е,!-ттZеБ!aaё!0, Z?есZ0АZсYcbтaт!АВXБY- сВтё1,Z?b еX,bё 1Б?ттс1,есееБ!!?.ZАВе1тс_.тZacсb1ёY bтX0.сX-1БтА_!b,ттс,bY _,b?XБ_Xес1т .-9В_?9,_тYbёеZтёеZт?ёВ.ттАёё.т? aZ.bcВё!09. Б0_91.Yё-0cZВеba.cc.abеВZc0-ёY.19_0Б .90!ёВcb.Za ?т.ёёАтт.Вё?тZеётZеёbYт_,9?_В9-. т1сеX_БX?b,_ Yb,стт,b!_АтБ1-Xс.0Xтb Yё1bсcaZт._ст1еВАZ.?!!Беесе,1стт?Б1 ёb,Xе b?Z,1ётВс -YБXВА!тaтbcYсZА0Zсе?Z ,0!ёaa!БеZтт-!,е._,19А0,!Z!YББXX,cbb, \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_214",
+    "input": "0?е-_abXZaАс.сёYА,Ат9a,,X-1В._ !ё0,b -Аст.9се,,-a-Б0тс,1 АZX!YетА_0ёYВcсYZaс10тZт?,еXАY!9ZБ-aБ.В0X.сБ9XёБ1a  9bт?YbБc,!XYcXтёт_aZ1Y,сБc1.!ееXе?.aё_ё1b -!с.cБc-Y, ,ВёА9YaеZZ19.?0aYZ! сВ.ст0!-БсY-еa Xaс_9cБaАёёZZ-XY1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0?е-_abXZaАс.сёYА,Ат9a,,X-1В._ !ё0,b -Аст.9се,,-a-Б0тс,1 АZX!YетА_0ёYВcсYZaс10тZт?,еXАY!9ZБ-aБ.В0X.сБ9XёБ1a  9bт?YbБc,!XYcXтёт_aZ1Y,сБc1.!ееXе?.aё_ё1b -!с.cБc-Y, ,ВёА9YaеZZ19.?0aYZ! сВ.ст0!-БсY-еa Xaс_9cБaАёёZZ-XY11YX-ZZёёАaБc9_сaX aе-YсБ-!0тс.Вс !ZYa0?.91ZZеaY9АёВ, ,Y-cБc.с!- b1ё_ёa.?еXее!.1cБс,Y1Za_тётXcYX!,cБbY?тb9  a1БёX9Бс.X0В.Бa-БZ9!YАXе,?тZт01сaZYсcВYё0_АтеY!XZА 1,ст0Б-a-,,ес9.тсА- b,0ё! _.В1-X,,a9тА,АYёс.сАaZXba_-е?0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_215",
+    "input": "-е.т0?т-!тcc_bcX.!АX,е_тZbт_9.,ВZ1Yт!т-9!0bcbе-АтYYё0Z!1bт!Z ,!ВеАc тcВёВ?.XётВ.стВ_,-,тт?!БеX.ВZсВ0a9тbВZсёБ,Б т-!Ат?a?1XВё.Бa0т9АbZтеYВе?c._ё тYт,?т9ВВX9_aе,,0, БсБАБ е!т,т9X!cБтАё т9-еcaсYс091Y0АттX!е?19ААёБbБ1ёт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -е.т0?т-!тcc_bcX.!АX,е_тZbт_9.,ВZ1Yт!т-9!0bcbе-АтYYё0Z!1bт!Z ,!ВеАc тcВёВ?.XётВ.стВ_,-,тт?!БеX.ВZсВ0a9тbВZсёБ,Б т-!Ат?a?1XВё.Бa0т9АbZтеYВе?c._ё тYт,?т9ВВX9_aе,,0, БсБАБ е!т,т9X!cБтАё т9-еcaсYс091Y0АттX!е?19ААёБbБ1ёттё1БbБёАА91?е!XттА0Y190сYсacе-9т ёАтБc!X9т,т!е БАБсБ ,0,,еa_9XВВ9т?,тYт ё_.c?еВYетZbА9т0aБ.ёВX1?a?тА!-т Б,БёсZВbт9a0ВсZВ.XеБ!?тт,-,_Втс.ВтёX.?ВёВcт cАеВ!, Z!тb1!Z0ёYYтА-еbcb0!9-т!тY1ZВ,.9_тbZт_е,XА!.Xcb_ccт!-т?0т.е-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_216",
+    "input": "YY-b-00Xте_,-В0Y,сс0.ВbX0с--9aёВ1 ZY0Zёетaё-есXс??-т-1,.? -ётYсБёе_b!ёёY! еZ_еX1 0Zё,_1.А9ёaВbт_- bеaБтa. т c, .011b-,0bБbc0aАБ?ZZY99А_Y XАa0aсеБ!Yёс_еёс1ёВX_сX,a- .0ZАbтb!- ., ??XY9aтБ?a0,Y! XbВ,!ААYbZa_АА _Xт_c,1с-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: YY-b-00Xте_,-В0Y,сс0.ВbX0с--9aёВ1 ZY0Zёетaё-есXс??-т-1,.? -ётYсБёе_b!ёёY! еZ_еX1 0Zё,_1.А9ёaВbт_- bеaБтa. т c, .011b-,0bБbc0aАБ?ZZY99А_Y XАa0aсеБ!Yёс_еёс1ёВX_сX,a- .0ZАbтb!- ., ??XY9aтБ?a0,Y! XbВ,!ААYbZa_АА _Xт_c,1с--с1,c_тX_ АА_aZbYАА!,ВbX !Y,0a?Бтa9YX?? ,. -!bтbАZ0. -a,Xс_XВё1сёе_сёY!Бесa0aАX Y_А99YZZ?БАa0cbБb0,-b110. ,c т .aтБaеb -_тbВaё9А.1_,ёZ0 1Xе_Zе !Yёё!b_еёБсYтё- ?.,1-т-??сXсе-ёaтеёZ0YZ 1Вёa9--с0XbВ.0сс,Y0В-,_етX00-b-YY\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_217",
+    "input": ".Б е,тY-.1!a?9-В.1ё_ттXXтb9 1,АcеБ.т?А0Z1с9. тbё!тттст,теacёБ0X,,0 1!Zс0aYеX_?тbёВА!тYсВБb0 ?cВ?0ёе,ААX01!тА9XБАbc9тbb_е0сZ?X?X!_!bcZАZ-Xтb!,aе.b1,,9сёbБ-ВcАтеXa0БYеZ.Y,1,-bеc1ёaВ1ё0_?с0.В,еXАБaс?ZYYБ1?!,АY19!Y0?!b0В,",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .Б е,тY-.1!a?9-В.1ё_ттXXтb9 1,АcеБ.т?А0Z1с9. тbё!тттст,теacёБ0X,,0 1!Zс0aYеX_?тbёВА!тYсВБb0 ?cВ?0ёе,ААX01!тА9XБАbc9тbb_е0сZ?X?X!_!bcZАZ-Xтb!,aе.b1,,9сёbБ-ВcАтеXa0БYеZ.Y,1,-bеc1ёaВ1ё0_?с0.В,еXАБaс?ZYYБ1?!,АY19!Y0?!b0В,,В0b!?0Y!91YА,!?1БYYZ?сaБАXе,В.0с?_0ё1Вaё1cеb-,1,Y.ZеYБ0aXетАcВ-Бbёс9,,1b.еa,!bтX-ZАZcb!_!X?X?Zс0е_bbт9cbАБX9Ат!10XАА,её0?Вc? 0bБВсYт!АВёbт?_XеYa0сZ!1 0,,X0Бёcaет,тсттт!ёbт .9с1Z0А?т.БеcА,1 9bтXXтт_ё1.В-9?a!1.-Yт,е Б.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_218",
+    "input": "?aтX?е?е9Za10_1В!XZ91cБАе?с-тт9еYaВсZY,БсБ !т?cтАсb-Zb-е?b_0ZZZY,В!!-X?-Zbт с!тВБт_bтZВ?с Z 1__В,-a___Z с9 ееА!,Z0_ёca  -0 -ёеYс1cеbё9!aт9тс,т!Zесaт 0,cА-a-,0Xт,-, 1_-Б0bcтaacт9_сaт -ZБcБ_-ZВY !.1Y!?ab_-Yab В9т. ёсВс-В",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?aтX?е?е9Za10_1В!XZ91cБАе?с-тт9еYaВсZY,БсБ !т?cтАсb-Zb-е?b_0ZZZY,В!!-X?-Zbт с!тВБт_bтZВ?с Z 1__В,-a___Z с9 ееА!,Z0_ёca  -0 -ёеYс1cеbё9!aт9тс,т!Zесaт 0,cА-a-,0Xт,-, 1_-Б0bcтaacт9_сaт -ZБcБ_-ZВY !.1Y!?ab_-Yab В9т. ёсВс-ВВ-сВсё .т9В baY-_ba?!Y1.! YВZ-_БcБZ- тaс_9тcaaтcb0Б-_1 ,-,тX0,-a-Аc,0 тaсеZ!т,ст9тa!9ёbеc1сYеё- 0-  acё_0Z,!Аее 9с Z___a-,В__1 Z с?ВZтb_тБВт!с тbZ-?X-!!В,YZZZ0_b?е-bZ-bсАтc?т! БсБ,YZсВaYе9тт-с?еАБc19ZX!В1_01aZ9е?е?Xтa?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_219",
+    "input": "БcВXБ1YтБ-тёБ0XaZcВ_ттАтБсa?_Zc-с9 -В0Вс91,ВВ9c.ёX тYё её9е-Бт?,.bё.,9Xес !.ёcYёb,cс!?!!ZтYе9еА0т!Za9?.,Ya Б!aВАВ,еZ!А.._?Бcё_?9еc1?9Б,с0А?тА-В9X0БтБa XYb9-9cе!0.-1bcёт,?БYтёcb1 !Б,Y-АБ_9сc е01Аеc!е !ттZ1_А?т.1?Xb. 9ё0.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БcВXБ1YтБ-тёБ0XaZcВ_ттАтБсa?_Zc-с9 -В0Вс91,ВВ9c.ёX тYё её9е-Бт?,.bё.,9Xес !.ёcYёb,cс!?!!ZтYе9еА0т!Za9?.,Ya Б!aВАВ,еZ!А.._?Бcё_?9еc1?9Б,с0А?тА-В9X0БтБa XYb9-9cе!0.-1bcёт,?БYтёcb1 !Б,Y-АБ_9сc е01Аеc!е !ттZ1_А?т.1?Xb. 9ё0..0ё9 .bX?1.т?А_1Zтт! е!cеА10е cс9_БА-Y,Б! 1bcётYБ?,тёcb1-.0!еc9-9bYX aБтБ0X9В-Ат?А0с,Б9?1cе9?_ёcБ?_..А!Zе,ВАВa!Б aY,.?9aZ!т0Ае9еYтZ!!?!сc,bёYcё.! сеX9,.ёb.,?тБ-е9ёе ёYт Xё.c9ВВ,19сВ0В- 9с-cZ_?aсБтАтт_ВcZaX0Бёт-БтY1БXВcБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_220",
+    "input": ".c?БсБеА9X 0_ А .ёее1т?Xс!?сZ0Бcт-Yт Б1 0b.0 !YБ9? с!!тZbА?В?.с,ё-В0Y-ё.Z0c!А?А-_-еY.0bтcbА!т?с!bтa0_тё1Xc -БXтZАе9!._сс!019с.ВтАтБX9ZБ9cс!Вт-,ё9сZ, b_ Yc0!А-ё!ВБ!XБY1!тБ?А91bbё1ёБтbё9-aВ,стеА1АБZb0Б!c-_Б1YеX АXА!.9т 1т.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: .c?БсБеА9X 0_ А .ёее1т?Xс!?сZ0Бcт-Yт Б1 0b.0 !YБ9? с!!тZbА?В?.с,ё-В0Y-ё.Z0c!А?А-_-еY.0bтcbА!т?с!bтa0_тё1Xc -БXтZАе9!._сс!019с.ВтАтБX9ZБ9cс!Вт-,ё9сZ, b_ Yc0!А-ё!ВБ!XБY1!тБ?А91bbё1ёБтbё9-aВ,стеА1АБZb0Б!c-_Б1YеX АXА!.9т 1т..т1 т9.!АXА XеY1Б_-c!Б0bZБА1Аетс,Вa-9ёbтБё1ёbb19А?Бт!1YБX!БВ!ё-А!0cY _b ,Zс9ё,-тВ!сc9БZ9XБтАтВ.с910!сс_.!9еАZтXБ- cX1ёт_0aтb!с?т!Аbcтb0.Yе-_-А?А!c0Z.ё-Y0В-ё,с.?В?АbZт!!с ?9БY! 0.b0 1Б тY-тcБ0Zс?!сX?т1ееё. А _0 X9АеБсБ?c.\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_221",
+    "input": "Y cтZaт!__ b-е??Zb0т1тY.Xте!_-.1,bе .0В,X0!0Z-ZZ-сётXёbт_ Z-_Z!етcXВb -еВ?? А 9ёZе,Б.9ac.??,_ттbbт..Yеcе-ет.В,bАZё!9БтАеАcВ.11 тa11aZc9Бт_a1a!ё0А?.,X9_1Zb,_-cёb? ca .9т90,-cБ_БАе!aБ-1b,сaВ_Бbт9bё9?a1е9сcbZY!Xе0Z?a_cстВ-cс",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Y cтZaт!__ b-е??Zb0т1тY.Xте!_-.1,bе .0В,X0!0Z-ZZ-сётXёbт_ Z-_Z!етcXВb -еВ?? А 9ёZе,Б.9ac.??,_ттbbт..Yеcе-ет.В,bАZё!9БтАеАcВ.11 тa11aZc9Бт_a1a!ё0А?.,X9_1Zb,_-cёb? ca .9т90,-cБ_БАе!aБ-1b,сaВ_Бbт9bё9?a1е9сcbZY!Xе0Z?a_cстВ-cссc-Втсc_a?Z0еX!YZbcс9е1a?9ёb9тbБ_Вaс,b1-Бa!еАБ_Бc-,09т9. ac ?bёc-_,bZ1_9X,.?А0ё!a1a_тБ9cZa11aт 11.ВcАеАтБ9!ёZАb,В.те-еcеY..тbbтт_,??.ca9.Б,еZё9 А ??Ве- bВXcте!Z_-Z _тbёXтёс-ZZ-Z0!0X,В0. еb,1.-_!етX.Yт1т0bZ??е-b __!тaZтc Y\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_222",
+    "input": "!aXXaё,!АеБ-тБ-..сaX _aеaXеА_!ZXY0ееY,0сё,_-Xc тсёbXYbZ1Z000.1ёс!ё1-.ёБY0Б1ёZе.ZcY91cZcАте?тВZ!.ё101ё 0Вёb?ВБ_т1тВ11ттё_,,тZ0Бa0?.c_ сXБ-9.??е?c9b1c?с1?0 0!1еY1А 1,естXXёт-cccZ,теА!,Бb1сbе!е9тВ?Z._!Y9тБ 9_Б А 00b0т9a._X cё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: !aXXaё,!АеБ-тБ-..сaX _aеaXеА_!ZXY0ееY,0сё,_-Xc тсёbXYbZ1Z000.1ёс!ё1-.ёБY0Б1ёZе.ZcY91cZcАте?тВZ!.ё101ё 0Вёb?ВБ_т1тВ11ттё_,,тZ0Бa0?.c_ сXБ-9.??е?c9b1c?с1?0 0!1еY1А 1,естXXёт-cccZ,теА!,Бb1сbе!е9тВ?Z._!Y9тБ 9_Б А 00b0т9a._X cёёc X_.a9т0b00 А Б_9 Бт9Y!_.Z?Вт9е!еbс1bБ,!Ает,Zccc-тёXXтсе,1 А1Yе1!0 0?1с?c1b9c?е??.9-БXс _c.?0aБ0Zт,,_ётт11Вт1т_БВ?bёВ0 ё101ё.!ZВт?етАcZc19YcZ.еZё1Б0YБё.-1ё!сё1.000Z1ZbYXbёст cX-_,ёс0,Yее0YXZ!_АеXaеa_ Xaс..-Бт-БеА!,ёaXXa!\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_223",
+    "input": "-a,,a? 1XБ ётБ1,Y1Z?Y-ZАВaетт,b0b.е.,е!1?9XАтaX.ВБеё0Z.ё_-X0X,т,Zе?е?БZY,?етёеab1.cБ-ААсaё9Zё1a000ААт.Б!_!_!0,тX9ВZYс,ё9ZZ9сaё19XБ00--т ёеaёс АZ_Xё9БА_Б,?Y-1Бт__X?aАcАе._,b- тaВВ0,Zеc9bБББАБcБ0т.Б a-YbВе,ё!.ВX_9ес1сZa.тБ_е!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: -a,,a? 1XБ ётБ1,Y1Z?Y-ZАВaетт,b0b.е.,е!1?9XАтaX.ВБеё0Z.ё_-X0X,т,Zе?е?БZY,?етёеab1.cБ-ААсaё9Zё1a000ААт.Б!_!_!0,тX9ВZYс,ё9ZZ9сaё19XБ00--т ёеaёс АZ_Xё9БА_Б,?Y-1Бт__X?aАcАе._,b- тaВВ0,Zеc9bБББАБcБ0т.Б a-YbВе,ё!.ВX_9ес1сZa.тБ_е!!е_Бт.aZс1се9_XВ.!ё,еВbY-a Б.т0БcБАБББb9cеZ,0ВВaт -b,_.еАcАa?X__тБ1-Y?,Б_АБ9ёX_ZА сёaеё т--00БX91ёaс9ZZ9ё,сYZВ9Xт,0!_!_!Б.тАА000a1ёZ9ёaсАА-Бc.1baеёте?,YZБ?е?еZ,т,X0X-_ё.Z0ёеБВ.XaтАX9?1!е,.е.b0b,ттеaВАZ-Y?Z1Y,1Бтё БX1 ?a,,a-\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_224",
+    "input": "?.cВZё?.ё_Y.1,Бc9т,Вт1Z0,А9с,1XеёБёеБ?a?---_Xa,?9А__е!Z-еYbё!9 9?090?9БX1.?cс !ё.А т ВX.1YВБZ1БсАXc!! aе_?тb9-0тXт1ccБВеZ?9cZтт_0!стА??YYАZ1В-!В1В1. В9!Б1т_ё,тcе._?bY YБZ?c.еbАт!9YтётbY00Yёc1XZАZ,В9 09-т!.90Y.с,.0-?_т_Z9 _,!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ?.cВZё?.ё_Y.1,Бc9т,Вт1Z0,А9с,1XеёБёеБ?a?---_Xa,?9А__е!Z-еYbё!9 9?090?9БX1.?cс !ё.А т ВX.1YВБZ1БсАXc!! aе_?тb9-0тXт1ccБВеZ?9cZтт_0!стА??YYАZ1В-!В1В1. В9!Б1т_ё,тcе._?bY YБZ?c.еbАт!9YтётbY00Yёc1XZАZ,В9 09-т!.90Y.с,.0-?_т_Z9 _,!!,_ 9Z_т_?-0.,с.Y09.!т-90 9В,ZАZX1cёY00YbтётY9!тАbе.c?ZБY Yb?_.еcт,ё_т1Б!9В .1В1В!-В1ZАYY??Атс!0_ттZc9?ZеВБcc1тXт0-9bт?_еa !!cXАсБ1ZБВY1.XВ т А.ё! сc?.1XБ9?090?9 9!ёbYе-Z!е__А9?,aX_---?a?БеёБёеX1,с9А,0Z1тВ,т9cБ,1.Y_ё.?ёZВc.?\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_225",
+    "input": "X тXс.с, aZс!т.БёZcYbе0b-01-.ZБеYcт0,0с1Z9Аa_Вё?  bеaс Вттеaё.a0-еВ-!ВYтАc0 ZZcБ0 Б1cтВВ 9А9_.- ?т_b9b.b т?- 9c?.,А? тY0190е,Б9ё.стБ00тZе, т1ёАёАXYY1АaсbВ9bВттX?9В9В_9XБс,БтБ?b1А-b!ттbтББ 1сеc.1_АcеБттc900? a,0ёВ!Б cт-А.9 -aZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: X тXс.с, aZс!т.БёZcYbе0b-01-.ZБеYcт0,0с1Z9Аa_Вё?  bеaс Вттеaё.a0-еВ-!ВYтАc0 ZZcБ0 Б1cтВВ 9А9_.- ?т_b9b.b т?- 9c?.,А? тY0190е,Б9ё.стБ00тZе, т1ёАёАXYY1АaсbВ9bВттX?9В9В_9XБс,БтБ?b1А-b!ттbтББ 1сеc.1_АcеБттc900? a,0ёВ!Б cт-А.9 -aZZa- 9.А-тc Б!Вё0,a ?009cттБеcА_1.cес1 ББтbтт!b-А1b?БтБ,сБX9_В9В9?XттВb9ВbсaА1YYXАёАё1т ,еZт00Бтс.ё9Б,е0910Yт ?А,.?c9 -?т b.b9b_т? -._9А9 ВВтc1Б 0БcZZ 0cАтYВ!-Ве-0a.ёaеттВ сaеb  ?ёВ_aА9Z1с0,0тcYеБZ.-10-b0еbYcZёБ.т!сZa ,с.сXт X\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_226",
+    "input": "_?АXZ?X0X9 -aYYт0Б!,0bтсстс1тbтВ1?9Y01с?9b?9aт_!?_,9сВё0 е!  YZZВВ?a_АZт1т.1._X0XА_АБb!А -  9В1,.?aZ1т!В!0!c,-?БтcaА,Б-е1.Ве9тZВ-!ВАтcbZВbеab.aёё1Z-Y0!0Вb Z?ВБcт-?.ВY0, b1т!!ёсте-_?е-?!-,YА_ёZ.тb!ёZт_?ВёБт?тZе.?X1Б,9_X_Xт1?АВё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: _?АXZ?X0X9 -aYYт0Б!,0bтсстс1тbтВ1?9Y01с?9b?9aт_!?_,9сВё0 е!  YZZВВ?a_АZт1т.1._X0XА_АБb!А -  9В1,.?aZ1т!В!0!c,-?БтcaА,Б-е1.Ве9тZВ-!ВАтcbZВbеab.aёё1Z-Y0!0Вb Z?ВБcт-?.ВY0, b1т!!ёсте-_?е-?!-,YА_ёZ.тb!ёZт_?ВёБт?тZе.?X1Б,9_X_Xт1?АВёёВА?1тX_X_9,Б1X?.еZт?тБёВ?_тZё!bт.Zё_АY,-!?-е?_-етсё!!т1b ,0YВ.?-тcБВ?Z bВ0!0Y-Z1ёёa.baеbВZbcтАВ!-ВZт9еВ.1е-Б,АacтБ?-,c!0!В!т1Za?.,1В9  - А!bБА_АX0X_.1.т1тZА_a?ВВZZY  !е 0ёВс9,_?!_тa9?b9?с10Y9?1Втbт1стсстb0,!Б0тYYa- 9X0X?ZXА?_\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_227",
+    "input": "9Бaе.!a,Xa В-Zсс__А-?,ZZе_Y 1тБ1_,ZБa-АВет-abт,АZБ.1-Zст!сZсb_a,сеaтa9aе!.b9тYеАт-БXА_сc0ёАс10!тbВXтА ёXXАё9.ZВ9Zеa!bёА-.сb9Вcе0Веbc,ВёXZ-. aА9XА-aеее Z19 А19.Zё09bYbт.?е1Беa1X1-т__Xёе,т,Аcc?БXYВacт-1ееY.еZ_АБc -е Б0a.XА?b?е9тт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9Бaе.!a,Xa В-Zсс__А-?,ZZе_Y 1тБ1_,ZБa-АВет-abт,АZБ.1-Zст!сZсb_a,сеaтa9aе!.b9тYеАт-БXА_сc0ёАс10!тbВXтА ёXXАё9.ZВ9Zеa!bёА-.сb9Вcе0Веbc,ВёXZ-. aА9XА-aеее Z19 А19.Zё09bYbт.?е1Беa1X1-т__Xёе,т,Аcc?БXYВacт-1ееY.еZ_АБc -е Б0a.XА?b?е9тттт9е?b?АX.a0Б е- cБА_Zе.Yее1-тcaВYXБ?ccА,т,еёX__т-1X1aеБ1е?.тbYb90ёZ.91А 91Z еееa-АX9Аa .-ZXёВ,cbеВ0еcВ9bс.-Аёb!aеZ9ВZ.9ёАXXё АтXВbт!01сАё0cс_АXБ-тАеYт9b.!еa9aтaес,a_bсZс!тсZ-1.БZА,тba-теВА-aБZ,_1Бт1 Y_еZZ,?-А__ссZ-В aX,a!.еaБ9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_228",
+    "input": "тY т0!Z,тте0Y,Yсc!9В.БcБе19.__стВ,Z?!АcеY.тББ!bБВb!еc!bттcY?cе!,Zbе9тАсВXВa_ттaтX.тY0Y1!1т,?b Y?,тb?А!a?,В.сёВБ!.1aстАВВ! Б0ААВ9А.её,YтY-еZbтВ-,0Xс0_YБё-cZ,a,!XВе_!-9.етВт.-,тcсБ??Вcё?Б-Z0_тБaВXВ0ZтZе9 В,Y9Ае-т?еВВВт0?Xсa9-ёc Вт",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тY т0!Z,тте0Y,Yсc!9В.БcБе19.__стВ,Z?!АcеY.тББ!bБВb!еc!bттcY?cе!,Zbе9тАсВXВa_ттaтX.тY0Y1!1т,?b Y?,тb?А!a?,В.сёВБ!.1aстАВВ! Б0ААВ9А.её,YтY-еZbтВ-,0Xс0_YБё-cZ,a,!XВе_!-9.етВт.-,тcсБ??Вcё?Б-Z0_тБaВXВ0ZтZе9 В,Y9Ае-т?еВВВт0?Xсa9-ёc ВттВ cё-9aсX?0тВВВе?т-еА9Y,В 9еZтZ0ВXВaБт_0Z-Б?ёcВ??Бсcт,-.тВте.9-!_еВX!,a,Zc-ёБY_0сX0,-ВтbZе-YтY,ёе.А9ВАА0Б !ВВАтсa1.!БВёс.В,?a!А?bт,?Y b?,т1!1Y0Yт.Xтaтт_aВXВсАт9еbZ,!еc?Ycттb!cе!bВБb!ББт.YеcА!?Z,Втс__.91еБcБ.В9!cсY,Y0етт,Z!0т Yт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_229",
+    "input": "тётАтАе.тXc 9БaсXё0.БА_т0АёАБ еАА!XbАБ9X.__._ёcтYА?ВaсВтc?,cс99Ве1Y?,е-.abсbZБ-c,ZёX?X_Бс,тА-т!XYc,т1те11ётБ_ bВ!.XcXетY_ Z.с9abZ.?сaсВ-b 1_В,с!YZaaZY00XБесcb!те??ВАY9?А_е,сcbе1А т .-с?X?_сАcё,АВXc?cА1Вёётт9?с?,!Б1_ тbc9?1bтВБт-ё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тётАтАе.тXc 9БaсXё0.БА_т0АёАБ еАА!XbАБ9X.__._ёcтYА?ВaсВтc?,cс99Ве1Y?,е-.abсbZБ-c,ZёX?X_Бс,тА-т!XYc,т1те11ётБ_ bВ!.XcXетY_ Z.с9abZ.?сaсВ-b 1_В,с!YZaaZY00XБесcb!те??ВАY9?А_е,сcbе1А т .-с?X?_сАcё,АВXc?cА1Вёётт9?с?,!Б1_ тbc9?1bтВБт-ёё-тБВтb1?9cbт _1Б!,?с?9ттёёВ1Аc?cXВА,ёcАс_?X?с-. т А1еbcс,е_А?9YАВ??ет!bcсеБX00YZaaZY!с,В_1 b-Всaс?.Zba9с.Z _YтеXcX.!Вb _Бтё11ет1т,cYX!т-Ат,сБ_X?XёZ,c-БZbсba.-е,?Y1еВ99сc,?cтВсaВ?АYтcё_.__.X9БАbX!ААе БАёА0т_АБ.0ёXсaБ9 cXт.еАтАтёт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_230",
+    "input": " -А.В._тZa сВXX?aт1b-!тстс_-0b_,т0т0XтсbеZZb тX,-cё тс0Z_---АБ9ё0__ZZе_.0Zт.9XYYеZттБcБ_99ZZеc-А,   Y0-YXYВВАYтY.  1А9тaZёaАYВ ёYaтВ?.,Z_?т-ттa9В!Б_c_.cе,1-ZБт-0cXYт,Z,!сББ,Zaёт с. Y1А .ё, ссZ__т 1a91тc?ZZc9_,ё9т?09сcт?b.тXт9Z,.е!",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome:  -А.В._тZa сВXX?aт1b-!тстс_-0b_,т0т0XтсbеZZb тX,-cё тс0Z_---АБ9ё0__ZZе_.0Zт.9XYYеZттБcБ_99ZZеc-А,   Y0-YXYВВАYтY.  1А9тaZёaАYВ ёYaтВ?.,Z_?т-ттa9В!Б_c_.cе,1-ZБт-0cXYт,Z,!сББ,Zaёт с. Y1А .ё, ссZ__т 1a91тc?ZZc9_,ё9т?09сcт?b.тXт9Z,.е!!е.,Z9тXт.b?тcс90?т9ё,_9cZZ?cт19a1 т__Zсс ,ё. А1Y .с тёaZ,ББс!,Z,тYXc0-тБZ-1,еc._c_Б!В9aтт-т?_Z,.?ВтaYё ВYАaёZaт9А1  .YтYАВВYXY-0Y   ,А-cеZZ99_БcБттZеYYX9.тZ0._еZZ__0ё9БА---_Z0ст ёc-,Xт bZZеbстX0т0т,_b0-_стст!-b1тa?XXВс aZт_.В.А- \r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_231",
+    "input": "9,!-.Z_Y9.,, ZБY Б09a_Б_ё.ZcaАcВ YX,ccВZX0X10Zс?9ВXВт, 0Y0.cc? еёcс,-  cс.Z.ё0В -ZcY_?,0bb с!тВАс1 ?9YX9стс. -ё-еYстX!сттY ёс_YZе.ё!YYБА-cт0Yтс_?с.-?е?Xеb.?ВX b1ё0ВaёZ0Б.0bca.т0е!9ВБbZВ?!aY-aZБbтВ0т,bX_XX. ВстbтёZ0Y0ёА.е1X-?еВc_9c.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 9,!-.Z_Y9.,, ZБY Б09a_Б_ё.ZcaАcВ YX,ccВZX0X10Zс?9ВXВт, 0Y0.cc? еёcс,-  cс.Z.ё0В -ZcY_?,0bb с!тВАс1 ?9YX9стс. -ё-еYстX!сттY ёс_YZе.ё!YYБА-cт0Yтс_?с.-?е?Xеb.?ВX b1ё0ВaёZ0Б.0bca.т0е!9ВБbZВ?!aY-aZБbтВ0т,bX_XX. ВстbтёZ0Y0ёА.е1X-?еВc_9c..c9_cВе?-X1е.Аё0Y0ZётbтсВ .XX_Xb,т0ВтbБZa-Ya!?ВZbБВ9!е0т.acb0.Б0ZёaВ0ё1b XВ?.bеX?е?-.с?_стY0тc-АБYY!ё.еZY_сё Yттс!XтсYе-ё- .стс9XY9? 1сАВт!с bb0,?_YcZ- В0ё.Z.сc  -,сcёе ?cc.0Y0 ,тВXВ9?сZ01X0XZВcc,XY ВcАacZ.ё_Б_a90Б YБZ ,,.9Y_Z.-!,9\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_232",
+    "input": "1-ёе-В_1. ?b?-_сY_ZсАсb-Вт?с-  е- тZ ,bБ! _т!еb !X1_ё?aтБтБY!ёА9еX1АтБ.0,тZА9Бт,тY А,aYY! БсYВc001БY_Z,е1_.1с._!_XВ-?,БX!ёБётZ!aYёa!В0В1bт,cYbАБе?aa.В_ББВААёYтВXАсё1?тА9ZБc-А c?YБте0еaАaеbXВcZ-тXА!1b-АbcБY01?Бaе.ё,9тXZcВВX?a,?!АеттX",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 1-ёе-В_1. ?b?-_сY_ZсАсb-Вт?с-  е- тZ ,bБ! _т!еb !X1_ё?aтБтБY!ёА9еX1АтБ.0,тZА9Бт,тY А,aYY! БсYВc001БY_Z,е1_.1с._!_XВ-?,БX!ёБётZ!aYёa!В0В1bт,cYbАБе?aa.В_ББВААёYтВXАсё1?тА9ZБc-А c?YБте0еaАaеbXВcZ-тXА!1b-АbcБY01?Бaе.ё,9тXZcВВX?a,?!АеттXXттеА!?,a?XВВcZXт9,ё.еaБ?10YБcbА-b1!АXт-ZcВXbеaАaе0етБY?c А-cБZ9Ат?1ёсАXВтYёААВББ_В.aa?еБАbYc,тb1В0В!aёYa!ZтёБё!XБ,?-ВX_!_.с1._1е,Z_YБ100cВYсБ !YYa,А Yт,тБ9АZт,0.БтА1Xе9Аё!YБтБтa?ё_1X! bе!т_ !Бb, Zт -е  -с?тВ-bсАсZ_Yс_-?b? .1_В-её-1\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_233",
+    "input": "cт?0,АеВ1YВ XcZXеВБттсВАсX,-тb.В?c-еZ?cc,9Y_X ё?т1.ёYbВ_ёВееБb_БАе?b!тёБcе!БY.aеb11ca,?тZ.bca!.ё,ёcВ1сbёА?ёXА_XБYБ-9еYaY! ZтXaёА_т!тёАXБВZА_1cёYеbА!9cёbтА1 ВА0.a?9ёВ_!_-9Аеab0т1Yё0c!. сZтАттb90Y А !??тZ.-aY_0т_-БВБ Z-ё1X. .т9XБАА.ac-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: cт?0,АеВ1YВ XcZXеВБттсВАсX,-тb.В?c-еZ?cc,9Y_X ё?т1.ёYbВ_ёВееБb_БАе?b!тёБcе!БY.aеb11ca,?тZ.bca!.ё,ёcВ1сbёА?ёXА_XБYБ-9еYaY! ZтXaёА_т!тёАXБВZА_1cёYеbА!9cёbтА1 ВА0.a?9ёВ_!_-9Аеab0т1Yё0c!. сZтАттb90Y А !??тZ.-aY_0т_-БВБ Z-ё1X. .т9XБАА.ac--ca.ААБX9т. .X1ё-Z БВБ-_т0_Ya-.Zт??! А Y09bттАтZс .!c0ёY1т0baеА9-_!_Вё9?a.0АВ 1Атbёc9!АbеYёc1_АZВБXАёт!т_АёaXтZ !YaYе9-БYБX_АXё?Аёbс1Вcё,ё.!acb.Zт?,ac11bеa.YБ!еcБёт!b?еАБ_bБееВё_ВbYё.1т?ё X_Y9,cc?Zе-c?В.bт-,XсАВсттБВеXZcX ВY1ВеА,0?тc\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_234",
+    "input": "сcт9Б_c,АтbcZ0!Z9Xaс,!0Асе9cтАaac9Yтт-Y-bс-с!тa!-БтYтАтc-с-a!т!тXе__ 1ес,еbБaтБb1,1т- БX90ccaАaZa_!9X?XтY 0еВёВ10теБ9А1-aY.Y еБ!!сcе X!тb т  т!с АZёcт!еc. -?a!X,БZсb9_-! ВY?Б-,тYе,.a._YYтcтВaab!сёёеББ!!сY.0!c?1_bт.,ёВYbтБсb?0_ё0ёА_aYZ",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: сcт9Б_c,АтbcZ0!Z9Xaс,!0Асе9cтАaac9Yтт-Y-bс-с!тa!-БтYтАтc-с-a!т!тXе__ 1ес,еbБaтБb1,1т- БX90ccaАaZa_!9X?XтY 0еВёВ10теБ9А1-aY.Y еБ!!сcе X!тb т  т!с АZёcт!еc. -?a!X,БZсb9_-! ВY?Б-,тYе,.a._YYтcтВaab!сёёеББ!!сY.0!c?1_bт.,ёВYbтБсb?0_ё0ёА_aYZZYa_Аё0ё_0?bсБтbYВё,.тb_1?c!0.Yс!!ББеёёс!baaВтcтYY_.a.,еYт,-Б?YВ !-_9bсZБ,X!a?- .cе!тcёZА с!т  т bт!X еcс!!Бе Y.Ya-1А9Бет01ВёВе0 YтX?X9!_aZaАacc09XБ -т1,1bБтaБbе,се1 __еXт!т!a-с-cтАтYтБ-!aт!с-сb-Y-ттY9caaАтc9есА0!,сaX9Z!0ZcbтА,c_Б9тcс\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_235",
+    "input": "Б -cВсс1_теёac! АZ!,т?сАb.!_тт1Б.А9a-X.cX.aZZbВa9?c_Z._ёcе!Б0т?с0 т?--0 _-ZX?с_А_a,0.bА9еaYZ,9aББaАa_ZX?А.-aБёX !А -т.1ZXёАсbАтa0_-0?ёт0. ccт.b-ё-т_Yc?X!АcтcВ_тВеВ.Аё11Вc,А1е_Y!YY-Zbт1a. БссВ_-9c 0bБс1?Y.a, Б-ёZ-сXВеaсстеX1еБ 1Y9ё0ёе9Z",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Б -cВсс1_теёac! АZ!,т?сАb.!_тт1Б.А9a-X.cX.aZZbВa9?c_Z._ёcе!Б0т?с0 т?--0 _-ZX?с_А_a,0.bА9еaYZ,9aББaАa_ZX?А.-aБёX !А -т.1ZXёАсbАтa0_-0?ёт0. ccт.b-ё-т_Yc?X!АcтcВ_тВеВ.Аё11Вc,А1е_Y!YY-Zbт1a. БссВ_-9c 0bБс1?Y.a, Б-ёZ-сXВеaсстеX1еБ 1Y9ё0ёе9ZZ9её0ё9Y1 Бе1XетссaеВXс-Zё-Б ,a.Y?1сБb0 c9-_ВссБ .a1тbZ-YY!Y_е1А,cВ11ёА.ВеВт_ВcтcА!X?cY_т-ё-b.тcc .0тё?0-_0aтАbсАёXZ1.т- А! XёБa-.А?XZ_aАaББa9,ZYaе9Аb.0,a_А_с?XZ-_ 0--?т 0с?т0Б!еcё_.Z_c?9aВbZZa.Xc.X-a9А.Б1тт_!.bАс?т,!ZА !caёет_1ссВc- Б\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_236",
+    "input": "тБ,-aтX!с?YX0еБccт9X!-.-е0c?bетXеББВБ?В__0,Xт-Б X!,,с. -БВБZ!XттВ?ZёеaZё !ZX0-Y!ВсZXb X?X!bZс.Z!тсYYВ9cZ !1А!_!Бb.БbБ,Бccе!c9YБXё1сaт?!т!АYZX991В ?Xc!етYт_9?В.XYсА._!XБ_bcZсZВXё. ёXе9ёт!90XВт9 .bY?се  a-Б0е?YВс_1bZXсё1?XстёZ-Бётa1 е-9В1",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тБ,-aтX!с?YX0еБccт9X!-.-е0c?bетXеББВБ?В__0,Xт-Б X!,,с. -БВБZ!XттВ?ZёеaZё !ZX0-Y!ВсZXb X?X!bZс.Z!тсYYВ9cZ !1А!_!Бb.БbБ,Бccе!c9YБXё1сaт?!т!АYZX991В ?Xc!етYт_9?В.XYсА._!XБ_bcZсZВXё. ёXе9ёт!90XВт9 .bY?се  a-Б0е?YВс_1bZXсё1?XстёZ-Бётa1 е-9В11В9-е 1aтёБ-ZётсX?1ёсXZb1_сВY?е0Б-a  ес?Yb. 9тВX09!тё9еXё .ёXВZсZcb_БX!_.АсYX.В?9_тYте!cX? В199XZYА!т!?тaс1ёXБY9c!еccБ,БbБ.bБ!_!А1! Zc9ВYYст!Z.сZb!X?X bXZсВ!Y-0XZ! ёZaеёZ?ВттX!ZБВБ- .с,,!X Б-тX,0__В?БВББеXтеb?c0е-.-!X9тccБе0XY?с!Xтa-,Бт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_237",
+    "input": "Б ,тё X9YaсZс,a! ?,a_1c-!!т-Y..0c1 baтё09теZе Z-b_Бе.!ВБААБ1т.ВсетYXa--е,aY9 т,.bсВА1caYaYbт_А0сВ? ,XВ  А 0?е_!,А,сеa1с_X,aY,-1Za,Z b-.А-X.?c_. Б ,X_Zbс,А!9ё.abb.еacсZ9Б1сАе1ссaВ!т_.е19В,!0етc9т с.тАёZс!XссВX!ac?т!1 сё1т0?еётеZееА0еXВYВА",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Б ,тё X9YaсZс,a! ?,a_1c-!!т-Y..0c1 baтё09теZе Z-b_Бе.!ВБААБ1т.ВсетYXa--е,aY9 т,.bсВА1caYaYbт_А0сВ? ,XВ  А 0?е_!,А,сеa1с_X,aY,-1Za,Z b-.А-X.?c_. Б ,X_Zbс,А!9ё.abb.еacсZ9Б1сАе1ссaВ!т_.е19В,!0етc9т с.тАёZс!XссВX!ac?т!1 сё1т0?еётеZееА0еXВYВААВYВXе0АееZетёе?0т1ёс 1!т?ca!XВссX!сZёАт.с т9cте0!,В91е._т!Вaсс1еАс1Б9Zсcaе.bba.ё9!А,сbZ_X, Б ._c?.X-А.-b Z,aZ1-,Ya,X_с1aес,А,!_е?0 А  ВX, ?Вс0А_тbYaYac1АВсb.,т 9Ya,е--aXYтесВ.т1БААБВ!.еБ_b-Z еZет90ётab 1c0..Y-т!!-c1_a,? !a,сZсaY9X ёт, Б\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_238",
+    "input": "b9БX-ZZbБYc09!a,-ZеВbс!Zё a1Б9XX.,?- ,?Бт!0Вс_т1!_Zёa?БёX,!Ya.?Xттcт9Бb9тaБеXYсБYc.стbcX1т.Y!_bБё1етВтXc.В!aА,Вт-bёс_9-ZZ-.01?,тА,-1bYcY0-Zсе0bте-aё0Yёccт,?-9!1ВтБaa!,1 aБВ1еБaВ1_,Xb-Y9 ёZ10с,с,В.- a0.!Z,ссZbт9X.-c1XБсВ_В_т,еВbY0cеА,.bXеY",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: b9БX-ZZbБYc09!a,-ZеВbс!Zё a1Б9XX.,?- ,?Бт!0Вс_т1!_Zёa?БёX,!Ya.?Xттcт9Бb9тaБеXYсБYc.стbcX1т.Y!_bБё1етВтXc.В!aА,Вт-bёс_9-ZZ-.01?,тА,-1bYcY0-Zсе0bте-aё0Yёccт,?-9!1ВтБaa!,1 aБВ1еБaВ1_,Xb-Y9 ёZ10с,с,В.- a0.!Z,ссZbт9X.-c1XБсВ_В_т,еВbY0cеА,.bXеYYеXb.,Аеc0YbВе,т_В_ВсБX1c-.X9тbZсс,Z!.0a -.В,с,с01Zё 9Y-bX,_1ВaБе1ВБa 1,!aaБтВ1!9-?,тccёY0ёa-етb0есZ-0YcYb1-,Ат,?10.-ZZ-9_сёb-тВ,Аa!В.cXтВте1ёБb_!Y.т1Xcbтс.cYБсYXеБaт9bБ9тcттX?.aY!,XёБ?aёZ_!1т_сВ0!тБ?, -?,.XX9Б1a ёZ!сbВеZ-,a!90cYБbZZ-XБ9b\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_239",
+    "input": "..cYтт..т_ВZАbbсё,сБ0 , -АX_0a т-caВ1, cbА.Z?Y-тсbАa--c?еa_Y,-  - БYbБXАXе b 0._1.ВВ-0ВX В_Б,?Yc9_Бе YёbZ?aZXb0е,cсa!c1А11,еX0?БZёb.1?1?т-,_ZZтa-0c!- е9-1А-,!тX .!,YВт10aтБ_сА!1сётY !9!19сaе!00c ,Z ВcБт!, a9-a_cтт0.ВтXY_т0b_b1Y_1-ё0ё1сZеБ-",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ..cYтт..т_ВZАbbсё,сБ0 , -АX_0a т-caВ1, cbА.Z?Y-тсbАa--c?еa_Y,-  - БYbБXАXе b 0._1.ВВ-0ВX В_Б,?Yc9_Бе YёbZ?aZXb0е,cсa!c1А11,еX0?БZёb.1?1?т-,_ZZтa-0c!- е9-1А-,!тX .!,YВт10aтБ_сА!1сётY !9!19сaе!00c ,Z ВcБт!, a9-a_cтт0.ВтXY_т0b_b1Y_1-ё0ё1сZеБ--БеZс1ё0ё-1_Y1b_b0т_YXтВ.0ттc_a-9a ,!тБcВ Z, c00!еaс91!9! Yтёс1!Ас_Бтa01тВY,!. Xт!,-А1-9е -!c0-aтZZ_,-т?1?1.bёZБ?0Xе,11А1c!aсc,е0bXZa?ZbёY еБ_9cY?,Б_В XВ0-ВВ.1_.0 b еXАXБbYБ -  -,Y_aе?c--aАbст-Y?Z.Аbc ,1Вac-т a0_XА- , 0Бс,ёсbbАZВ_т..ттYc..\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_240",
+    "input": "Б_a.Y!,Бт0cт0-АсАb9сXе,ААБеcс!a9Атё?БYaБ9ёет_ё,Y09,ZZсё0-X!сВ?ВbZ0?е.те1-Xabb!Y!_-В1! ВaтXеX0ac!c_с_X!ёетсёb1с_с т?сb-ZZ0БВ9Вc-0т0- ?!ё?Yе,!0_Xa-1cX__Yт-?YZ1ВbттсZАYc .сYё еY?bс 9ВYёac0_-Y1еXААеY-тXb1еX?-XZX!е!ееYеБc09ёcте_Yт,Z,Xт-Б_Yёaе.,В",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Б_a.Y!,Бт0cт0-АсАb9сXе,ААБеcс!a9Атё?БYaБ9ёет_ё,Y09,ZZсё0-X!сВ?ВbZ0?е.те1-Xabb!Y!_-В1! ВaтXеX0ac!c_с_X!ёетсёb1с_с т?сb-ZZ0БВ9Вc-0т0- ?!ё?Yе,!0_Xa-1cX__Yт-?YZ1ВbттсZАYc .сYё еY?bс 9ВYёac0_-Y1еXААеY-тXb1еX?-XZX!е!ееYеБc09ёcте_Yт,Z,Xт-Б_Yёaе.,ВВ,.еaёY_Б-тX,Z,тY_етcё90cБеYее!е!XZX-?Xе1bXт-YеААXе1Y-_0caёYВ9 сb?Yе ёYс. cYАZсттbВ1ZY?-тY__Xc1-aX_0!,еY?ё!? -0т0-cВ9ВБ0ZZ-bс?т с_с1bёстеё!X_с_c!ca0XеXтaВ !1В-_!Y!bbaX-1ет.е?0ZbВ?Вс!X-0ёсZZ,90Y,ё_теё9БaYБ?ётА9a!сcеБАА,еXс9bАсА-0тc0тБ,!Y.a_Б\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_241",
+    "input": "0тcY0ВсВXc0cАт т0c!_А1Zт09bёa?1сёYZтcXb1ё.Yba_b__ётБт0 9-тт.,_тт?!тё,  0_!_b,-_ёттё.Б 0YБc__YсXБ?А .В1т!c0aё aеc.?Аb0тabac-стYbaБ_-0Xс9X_bтБX 9сёё?т- Б._aтБbте_т,ZВ_, .Бc- !Бc?1ттYБ еcттт9ё9БтZ0cтX,!с.!ёZ- 1Z-aa?0X.с0ZYYa-В!еБa0Вт!!0!-bт1т?X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0тcY0ВсВXc0cАт т0c!_А1Zт09bёa?1сёYZтcXb1ё.Yba_b__ётБт0 9-тт.,_тт?!тё,  0_!_b,-_ёттё.Б 0YБc__YсXБ?А .В1т!c0aё aеc.?Аb0тabac-стYbaБ_-0Xс9X_bтБX 9сёё?т- Б._aтБbте_т,ZВ_, .Бc- !Бc?1ттYБ еcттт9ё9БтZ0cтX,!с.!ёZ- 1Z-aa?0X.с0ZYYa-В!еБa0Вт!!0!-bт1т?XX?т1тb-!0!!тВ0aБе!В-aYYZ0с.X0?aa-Z1 -Zё!.с!,Xтc0ZтБ9ё9тттcе БYтт1?cБ! -cБ. ,_ВZ,т_етbБтa_.Б -т?ёёс9 XБтb_X9сX0-_БabYтс-cabaт0bА?.cеa ёa0c!т1В. А?БXсY__cБY0 Б.ёттё_-,b_!_0  ,ёт!?тт_,.тт-9 0тБтё__b_abY.ё1bXcтZYёс1?aёb90тZ1А_!c0т тАc0cXВсВ0Ycт0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_242",
+    "input": "Б ?,.X19?1bАте?_АX_Y!1._! ?_!ё_,bX-БcaX!т,bbА1Бb?-!!Yba т!!?ст,.БYbZ,XX19-ёZ00,В 999_,!Бё,ёВZтXZ!сZ -Y-Б_Xaтт_X?bX,YXАБXВ-Вaс,9?.,aт0b,БсbВ,е_01Б_тВБт.!Бc0_?bеА1стXYВ.Zёa!,-1!aXт9c?е-1ё.Y тёcАc.c,!bтc. Всb9ВБс1cYYYт_тYXaY?9bеaА тa9c !,ё,_т?Zё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Б ?,.X19?1bАте?_АX_Y!1._! ?_!ё_,bX-БcaX!т,bbА1Бb?-!!Yba т!!?ст,.БYbZ,XX19-ёZ00,В 999_,!Бё,ёВZтXZ!сZ -Y-Б_Xaтт_X?bX,YXАБXВ-Вaс,9?.,aт0b,БсbВ,е_01Б_тВБт.!Бc0_?bеА1стXYВ.Zёa!,-1!aXт9c?е-1ё.Y тёcАc.c,!bтc. Всb9ВБс1cYYYт_тYXaY?9bеaА тa9c !,ё,_т?ZёёZ?т_,ё,! c9aт Аaеb9?YaXYт_тYYYc1сБВ9bсВ .cтb!,c.cАcёт Y.ё1-е?c9тXa!1-,!aёZ.ВYXтс1Аеb?_0cБ!.тБВт_Б10_е,ВbсБ,b0тa,.?9,сaВ-ВXБАXY,Xb?X_ттaX_Б-Y- Zс!ZXтZВё,ёБ!,_999 В,00Zё-91XX,ZbYБ.,тс?!!т abY!!-?bБ1Аbb,т!XacБ-Xb,_ё!_? !_.1!Y_XА_?етАb1?91X.,? Б\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_243",
+    "input": "тZАБ-ссbёААcт?0cБXZ_ё.А-т!b. -!ттВ-b Вa?bXБb  bёт cт9с9тс0стё_a9тcё-YтcZА.bт!тY.еБ_0b?_тYе!тА 0с1!bсbАcbY__АbZYеВтАБ.cтБ. ёcтbbА.ёcё1c,_тёё,0a0е,a9Вb0YcБ1т,.с.Zе1YБАте1c0Ybе91с!БВесYАZ1aт9,..-b1 YZсX9т0т? Б99ZА1cёY БZ_Втёb-X!0  тВёc_т1bт1Z_aё?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: тZАБ-ссbёААcт?0cБXZ_ё.А-т!b. -!ттВ-b Вa?bXБb  bёт cт9с9тс0стё_a9тcё-YтcZА.bт!тY.еБ_0b?_тYе!тА 0с1!bсbАcbY__АbZYеВтАБ.cтБ. ёcтbbА.ёcё1c,_тёё,0a0е,a9Вb0YcБ1т,.с.Zе1YБАте1c0Ybе91с!БВесYАZ1aт9,..-b1 YZсX9т0т? Б99ZА1cёY БZ_Втёb-X!0  тВёc_т1bт1Z_aё??ёa_Z1тb1т_cёВт  0!X-bётВ_ZБ Yёc1АZ99Б ?т0т9XсZY 1b-..,9тa1ZАYсеВБ!с19еbY0c1етАБY1еZ.с.,т1БcY0bВ9a,е0a0,ёёт_,c1ёcё.Аbbтcё .Бтc.БАтВеYZbА__YbcАbсb!1с0 Ат!еYт_?b0_Бе.Yт!тb.АZcтY-ёcт9a_ётс0ст9с9тc тёb  bБXb?aВ b-Втт!- .b!т-А.ё_ZXБc0?тcААёbсс-БАZт\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_244",
+    "input": "X-Бa.1.т--Xт_АZ,тa9_0А-еYZ,,, тт,b?aеbYY?т1cbXтетaaёеБАА1Аa9Б?a?9,ттБё,т0ёc-тa!aет.ВYе-? X_a_99ё9Z_тbXБ9ё-е, 0-ет9cс0е1aZ!Zё т.ВееАт-ё! 9Xb_еcВёВb!!.В1Z! .ВтY1Z 9-b?090.-cАБ-X-1XXттёc-.В9-?1Y._т ?Y?-ё,Б.тXZa,Z.c,сё?bтXXa,Бе!БАcZXc10YXYZт,!?А_0А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: X-Бa.1.т--Xт_АZ,тa9_0А-еYZ,,, тт,b?aеbYY?т1cbXтетaaёеБАА1Аa9Б?a?9,ттБё,т0ёc-тa!aет.ВYе-? X_a_99ё9Z_тbXБ9ё-е, 0-ет9cс0е1aZ!Zё т.ВееАт-ё! 9Xb_еcВёВb!!.В1Z! .ВтY1Z 9-b?090.-cАБ-X-1XXттёc-.В9-?1Y._т ?Y?-ё,Б.тXZa,Z.c,сё?bтXXa,Бе!БАcZXc10YXYZт,!?А_0АА0_А?!,тZYXY01cXZcАБ!еБ,aXXтb?ёс,c.Z,aZXт.Б,ё-?Y? т_.Y1?-9В.-cёттXX1-X-БАc-.090?b-9 Z1YтВ. !Z1В.!!bВёВcе_bX9 !ё-тАееВ.т ёZ!Za1е0сc9те-0 ,е-ё9БXbт_Z9ё99_a_X ?-еYВ.теa!aт-cё0т,ёБтт,9?a?Б9aА1ААБеёaaтетXbc1т?YYbеa?b,тт ,,,ZYе-А0_9aт,ZА_тX--т.1.aБ-X\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_245",
+    "input": "ёXАВсст1cbАaт1!т-?тВ9с1сZaтY ё1_ё!тYb-?ё,сБ1,_ттёАaВе,bё !АabтX0-bZ _БZсВ X,_aВZтX!Б0_АbАёcёYcZXёcА?_ёсaБтX0Y.XВт?с9ё0?-?cc9cZaaт! -А1-ёА-YZтБт aY0?,БaБ0_сА?XБccсттсYттX-__!!т-ёс??ВБеетс.X_Z cc? 01ВabсXтё .cт- еYa!_с!Бёт9ёё.ZbaтY-Z, !Ве,,,YZc0ёА",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ёXАВсст1cbАaт1!т-?тВ9с1сZaтY ё1_ё!тYb-?ё,сБ1,_ттёАaВе,bё !АabтX0-bZ _БZсВ X,_aВZтX!Б0_АbАёcёYcZXёcА?_ёсaБтX0Y.XВт?с9ё0?-?cc9cZaaт! -А1-ёА-YZтБт aY0?,БaБ0_сА?XБccсттсYттX-__!!т-ёс??ВБеетс.X_Z cc? 01ВabсXтё .cт- еYa!_с!Бёт9ёё.ZbaтY-Z, !Ве,,,YZc0ёААё0cZY,,,еВ! ,Z-YтabZ.ёё9тёБ!с_!aYе -тc. ётXсbaВ10 ?cc Z_X.стееБВ??сё-т!!__-XттYсттсccБX?Ас_0БaБ,?0Ya тБтZY-Аё-1А- !тaaZc9cc?-?0ё9с?тВX.Y0XтБaсё_?АcёXZcYёcёАbА_0Б!XтZВa_,X ВсZБ_ Zb-0XтbaА! ёb,еВaАётт_,1Бс,ё?-bYт!ё_1ё YтaZс1с9Вт?-т!1тaАbc1тссВАXё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_246",
+    "input": "АbВ-Z-b.a.Z0bАё_9b01Бесc1Б, .0cе0т9ее b.0-XY.еXaт,9тaтaт!?9е1_е0YXaА9Y9Б!Y9_9АaАZ 9сXYБ_0bБc10-aXБZАсbX1_ .0!БеcВВ9ё!ё.c- _-БXё!_т,bёbсaYееАт?В,1--9X0.сa?.aт_Z!cБс9еa ..,еБе!ёYт-Бa,?Б 9_е1т0Z??Y!_a0,_.b0Yёё??сa9В1?XА ccБАaБ.тВсabетБZ .9XX!bZbaе т",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: АbВ-Z-b.a.Z0bАё_9b01Бесc1Б, .0cе0т9ее b.0-XY.еXaт,9тaтaт!?9е1_е0YXaА9Y9Б!Y9_9АaАZ 9сXYБ_0bБc10-aXБZАсbX1_ .0!БеcВВ9ё!ё.c- _-БXё!_т,bёbсaYееАт?В,1--9X0.сa?.aт_Z!cБс9еa ..,еБе!ёYт-Бa,?Б 9_е1т0Z??Y!_a0,_.b0Yёё??сa9В1?XА ccБАaБ.тВсabетБZ .9XX!bZbaе тт еabZb!XX9. ZБтеbaсВт.БaАБcc АX?1В9aс??ёёY0b._,0a_!Y??Z0т1е_9 Б?,aБ-тYё!еБе,.. aе9сБc!Z_тa.?aс.0X9--1,В?тАееYaсbёb,т_!ёXБ-_ -c.ё!ё9ВВcеБ!0. _1XbсАZБXa-01cБb0_БYXс9 ZАaА9_9Y!Б9Y9АaXY0е_1е9?!тaтaт9,тaXе.YX-0.b ее9т0еc0. ,Б1cсеБ10b9_ёАb0Z.a.b-Z-ВbА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_247",
+    "input": "ВсYБтZ_9XеaБY-т_?0тБZ?-X.,А?X9Z.Xт,Z!Y0!с-тcёёёёcт-ётетА-?еБеА1b-.т,Y a 1cbc?,Ае0bеZZ!_0ёАXc1_10еАёa?еaaX?c0 -_ ?,-А.Вacтёт_bZXБВ1-1YZёXaБ1b1Xссеё_сYт-А__Y_В-БZ_ba,е1,b?,А?В!ёсстеX Ya9bБс-bb _.a.190aтX-0ZZ,aВ_ёётт_X_0ВcY!т-.Xт9?БXaеАb-?Yё!1ёБX,?т0",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ВсYБтZ_9XеaБY-т_?0тБZ?-X.,А?X9Z.Xт,Z!Y0!с-тcёёёёcт-ётетА-?еБеА1b-.т,Y a 1cbc?,Ае0bеZZ!_0ёАXc1_10еАёa?еaaX?c0 -_ ?,-А.Вacтёт_bZXБВ1-1YZёXaБ1b1Xссеё_сYт-А__Y_В-БZ_ba,е1,b?,А?В!ёсстеX Ya9bБс-bb _.a.190aтX-0ZZ,aВ_ёётт_X_0ВcY!т-.Xт9?БXaеАb-?Yё!1ёБX,?т00т?,XБё1!ёY?-bАеaXБ?9тX.-т!YcВ0_X_ттёё_Вa,ZZ0-Xтa091.a._ bb-сБb9aY Xетссё!В?А,?b,1е,ab_ZБ-В_Y__А-тYс_ёессX1b1БaXёZY1-1ВБXZb_тётcaВ.А-,? _- 0c?Xaaе?aёАе01_1cXАё0_!ZZеb0еА,?cbc1 a Y,т.-b1АеБе?-Атетё-тcёёёёcт-с!0Y!Z,тX.Z9X?А,.X-?ZБт0?_т-YБaеX9_ZтБYсВ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_248",
+    "input": "Бт-Z0Беb?,стZтZБ,Бa!АтZ9Zт_a. Б cXАтX0т!Б?0 тА Yb ВсXВт1Б 1.тaтё Аст!.?_09,т1cВё0,В_с,.с-сё0А!АY!А-b9ZXБтт?YZ0.ет-ссё сbт- _Z__т9XaАе0Бт 9ё.,cbее Бaт1X,a1_т?.Yт-!Ат0.,с1YБтсс0 c9a9a.е..т-сZ-1т1aесacВc!!Вcт_т0ZYс,сaАе!,,ё.ВБaе!Втaт!X--В ё_Бb?b,bёсё?",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Бт-Z0Беb?,стZтZБ,Бa!АтZ9Zт_a. Б cXАтX0т!Б?0 тА Yb ВсXВт1Б 1.тaтё Аст!.?_09,т1cВё0,В_с,.с-сё0А!АY!А-b9ZXБтт?YZ0.ет-ссё сbт- _Z__т9XaАе0Бт 9ё.,cbее Бaт1X,a1_т?.Yт-!Ат0.,с1YБтсс0 c9a9a.е..т-сZ-1т1aесacВc!!Вcт_т0ZYс,сaАе!,,ё.ВБaе!Втaт!X--В ё_Бb?b,bёсё??ёсёb,b?bБ_ё В--X!тaтВ!еaБВ.ё,,!еАaс,сYZ0т_тcВ!!cВcaсеa1т1-Zс-т..е.a9a9c 0сстБY1с,.0тА!-тY.?т_1a,X1тaБ ееbc,.ё9 тБ0еАaX9т__Z_ -тbс ёсс-те.0ZY?ттБXZ9b-А!YА!А0ёс-с.,с_В,0ёВc1т,90_?.!тсА ётaт.1 Б1тВXсВ bY Ат 0?Б!т0XтАXc Б .a_тZ9ZтА!aБ,БZтZтс,?bеБ0Z-тБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_249",
+    "input": "Ат!Б  тсесет9Yc_,9тb0?еZстБАёёё,ё_YccА.!Б! В1 ,?БтY0XВ,0ё?c.X, тётт9bёZ!!1ё!?,a,  ст0В1bbтcе0В0с,,т.!bZё .?!1етт!Б_тВ 0тcтВ-ё0!еc?тБ0ББa?!a9т, ZёеX,, _тА9А!9с?В,0т.БеX_9?с,сa,1!.b1YтААXa_0Ае9b00c_Z?т,!c ,е.ВБc?cY_ сca9bbaс0cтZbВ?aБ-т!,еcВсaтБcb-,1А.",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: Ат!Б  тсесет9Yc_,9тb0?еZстБАёёё,ё_YccА.!Б! В1 ,?БтY0XВ,0ё?c.X, тётт9bёZ!!1ё!?,a,  ст0В1bbтcе0В0с,,т.!bZё .?!1етт!Б_тВ 0тcтВ-ё0!еc?тБ0ББa?!a9т, ZёеX,, _тА9А!9с?В,0т.БеX_9?с,сa,1!.b1YтААXa_0Ае9b00c_Z?т,!c ,е.ВБc?cY_ сca9bbaс0cтZbВ?aБ-т!,еcВсaтБcb-,1А..А1,-bcБтaсВcе,!т-Бa?ВbZтc0сabb9acс _Yc?cБВ.е, c!,т?Z_c00b9еА0_aXААтY1b.!1,aс,с?9_XеБ.т0,В?с9!А9Ат_ ,,XеёZ ,т9a!?aББ0Бт?cе!0ё-Втcт0 Вт_Б!тте1!?. ёZb!.т,,с0В0еcтbb1В0тс  ,a,?!ё1!!Zёb9ттёт ,X.c?ё0,ВX0YтБ?, 1В !Б!.АccY_ё,ёёёАБтсZе?0bт9,_cY9тесест  Б!тА\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_250",
+    "input": "0тZ9?ёaБВcс-_Y.ё?Yт_сcc _9!ст.bXАт!Вт b А_cА?с9cсё_9cZ._БВ Б еX_bВ0YАbZБbёaБcст9YБab9?В?т.b9ZААА  -А,Y 9Б,т!тБ.ZА_е0Б -ВсZ.cё.-Xт_ВБc?тё,В?cтет90 cYВ1cВ 1-сbc,1тXёВa0YYYa,bе?сБ-теXВВ9-е..XеZ-0_ттYX_т1?1b-Y-_cА_,a!тёеБ01bc с0XеcВ??XА.b-ёc!YёYYт-Zе.Бcе",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: 0тZ9?ёaБВcс-_Y.ё?Yт_сcc _9!ст.bXАт!Вт b А_cА?с9cсё_9cZ._БВ Б еX_bВ0YАbZБbёaБcст9YБab9?В?т.b9ZААА  -А,Y 9Б,т!тБ.ZА_е0Б -ВсZ.cё.-Xт_ВБc?тё,В?cтет90 cYВ1cВ 1-сbc,1тXёВa0YYYa,bе?сБ-теXВВ9-е..XеZ-0_ттYX_т1?1b-Y-_cА_,a!тёеБ01bc с0XеcВ??XА.b-ёc!YёYYт-Zе.БcееcБ.еZ-тYYёY!cё-b.АX??ВcеX0с cb10Беёт!a,_Аc_-Y-b1?1т_XYтт_0-ZеX..е-9ВВXет-Бс?еb,aYYY0aВёXт1,cbс-1 Вc1ВYc 09тетc?В,ёт?cБВ_тX-.ёc.ZсВ- Б0е_АZ.Бт!т,Б9 Y,А-  АААZ9b.т?В?9baБY9тсcБaёbБZbАY0Вb_Xе Б ВБ_.Zc9_ёсc9с?Аc_А b тВ!тАXb.тс!9_ ccс_тY?ё.Y_-сcВБaё?9Zт0\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_251",
+    "input": "етZВтcёВaВ9,,АВеё.!--_aaё1т9!9ёёт-Zе9X-b9Б9ёё. bYc,Y_!Xеa9,c.a9т1ё9c0a?0a XXY В_ёесXYX.-т ,X.ётё?ББ!тсZ11a.9т,ёёYБb стX!a9ВbY!09_YX0Xт е ,т0-ё!,ёАВ_XcеВ_9ёАё9ёY_c.9?9 т-9с-1._-1_?т,0cетеYтbZX1Y0ZВтБ ес0сc!Xcе9-Zc?1Z_Zc9еa,ёё a-А9Yc,,a!9,еbaБ._!0Вc1.aё",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: етZВтcёВaВ9,,АВеё.!--_aaё1т9!9ёёт-Zе9X-b9Б9ёё. bYc,Y_!Xеa9,c.a9т1ё9c0a?0a XXY В_ёесXYX.-т ,X.ётё?ББ!тсZ11a.9т,ёёYБb стX!a9ВbY!09_YX0Xт е ,т0-ё!,ёАВ_XcеВ_9ёАё9ёY_c.9?9 т-9с-1._-1_?т,0cетеYтbZX1Y0ZВтБ ес0сc!Xcе9-Zc?1Z_Zc9еa,ёё a-А9Yc,,a!9,еbaБ._!0Вc1.aёёa.1cВ0!_.Бabе,9!a,,cY9А-a ёё,aе9cZ_Z1?cZ-9еcX!cс0се БтВZ0Y1XZbтYетеc0,т?_1-_.1-с9-т 9?9.c_Yё9ёАё9_ВеcX_ВАё,!ё-0т, е тX0XY_90!YbВ9a!Xтс bБYёё,т9.a11Zст!ББ?ётё.X, т-.XYXсеё_В YXX a0?a0c9ё1т9a.c,9aеX!_Y,cYb .ёё9Б9b-X9еZ-тёё9!9т1ёaa_--!.ёеВА,,9ВaВёcтВZте\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_252",
+    "input": "ё_!9 YВ.9_тaёbс -XZ1ё90_е,c!тX9ё!9c1.!-00Xb!1-?9т-Z.т--ттaт_Xт1АaАБ ?тссc Y 0._се0В !19Yс,aYВ!0bВтXbcе9е-,X1 ёZ-Атc_?В-cтY9bZБXё-,тё9,ее1,0?т!?ВстYbВ_c?Б?тcВ.aе -9тБтсВX-ё0909сXaА1.0!АY0тёБ1-9b,Б,_Б,Z.bстт.,ZВсёАА 1АВс!b-БcX,-?т?ё!c?,А?с!сБАсВе_тс1c1!А",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: ё_!9 YВ.9_тaёbс -XZ1ё90_е,c!тX9ё!9c1.!-00Xb!1-?9т-Z.т--ттaт_Xт1АaАБ ?тссc Y 0._се0В !19Yс,aYВ!0bВтXbcе9е-,X1 ёZ-Атc_?В-cтY9bZБXё-,тё9,ее1,0?т!?ВстYbВ_c?Б?тcВ.aе -9тБтсВX-ё0909сXaА1.0!АY0тёБ1-9b,Б,_Б,Z.bстт.,ZВсёАА 1АВс!b-БcX,-?т?ё!c?,А?с!сБАсВе_тс1c1!АА!1c1ст_еВсАБс!с?А,?c!ё?т?-,XcБ-b!сВА1 ААёсВZ,.ттсb.Z,Б_,Б,b9-1Бёт0YА!0.1АaXс9090ё-XВстБт9- еa.Вcт?Б?c_ВbYтсВ?!т?0,1ее,9ёт,-ёXБZb9Yтc-В?_cтА-Zё 1X,-е9еcbXтВb0!ВYa,сY91! В0ес_.0 Y cсст? БАaА1тX_тaтт--т.Z-т9?-1!bX00-!.1c9!ё9Xт!c,е_09ё1ZX- сbёaт_9.ВY 9!_ё\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_253",
+    "input": "aА!0-сa-9bА9XтесеaaX9,,?a,Zе,.c,-aX-Z,1a.ее?тт-aА?тс10Б99ZтБт11 0сc?XВa91b 0еYт9?.т.-ААсё_,?_,a?БXё1?9А?XZY1!1Бт9Вёсе,т-?Z -!cББc_c,ёсZеА ??0,АттеY0е1_Бт1.А1тbZ,,YАёcт a9YaXaВc.т01 В9В.aеZтБ0-сттYеА _ab.Аc--.- Yёс_Y!bА1XY_ее0YcY0YcеАcтсё_В!!ттZc__1!,Z_X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: aА!0-сa-9bА9XтесеaaX9,,?a,Zе,.c,-aX-Z,1a.ее?тт-aА?тс10Б99ZтБт11 0сc?XВa91b 0еYт9?.т.-ААсё_,?_,a?БXё1?9А?XZY1!1Бт9Вёсе,т-?Z -!cББc_c,ёсZеА ??0,АттеY0е1_Бт1.А1тbZ,,YАёcт a9YaXaВc.т01 В9В.aеZтБ0-сттYеА _ab.Аc--.- Yёс_Y!bА1XY_ее0YcY0YcеАcтсё_В!!ттZc__1!,Z_XX_Z,!1__cZтт!!В_ёстcАеcY0YcY0ее_YX1Аb!Y_сёY -.--cА.ba_ АеYттс-0БтZеa.В9В 10т.cВaXaY9a тcёАY,,Zbт1А.1тБ_1е0YеттА,0?? АеZсё,c_cББc!- Z?-т,есёВ9тБ1!1YZX?А9?1ёXБ?a,_?,_ёсАА-.т.?9тYе0 b19aВX?cс0 11тБтZ99Б01ст?Аa-тт?ее.a1,Z-Xa-,c.,еZ,a?,,9XaaесетX9Аb9-aс-0!Аa\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_254",
+    "input": "БеZ!aБе.БтВ9ВZБ.0-с_91-Z9сёВА1еYXе9_b9?Ат,-В?0-!YБсaАт..ZZА0a1тc?В.те!ёX!X. !YbБ,YёАВ_ес.Z!А ёa_Y__т9YY!стАёcтabБ aaАZ1АБёее0.еZББb1Атa 99с0_ВБе1b1АБ09-1.01 a0 ZБёXВZ,_1!тБZА-c-АБ?Z0т.?!XАcYёaс1bтaёА0YБВёc-,Yс9c-Z!aтYт!X,ВсZ.сБ901ёт!Б. 9ттZ!-ВZXАbё!ст19X",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: БеZ!aБе.БтВ9ВZБ.0-с_91-Z9сёВА1еYXе9_b9?Ат,-В?0-!YБсaАт..ZZА0a1тc?В.те!ёX!X. !YbБ,YёАВ_ес.Z!А ёa_Y__т9YY!стАёcтabБ aaАZ1АБёее0.еZББb1Атa 99с0_ВБе1b1АБ09-1.01 a0 ZБёXВZ,_1!тБZА-c-АБ?Z0т.?!XАcYёaс1bтaёА0YБВёc-,Yс9c-Z!aтYт!X,ВсZ.сБ901ёт!Б. 9ттZ!-ВZXАbё!ст19XX91тс!ёbАXZВ-!Zтт9 .Б!тё109Бс.ZсВ,X!тYтa!Z-c9сY,-cёВБY0Аёaтb1сaёYcАX!?.т0Z?БА-c-АZБт!1_,ZВXёБZ 0a 10.1-90БА1b1еБВ_0с99 aтА1bББZе.0ееёБА1ZАaa БbaтcёАтс!YY9т__Y_aё А!Z.се_ВАёY,БbY! .X!Xё!ет.В?cт1a0АZZ..тАaсБY!-0?В-,тА?9b_9еXYе1АВёс9Z-19_с-0.БZВ9ВтБ.еБa!ZеБ\r\n",
+    "stderr": "",
+    "passed": true
+  },
+  {
+    "name": "length_255",
+    "input": "е?0В-09ётaА_9?еттX_aёс!_В_.9-9тX1_ёa.bZБX?ВYБ?,9,?ё9Б__.0_етa ,,Б91_Аё_АтБ!0ВZБZb?!9,А Бcт9,тВ1991АВе.bXb!АcY_Zb?е?XZВАтеееА??.,АY ВВ!сАВ0_с1АbА9Б1т9_Yт?-.cеXАБ-a9aт.,-..bX aт.?еYстZте a0b,т c!ВАXё_!ёБc9Z-В !-?X-,?1Y-bXYYс_Z.е -acb.c0aБ!?9Вё!?Xb-тXт!Zтcc_",
+    "exit_code": 0,
+    "stdout": "Enter a string (max 255 characters): Palindrome: е?0В-09ётaА_9?еттX_aёс!_В_.9-9тX1_ёa.bZБX?ВYБ?,9,?ё9Б__.0_етa ,,Б91_Аё_АтБ!0ВZБZb?!9,А Бcт9,тВ1991АВе.bXb!АcY_Zb?е?XZВАтеееА??.,АY ВВ!сАВ0_с1АbА9Б1т9_Yт?-.cеXАБ-a9aт.,-..bX aт.?еYстZте a0b,т c!ВАXё_!ёБc9Z-В !-?X-,?1Y-bXYYс_Z.е -acb.c0aБ!?9Вё!?Xb-тXт!Zтcc__ccтZ!тXт-bX?!ёВ9?!Бa0c.bca- е.Z_сYYXb-Y1?,-X?-! В-Z9cБё!_ёXАВ!c т,b0a етZтсYе?.тa Xb..-,.тa9a-БАXеc.-?тY_9т1Б9АbА1с_0ВАс!ВВ YА,.??АееетАВZX?е?bZ_YcА!bXb.еВА1991Вт,9тcБ А,9!?bZБZВ0!БтА_ёА_19Б,, aте_0.__Б9ё?,9,?БYВ?XБZb.aё_1Xт9-9._В_!сёa_Xтте?9_Аaтё90-В0?е\r\n",
+    "stderr": "",
+    "passed": true
+  }
+]

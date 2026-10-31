@@ -1,0 +1,24 @@
+# Local working files and reference copies
+/tmp/
+
+# Keep the ready-to-run program, ignore other build output
+/code/build/*
+!/code/build/lab3.exe
+/tests/build/
+*.obj
+*.pdb
+*.ilk
+.vs/
+.vscode/
+
+# TeX temporary files (keep report.pdf)
+*.aux
+*.log
+!tests/build.log
+*.out
+*.toc
+*.synctex.gz
+*.xdv
+
+__pycache__/
+*.pyc
