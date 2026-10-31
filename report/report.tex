@@ -39,41 +39,19 @@
 
 \section*{3 Алгоритм}
 \begin{enumerate}
-\item В модуле C++ прочитать строку с помощью \texttt{std::getline}.
-Проверить успешность ввода и длину $n$. Кодировка консоли --- CP866.
+\item Ввести исходную строку и проверить её длину. Если ввод не выполнен
+или длина превышает 255 символов, вывести сообщение об ошибке и завершить работу.
 \item Передать ассемблерной процедуре адрес исходной строки, адрес буфера
-результата и $n$. Сохранить используемые регистры \texttt{EBP}, \texttt{ESI}
-и \texttt{EDI}.
-\item Сбросить флаг направления командой \texttt{CLD}. Загрузить адреса
-строк в \texttt{ESI} и \texttt{EDI}, а $n$ в \texttt{ECX}.
-Скопировать исходную строку командой \texttt{REP MOVSB}.
-\item Если $n=0$, пропустить обратное копирование. Иначе установить
-\texttt{ESI} на последний символ исходной строки и выполнить $n$ повторений:
-\texttt{STD; LODSB; CLD; STOSB}. Чтение идёт назад, запись вперёд.
-\item Записать нулевой байт в конец результата, восстановить регистры
-и вернуться в C++ командой \texttt{RET}. Вывести полученную строку.
+результата и длину строки.
+\item Скопировать исходную строку в буфер результата.
+\item Если строка не пустая, дописать к результату её символы
+в обратном порядке.
+\item Добавить нулевой байт в конец полученной строки, вернуть управление
+в основную программу и вывести результат.
 \end{enumerate}
 
 \newpage
-\section*{4 Интерфейс модулей и используемые команды}
-В C++ процедура объявляется с \texttt{extern "C"}. Соглашение о вызове
-задаётся словом \texttt{\_\_cdecl}. В MASM используется имя
-\texttt{\_MakePalindrome}, экспортируемое директивой \texttt{PUBLIC}.
-Результат записывается по переданному адресу.
-
-Аргументы помещаются в стек справа налево. После
-\texttt{PUSH EBP; MOV EBP, ESP} по адресу \texttt{[EBP+8]} находится
-адрес исходной строки, по \texttt{[EBP+12]} --- адрес результата,
-по \texttt{[EBP+16]} --- длина строки. Аргументы из стека удаляет
-вызывающий код C++, поэтому используется \texttt{RET} без операнда.
-
-\texttt{REP MOVSB} копирует байты, \texttt{LODSB} читает байт в
-\texttt{AL}, \texttt{STOSB} записывает его в результат.
-\texttt{STD} задаёт движение указателя назад, \texttt{CLD} --- вперёд.
-Перед возвратом флаг направления сброшен. \texttt{EBX} не изменяется,
-\texttt{EBP}, \texttt{ESI} и \texttt{EDI} сохраняются в стеке.
-
-\section*{5 Тестирование}
+\section*{4 Тестирование}
 Проверены пустая строка, строки с пробелами, русскими буквами и знаками
 препинания, а также ввод предельной и превышающей её длины.
 В таблице приведены исходные данные и полученные результаты.
@@ -82,29 +60,29 @@
 \begin{center}
 \small
 \renewcommand{\arraystretch}{1.08}
-\begin{tabular}{@{}c p{37mm} p{67mm} c@{}}
+\begin{tabular}{@{}c p{45mm} p{90mm}@{}}
 \toprule
-№ & Исходная строка & Результат & Код выхода \\
+№ & Исходная строка & Результат \\
 \midrule
-1 & Пустая строка & Пустая строка & 0 \\
-2 & \texttt{a} & \texttt{aa} & 0 \\
-3 & \texttt{ab} & \texttt{abba} & 0 \\
-4 & \texttt{abc} & \texttt{abccba} & 0 \\
-5 & \texttt{abcd} & \texttt{abcddcba} & 0 \\
-6 & \texttt{aba} & \texttt{abaaba} & 0 \\
-7 & \texttt{aaaa} & \texttt{aaaaaaaa} & 0 \\
-8 & $\texttt{a}\mathord{\sqcup}\texttt{b}$ & $\texttt{a}\mathord{\sqcup}\texttt{bb}\mathord{\sqcup}\texttt{a}$ & 0 \\
-9 & $\mathord{\sqcup}\texttt{a}\mathord{\sqcup}$ & $\mathord{\sqcup}\texttt{a}\mathord{\sqcup}\mathord{\sqcup}\texttt{a}\mathord{\sqcup}$ & 0 \\
-10 & \texttt{Ab1!} & \texttt{Ab1!!1bA} & 0 \\
-11 & \texttt{тест} & \texttt{тесттсет} & 0 \\
-12 & $\texttt{а}\mathord{\sqcup}\texttt{роза}$ & $\texttt{а}\mathord{\sqcup}\texttt{розаазор}\mathord{\sqcup}\texttt{а}$ & 0 \\
+1 & Пустая строка & Пустая строка \\
+2 & \texttt{a} & \texttt{aa} \\
+3 & \texttt{ab} & \texttt{abba} \\
+4 & \texttt{abc} & \texttt{abccba} \\
+5 & \texttt{abcd} & \texttt{abcddcba} \\
+6 & \texttt{aba} & \texttt{abaaba} \\
+7 & \texttt{aaaa} & \texttt{aaaaaaaa} \\
+8 & $\texttt{a}\mathord{\sqcup}\texttt{b}$ & $\texttt{a}\mathord{\sqcup}\texttt{bb}\mathord{\sqcup}\texttt{a}$ \\
+9 & $\mathord{\sqcup}\texttt{a}\mathord{\sqcup}$ & $\mathord{\sqcup}\texttt{a}\mathord{\sqcup}\mathord{\sqcup}\texttt{a}\mathord{\sqcup}$ \\
+10 & \texttt{Ab1!} & \texttt{Ab1!!1bA} \\
+11 & \texttt{тест} & \texttt{тесттсет} \\
+12 & $\texttt{а}\mathord{\sqcup}\texttt{роза}$ & $\texttt{а}\mathord{\sqcup}\texttt{розаазор}\mathord{\sqcup}\texttt{а}$ \\
 13 & $(\texttt{abc})^{85}$, 255 символов
-   & $(\texttt{abc})^{85}(\texttt{cba})^{85}$, 510 символов & 0 \\
-14 & $\texttt{a}^{256}$ & Ошибка: превышена длина ввода & 1 \\
-15 & $\texttt{b}^{300}$ & Ошибка: превышена длина ввода & 1 \\
-16 & 1 пробел & 2 пробела & 0 \\
-17 & 3 пробела & 6 пробелов & 0 \\
-18 & Нет строки (EOF) & Ошибка ввода & 1 \\
+   & $(\texttt{abc})^{85}(\texttt{cba})^{85}$, 510 символов \\
+14 & $\texttt{a}^{256}$ & Ошибка: превышена длина ввода \\
+15 & $\texttt{b}^{300}$ & Ошибка: превышена длина ввода \\
+16 & 1 пробел & 2 пробела \\
+17 & 3 пробела & 6 пробелов \\
+18 & Нет строки (EOF) & Ошибка ввода \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -118,7 +96,7 @@
 \small Рисунок 1 --- Ввод и вывод русской строки в CP866
 \end{center}
 
-\section*{6 Код программы}
+\section*{5 Код программы}
 \noindent\textbf{Модуль C++ --- main.cpp}
 \lstinputlisting[language=C++]{../code/main.cpp}
 
@@ -126,7 +104,7 @@
 \noindent\textbf{Модуль MASM --- palindrome.asm}
 \lstinputlisting{../code/palindrome.asm}
 
-\section*{7 Вывод}
+\section*{6 Вывод}
 Для вызова ассемблерной процедуры из C++ использованы три аргумента:
 адрес исходной строки, адрес результата и длина. При \texttt{cdecl}
 вызывающий код освобождает 12 байтов аргументов, поэтому в процедуре
