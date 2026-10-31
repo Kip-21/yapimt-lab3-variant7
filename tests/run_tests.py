@@ -26,7 +26,7 @@ def check(name, value):
     else:
         expected_error = b'Error: string is longer than 255 characters.\r\n'
         passed = run.returncode == 1 and run.stdout == prompt and run.stderr == expected_error
-    result = {'name': name, 'input': value, 'exit_code': run.returncode,
+    result = {'number': len(results) + 1, 'name': name, 'input': value, 'exit_code': run.returncode,
               'stdout': run.stdout.decode('cp866'), 'stderr': run.stderr.decode('cp866'),
               'passed': passed}
     results.append(result)
@@ -38,7 +38,9 @@ for name, value in cases:
 run = subprocess.run([str(exe)], input=b'', capture_output=True, timeout=5)
 passed = (run.returncode == 1 and run.stdout == prompt
           and run.stderr == b'Error: input failed.\r\n')
-results.append({'name': 'end_of_input', 'exit_code': run.returncode, 'passed': passed})
+results.append({'number': len(results) + 1, 'name': 'end_of_input',
+                'exit_code': run.returncode, 'stdout': run.stdout.decode('cp866'),
+                'stderr': run.stderr.decode('cp866'), 'passed': passed})
 assert passed
 
 rng = random.Random(7)

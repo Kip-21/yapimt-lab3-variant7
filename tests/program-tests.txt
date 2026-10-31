@@ -1,0 +1,9 @@
+Passed 274/274 program tests.
+empty: exit=0, passed=True
+four: exit=0, passed=True
+space_inside: exit=0, passed=True
+russian: exit=0, passed=True
+maximum: exit=0, passed=True
+too_long_256: exit=1, passed=True
+one_space: exit=0, passed=True
+three_spaces: exit=0, passed=True

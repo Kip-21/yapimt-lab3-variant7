@@ -15,6 +15,7 @@
 *.aux
 *.log
 !tests/build.log
+!tests/program-build.log
 *.out
 *.toc
 *.synctex.gz

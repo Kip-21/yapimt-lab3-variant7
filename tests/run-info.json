@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-31T15:45:07.3971168+07:00",
+  "timezone": "Asia/Novosibirsk",
+  "build": "Visual Studio 2026 tools: MSVC x86 and MASM, code/build.bat, /MACHINE:X86",
+  "executable": "code/build/lab3.exe",
+  "program_tests": 274,
+  "program_tests_passed": 274,
+  "abi_tests": 256,
+  "abi_log": "tests/build.log",
+  "native_console_test": {
+    "input": "тест",
+    "expected_result": "тесттсет",
+    "exit_code": 0,
+    "screenshot": "tests/screenshots/11-russian.png"
+  },
+  "sha256": {
+    "code/build/lab3.exe": "ed5de40a5968e8b81980db815907f0b7ef13eaa8bd2595412b375f7e702c5bce",
+    "code/main.cpp": "372cc15fdd60a6869c10643b64859bba2dc5e7659da3ec66b434954d715b34e0",
+    "code/palindrome.asm": "e3b6d87144ff22e603c7bfd932d56638cfe39cbabf26c0a80fb44128b9b8de64",
+    "tests/run_tests.py": "6a212f433cf9706b6f33294d846eef4b5d43b867b6ba310f2b988fa08fb12be1",
+    "tests/check_abi.cpp": "041aab4ee42ed1852a94b72c6f92f941186792019b1d7ac83b3b22d1305be359",
+    "tests/results.json": "f740fe7e7d40979092c2ee7089c76dd16605ad9ad5da22cab334a3f6018e537a",
+    "tests/screenshots/11-russian.png": "10939f54d1a68d0ba33c878aed48ab8f873d7d92c99706c20bb9c1e91fbb2120"
+  }
+}
